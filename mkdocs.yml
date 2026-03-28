@@ -1,0 +1,103 @@
+site_name: Python OPPE Solutions
+site_description: Exam-prep companion for Python — walkthrough solutions, key concepts, and downloadable slides.
+site_url: https://nirban-a.github.io/Python_Buddy_2026T3/
+repo_url: https://github.com/Nirban-A/Python_Buddy_2026T3
+repo_name: Python_Buddy_2026T3
+edit_uri: ""
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/moon-waning-crescent
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+    - search.share
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.keys
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+      title: On this page
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Nirban-A/Python_Buddy_2026T3
+      name: GitHub Repository
+
+nav:
+  - Home: index.md
+
+  - 2024 Sep OPPE1:
+    - oppe-2024-sep/index.md
+    - Set 1:
+      - oppe-2024-sep/set1/index.md
+    - Set 2:
+      - oppe-2024-sep/set2/index.md
+    - Set 3:
+      - oppe-2024-sep/set3/index.md
+      - S1P2 · Date Format Conversion: oppe-2024-sep/set3/s1p2.md
+      - S1P3 · Increment Dict with Limit: oppe-2024-sep/set3/s1p3.md
+      - S2P1 · Last Uppercase Word: oppe-2024-sep/set3/s2p1.md
+      - S2P2 · Swap & Reverse Lines: oppe-2024-sep/set3/s2p2.md
+      - S3P2 · Centered Triangle: oppe-2024-sep/set3/s3p2.md
+
+  - 2025 Jan OPPE1:
+    - oppe-2025-jan/index.md
+    - Set 1:
+      - oppe-2025-jan/set1/index.md
+    - Set 2:
+      - oppe-2025-jan/set2/index.md
+    - Set 3:
+      - oppe-2025-jan/set3/index.md
