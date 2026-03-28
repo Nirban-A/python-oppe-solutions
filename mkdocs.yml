@@ -1,12 +1,14 @@
 site_name: Python OPPE Solutions
 site_description: Exam-prep companion for Python — walkthrough solutions, key concepts, and downloadable slides.
-site_url: https://nirban-a.github.io/Python_Buddy_2026T3/
+site_url: https://github.com/Nirban-A/Testing_Python_OPPE/
 repo_url: https://github.com/Nirban-A/Python_Buddy_2026T3
 repo_name: Python_Buddy_2026T3
 edit_uri: ""
 
 theme:
   name: material
+  logo: https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg
+  favicon: https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -78,26 +80,33 @@ extra:
 
 nav:
   - Home: index.md
+  - OPPE 1:
+    - oppe1/index.md
+    - 2024:
+      - oppe1/2024/index.md
+      - January:
+        - oppe1/2024/jan/index.md
+      - May:
+        - oppe1/2024/may/index.md
+      - September:
+        - oppe1/2024/sep/index.md
+        - Set 1: oppe1/2024/sep/set1/index.md
+        - Set 2: oppe1/2024/sep/set2/index.md
+        - Set 3:
+          - oppe1/2024/sep/set3/index.md
+          - S1P2 · Date Format Conversion: oppe1/2024/sep/set3/s1p2.md
+          - S1P3 · Increment Dict with Limit: oppe1/2024/sep/set3/s1p3.md
+          - S2P1 · Last Uppercase Word: oppe1/2024/sep/set3/s2p1.md
+          - S2P2 · Swap & Reverse Lines: oppe1/2024/sep/set3/s2p2.md
+          - S3P2 · Centered Triangle: oppe1/2024/sep/set3/s3p2.md
+    - 2025:
+      - oppe1/2025/index.md
+      - January:
+        - oppe1/2025/jan/index.md
+      - May:
+        - oppe1/2025/may/index.md
+      - September:
+        - oppe1/2025/sep/index.md
 
-  - 2024 Sep OPPE1:
-    - oppe-2024-sep/index.md
-    - Set 1:
-      - oppe-2024-sep/set1/index.md
-    - Set 2:
-      - oppe-2024-sep/set2/index.md
-    - Set 3:
-      - oppe-2024-sep/set3/index.md
-      - S1P2 · Date Format Conversion: oppe-2024-sep/set3/s1p2.md
-      - S1P3 · Increment Dict with Limit: oppe-2024-sep/set3/s1p3.md
-      - S2P1 · Last Uppercase Word: oppe-2024-sep/set3/s2p1.md
-      - S2P2 · Swap & Reverse Lines: oppe-2024-sep/set3/s2p2.md
-      - S3P2 · Centered Triangle: oppe-2024-sep/set3/s3p2.md
-
-  - 2025 Jan OPPE1:
-    - oppe-2025-jan/index.md
-    - Set 1:
-      - oppe-2025-jan/set1/index.md
-    - Set 2:
-      - oppe-2025-jan/set2/index.md
-    - Set 3:
-      - oppe-2025-jan/set3/index.md
+  - OPPE 2:
+    - oppe2/index.md

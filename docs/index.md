@@ -1,36 +1,37 @@
 # Python OPPE Solutions
 
-<div class="pb-hero">
-<h1><img src=https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg> Python OPPE Solutions</h1>
-<p>Your exam-prep companion for Python OPPE — detailed walkthroughs, pattern recognition, and downloadable slides.</p>
+<div class="pb-banner">
+  <div class="pb-banner-title">Every Python OPPE question. Solved. In one place.</div>
+  <div class="pb-banner-sub">CS1002 (Data Science) &nbsp;·&nbsp; CS2102 (Electronic Systems) &nbsp;·&nbsp;
+   IIT-Madras BS Degree</div>
 </div>
 
-Python Buddy is a companion resource for students preparing for the **Programming in Python** OPPE exams (IIT-Madras Online Degree Programme). Each problem page gives you:
+A dedicated solution manual and question bank for the **Programming in Python** OPPE exams. Each problem page contains a detailed walkthrough of the solution, multiple approaches from beginner-friendly to Pythonic, and a downloadable slide deck — so you can study on any device, anytime.
 
-- **Quick-reference** — collapsible cheat sheet at the very top
-- **Problem walkthrough** — step-by-step reasoning from scratch
-- **Multiple solutions** — from beginner-readable to Pythonic
-- **Key takeaways** — the concepts worth remembering long-term
+- **Quick Reference** — collapsible cheat sheet at the top of every page for last-minute revision
+- **Step-by-step walkthrough** — reasoning from scratch, not just the final answer
+- **Multiple solutions** — explanatory approach first, Pythonic shortcut after
+- **Key takeaways** — the concept worth remembering beyond this one question
 - **Slide download** — the full annotated deck for offline study
 
 ---
 
-## Exam Sets
+## Browse by Exam
 
 <div class="pb-set-grid">
 
-<a class="pb-set-card" href="oppe-2024-sep/">
-<div class="pb-set-card-label">2024 · September</div>
-<h3>OPPE 1 — Sep 2024</h3>
-<p>Three exam sets covering strings, lists, functions, dictionaries, and pattern printing.</p>
-<span class="pb-badge pb-badge-done">Set 3 ✓</span>
-<span class="pb-badge pb-badge-soon">Sets 1 & 2 coming</span>
+<a class="pb-set-card" href="oppe1/">
+<div class="pb-set-card-label">OPPE 1</div>
+<h3>OPPE 1</h3>
+<p>Weeks 1–5 · Strings, lists, functions, loops, dictionaries, and pattern printing.</p>
+<span class="pb-badge pb-badge-done">2024 Sep Set 3 ✓</span>
+<span class="pb-badge pb-badge-soon">More coming</span>
 </a>
 
-<a class="pb-set-card" href="oppe-2025-jan/">
-<div class="pb-set-card-label">2025 · January</div>
-<h3>OPPE 1 — Jan 2025</h3>
-<p>Three exam sets with fresh problems — I/O processing, comprehensions, and more.</p>
+<a class="pb-set-card" href="oppe2/">
+<div class="pb-set-card-label">OPPE 2</div>
+<h3>OPPE 2</h3>
+<p>Weeks 6–10 · File handling, OOP, advanced data structures, and more.</p>
 <span class="pb-badge pb-badge-soon">Coming soon</span>
 </a>
 
@@ -40,12 +41,24 @@ Python Buddy is a companion resource for students preparing for the **Programmin
 
 ## How to use this site
 
-Think of each page as a **slide deck in text form** — you can read it on any device without downloading anything. The collapsible **Quick Reference** box at the top of each problem page is designed for last-minute review before the exam.
+This site contains detailed solutions for previous year Python OPPE questions, organised by exam, year, session, and set. Use it as a **question bank** to practise, or as a **solution manual** to understand where you went wrong.
 
 !!! tip "Study tip"
     Work through the *Explanatory Approach* first, even if it looks verbose. The Pythonic shortcut only makes sense once you understand what it's replacing.
 
 ---
+
+## Useful links
+
+<div style="display:flex; justify-content:center;" markdown>
+
+| Resource | Link |
+|---|---|
+| Official Python Textbook (IIT-M) | [bsc-iitm.github.io/python-textbook](https://bsc-iitm.github.io/python-textbook/) |
+| Common OPPE Mistakes (video) | [YouTube](https://www.youtube.com/watch?v=7XgtJeG5Efw) |
+| Slide repository (GitHub) | [Nirban-A/Python\_Buddy\_2026T3](https://github.com/Nirban-A/Python_Buddy_2026T3) |
+
+</div>
 
 ## Useful links
 
