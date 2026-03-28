@@ -47,19 +47,19 @@
   --pb-green-lt:  #142018;
   --pb-red-lt:    #2E1210;
   --pb-purple-lt: #231530;
-
+ 
   --md-default-bg-color:  #1C1A16;
   --md-default-fg-color:  #EDE8E0;
   --md-code-bg-color:     #26231E;
   --md-typeset-table-color: rgba(255,255,255,0.05);
 }
-
+ 
 /* ─── Base ───────────────────────────────────────────── */
 .md-main { background: var(--pb-bg); }
 .md-content { background: var(--pb-bg); }
 .md-sidebar { background: var(--pb-surface); }
 .md-sidebar--secondary { background: var(--pb-bg); }
-
+ 
 /* ─── Header & Tabs ──────────────────────────────────── */
 .md-header {
   background: #1E3A78 !important;
@@ -69,7 +69,7 @@
 .md-tabs { background: #26478A !important; }
 .md-tabs__link { font-weight: 500; opacity: 0.85; }
 .md-tabs__link--active, .md-tabs__link:hover { opacity: 1; }
-
+ 
 /* ─── Navigation sidebar ─────────────────────────────── */
 .md-nav__title { font-weight: 700; color: var(--pb-blue); }
 .md-nav__link--active { color: var(--pb-orange) !important; font-weight: 600; }
@@ -81,7 +81,7 @@
   letter-spacing: 0.06em;
   color: var(--pb-muted);
 }
-
+ 
 /* ─── Headings ───────────────────────────────────────── */
 .md-typeset h1 {
   font-weight: 800;
@@ -102,7 +102,7 @@
   color: var(--pb-text);
   font-size: 1.1rem;
 }
-
+ 
 /* ─── Inline code ────────────────────────────────────── */
 .md-typeset code {
   background: var(--pb-blue-lt);
@@ -118,7 +118,7 @@
   padding: 0;
   font-weight: 400;
 }
-
+ 
 /* ─── Code blocks ────────────────────────────────────── */
 .md-typeset .highlight,
 .md-typeset pre {
@@ -132,7 +132,7 @@
   border-radius: 8px 8px 0 0;
   border: none;
 }
-
+ 
 /* ─── Tables ─────────────────────────────────────────── */
 .md-typeset table:not([class]) {
   border-radius: 8px;
@@ -159,7 +159,7 @@
 .md-typeset table:not([class]) tr:hover td {
   background: var(--pb-blue-lt);
 }
-
+ 
 /* ─── Admonitions ────────────────────────────────────── */
 .md-typeset .admonition,
 .md-typeset details {
@@ -174,7 +174,7 @@
   font-size: 0.85rem;
   letter-spacing: 0.02em;
 }
-
+ 
 /* ─── Custom admonition: problem ────────────────────── */
 .md-typeset .admonition.problem { border-color: var(--pb-blue); background: var(--pb-blue-lt); }
 .md-typeset .problem > .admonition-title { background: rgba(47,84,150,0.12); color: var(--pb-blue); }
@@ -183,7 +183,7 @@
   -webkit-mask-image: var(--md-admonition-icon--note);
   mask-image: var(--md-admonition-icon--note);
 }
-
+ 
 /* ─── Custom admonition: insight ────────────────────── */
 .md-typeset .admonition.insight { border-color: var(--pb-orange); background: var(--pb-orange-lt); }
 .md-typeset .insight > .admonition-title { background: rgba(192,82,42,0.10); color: var(--pb-orange); }
@@ -192,7 +192,7 @@
   -webkit-mask-image: var(--md-admonition-icon--tip);
   mask-image: var(--md-admonition-icon--tip);
 }
-
+ 
 /* ─── Custom admonition: quickref ───────────────────── */
 .md-typeset details.quickref {
   border-color: var(--pb-purple);
@@ -208,7 +208,7 @@
   -webkit-mask-image: var(--md-admonition-icon--abstract);
   mask-image: var(--md-admonition-icon--abstract);
 }
-
+ 
 /* ─── IO Example boxes ───────────────────────────────── */
 .pb-io {
   display: grid;
@@ -217,7 +217,7 @@
   margin: 1.2rem 0 1.6rem;
 }
 @media (max-width: 600px) { .pb-io { grid-template-columns: 1fr; } }
-
+ 
 .pb-io-block {
   background: var(--pb-card);
   border: 1px solid var(--pb-border);
@@ -226,7 +226,7 @@
 }
 .pb-io-block.input  { border-top: 3px solid var(--pb-blue); }
 .pb-io-block.output { border-top: 3px solid var(--pb-green); }
-
+ 
 .pb-io-label {
   font-size: 0.7rem;
   font-weight: 800;
@@ -238,7 +238,7 @@
 }
 .pb-io-block.input  .pb-io-label { background: var(--pb-blue); }
 .pb-io-block.output .pb-io-label { background: var(--pb-green); }
-
+ 
 .pb-io-block pre {
   margin: 0 !important;
   padding: 0.75rem 1rem !important;
@@ -249,7 +249,7 @@
   line-height: 1.6 !important;
   box-shadow: none !important;
 }
-
+ 
 /* ─── Takeaway cards ─────────────────────────────────── */
 .pb-cards {
   display: grid;
@@ -285,7 +285,7 @@
   color: var(--pb-muted);
   line-height: 1.6;
 }
-
+ 
 /* ─── Slides download button ─────────────────────────── */
 .pb-downloads { margin: 1rem 0 1.6rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .pb-btn {
@@ -304,7 +304,7 @@
 .pb-btn:hover { filter: brightness(1.1); transform: translateY(-1px); }
 .pb-btn-slides { background: var(--pb-orange); color: white !important; }
 .pb-btn-repo   { background: #24292E;       color: white !important; }
-
+ 
 /* ─── Step trace table highlight ────────────────────── */
 .md-typeset table tr.highlight-row td {
   background: var(--pb-green-lt) !important;
@@ -313,34 +313,26 @@
 .md-typeset table td.odd-pos  { background: var(--pb-orange-lt); color: var(--pb-red); }
 .md-typeset table td.even-pos { background: var(--pb-surface); color: var(--pb-muted); }
 .md-typeset table td.final    { background: var(--pb-green-lt); color: var(--pb-green); font-weight: 700; }
-
-/* ─── Hero banner (home page) ────────────────────────── */
-.pb-hero {
-  background: linear-gradient(135deg, #1E3A78 0%, #2F5496 60%, #3D6BB0 100%);
-  border-radius: 12px;
-  padding: 2.5rem 2.2rem 2.2rem;
-  color: white;
-  margin-bottom: 2rem;
-  position: relative;
-  overflow: hidden;
+ 
+/* ─── Banner (home page) ─────────────────────────────── */
+.pb-banner {
+  background: var(--pb-blue-lt);
+  border-left: 4px solid var(--pb-blue);
+  border-radius: 0 10px 10px 0;
+  padding: 1.4rem 1.8rem;
+  margin-bottom: 1.8rem;
 }
-.pb-hero::after {
-  content: "";
-  position: absolute;
-  right: -30px; top: -30px;
-  width: 200px; height: 200px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.04);
+.pb-banner-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--pb-blue);
+  margin-bottom: 0.35rem;
 }
-.pb-hero h1 {
-  color: white !important;
-  border: none !important;
-  font-size: 2.2rem !important;
-  margin-bottom: 0.5rem !important;
-  padding-bottom: 0 !important;
+.pb-banner-sub {
+  font-size: 0.88rem;
+  color: var(--pb-muted);
 }
-.pb-hero p { color: rgba(255,255,255,0.85); font-size: 1.05rem; margin: 0; }
-
+ 
 /* ─── Exam set cards on index pages ─────────────────── */
 .pb-set-grid {
   display: grid;
@@ -394,7 +386,7 @@
 }
 .pb-badge-done  { background: var(--pb-green-lt); color: var(--pb-green); }
 .pb-badge-soon  { background: var(--pb-orange-lt); color: var(--pb-orange); }
-
+ 
 /* ─── Step annotation blockquote ────────────────────── */
 .md-typeset blockquote {
   border-left: 4px solid var(--pb-orange);
@@ -405,7 +397,7 @@
   font-style: normal;
   font-size: 0.9rem;
 }
-
+ 
 /* ─── Footer ─────────────────────────────────────────── */
 .md-footer { background: #1E3A78; }
 .md-footer-meta { background: #152B5E; }
