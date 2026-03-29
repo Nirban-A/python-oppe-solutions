@@ -2,18 +2,19 @@
 
 OPPE 1 covers **Weeks 1–5** of the Programming in Python course. It tests foundational Python — strings, lists, functions, conditionals, loops, and basic I/O.
 
----
+
 
 ## Exam Structure
 
+<div style="display:flex; justify-content:center;" markdown>
 | Section | Questions | Marks each | Total |
 |---------|-----------|-----------|-------|
 | Section 1 | 3 | 10 | 30 |
 | Section 2 | 2 | 15 | 30 |
 | Section 3 | 2 | 20 | 40 |
 | **Total** | **7** | — | **100** |
+</div>
 
----
 
 ## Syllabus (Weeks 1–5)
 

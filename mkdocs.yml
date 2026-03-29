@@ -103,6 +103,16 @@ nav:
       - oppe1/2025/index.md
       - January:
         - oppe1/2025/jan/index.md
+        - Set 3:
+          - oppe1/2025/jan/set3/index.md
+          - S1Q1 · Even & Second Last Digit: oppe1/2025/jan/set3/2025_jan_3_s1q1.md
+          - S1Q2 · Capitalize nth Character: oppe1/2025/jan/set3/2025_jan_3_s1q2.md
+          - S1Q3 · Merge and Remove Duplicates: oppe1/2025/jan/set3/2025_jan_3_s1q3.md
+          - S2Q1 · Replace Vowels with Next Alphabet: oppe1/2025/jan/set3/2025_jan_3_s2q1.md
+          - S2Q2 · Max Column Sum and Index: oppe1/2025/jan/set3/2025_jan_3_s2q2.md
+          - S3Q1 · Analyze Sentences: oppe1/2025/jan/set3/2025_jan_3_s3q1.md
+          - S3Q2 · Centered Triangle of Zeroes: oppe1/2025/jan/set3/2025_jan_3_s3q2.md
+
       - May:
         - oppe1/2025/may/index.md
       - September:

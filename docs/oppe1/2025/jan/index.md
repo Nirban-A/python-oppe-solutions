@@ -20,7 +20,7 @@
 <div class="pb-set-card-label">Set 3</div>
 <h3>2025 Jan — Set 3</h3>
 <p>Problems from Set 3 of the January 2025 exam.</p>
-<span class="pb-badge pb-badge-soon">Coming soon</span>
+<span class="pb-badge pb-badge-done">Solutions</span>
 </a>
 
 </div>
