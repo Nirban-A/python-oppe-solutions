@@ -103,6 +103,24 @@ nav:
       - oppe1/2025/index.md
       - January:
         - oppe1/2025/jan/index.md
+        - Set 1:
+          - oppe1/2025/jan/set1/index.md
+          - S1Q1 · Even or Divisible by 5: oppe1/2025/jan/set1/2025_jan_1_s1q1.md
+          - S1Q2 · Deinterleave Even and Odd Indices: oppe1/2025/jan/set1/2025_jan_1_s1q2.md
+          - S1Q3 · Make Dictionary from Elements in Index: oppe1/2025/jan/set1/2025_jan_1_s1q3.md
+          - S2Q1 · Count Unique Even and Odd Numbers: oppe1/2025/jan/set1/2025_jan_1_s2q1.md
+          - S2Q2 · Vowel Count of Words: oppe1/2025/jan/set1/2025_jan_1_s2q2.md
+          - S3Q1 · Student Score Filter: oppe1/2025/jan/set1/2025_jan_1_s3q1.md
+          - S3Q2 · W Pattern: oppe1/2025/jan/set1/2025_jan_1_s3q2.md
+        - Set 2:
+          - oppe1/2025/jan/set2/index.md
+          - S1Q1 · Check If Number Divides Two Others: oppe1/2025/jan/set2/2025_jan_2_s1q1.md
+          - S1Q2 · Check String Rotation: oppe1/2025/jan/set2/2025_jan_2_s1q2.md
+          - S1Q3 · Find Missing Number in a Range: oppe1/2025/jan/set2/2025_jan_2_s1q3.md
+          - S2Q1 · Merge Dictionaries and Sum on Conflicts: oppe1/2025/jan/set2/2025_jan_2_s2q1.md
+          - S2Q2 · Most Frequent Numbers: oppe1/2025/jan/set2/2025_jan_2_s2q2.md
+          - S3Q1 · Employee Data Analysis: oppe1/2025/jan/set2/2025_jan_2_s3q1.md
+          - S3Q2 · Z Pattern: oppe1/2025/jan/set2/2025_jan_2_s3q2.md
         - Set 3:
           - oppe1/2025/jan/set3/index.md
           - S1Q1 · Even & Second Last Digit: oppe1/2025/jan/set3/2025_jan_3_s1q1.md
