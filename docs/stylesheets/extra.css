@@ -57,7 +57,6 @@
 /* ─── Base ───────────────────────────────────────────── */
 .md-main { background: var(--pb-bg); }
 .md-content { background: var(--pb-bg); }
-.md-sidebar { background: var(--pb-surface); }
 .md-sidebar--secondary { background: var(--pb-bg); }
  
 /* ─── Header & Tabs ──────────────────────────────────── */

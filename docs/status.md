@@ -13,9 +13,9 @@ Current completion status of all exam sets across OPPE 1 and OPPE 2.
 <a class="pb-set-card" href="../oppe1/2025/jan/">
 <div class="pb-set-card-label">January 2025</div>
 <h3>January</h3>
-<span class="pb-badge pb-badge-done">Set 1 ✓</span>
-<span class="pb-badge pb-badge-done">Set 2 ✓</span>
-<span class="pb-badge pb-badge-done">Set 3 ✓</span>
+<span class="pb-badge pb-badge-done"> Set 1 </span>
+<span class="pb-badge pb-badge-done"> Set 2 </span>
+<span class="pb-badge pb-badge-done"> Set 3 </span>
 </a>
 
 <a class="pb-set-card" href="">

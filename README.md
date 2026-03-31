@@ -1,6 +1,6 @@
 # Python OPPE Solutions
 
-> Previous year OPPE solutions for Python (CS1002/CS2102) — IIT-Madras Online Degree Programme
+> Previous year OPPE solutions for Python (CS1002/CS2102) - IIT-Madras Online Degree Programme
 
 Step-by-step solutions, multiple approaches, and downloadable slides for Python OPPE previous year questions.
 
@@ -17,7 +17,7 @@ mkdocs serve          # live-preview at http://127.0.0.1:8000
 
 ## Deploy to GitHub Pages
 
-Push to `main` — the GitHub Actions workflow in `.github/workflows/deploy.yml` runs `mkdocs gh-deploy` automatically.
+Push to `main` - the GitHub Actions workflow in `.github/workflows/deploy.yml` runs `mkdocs gh-deploy` automatically.
 
 Or deploy manually:
 
@@ -152,9 +152,9 @@ python-oppe-solutions/
             ├── index.md
             ├── jan/
             │   ├── index.md
-            │   ├── set1/   ✓ complete
-            │   ├── set2/   ✓ complete
-            │   └── set3/   ✓ complete
+            │   ├── set1/    complete
+            │   ├── set2/    complete
+            │   └── set3/    complete
             ├── may/
             │   ├── index.md
             │   ├── set1/

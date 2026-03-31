@@ -1,18 +1,18 @@
 # Python OPPE Solutions
 
 <div class="pb-banner">
-  <div class="pb-banner-title">Every Python OPPE question. Solved. In one place.</div>
+  <div class="pb-banner-title">Every Python OPPE Question Solved In One Place</div>
   <div class="pb-banner-sub">CS1002 (Data Science) &nbsp;·&nbsp; CS2102 (Electronic Systems) &nbsp;·&nbsp;
    IIT-Madras BS Degree</div>
 </div>
 
-A dedicated solution manual and question bank for the **Programming in Python** OPPE exams. Each problem page contains a detailed walkthrough of the solution, multiple approaches from beginner-friendly to Pythonic, and a downloadable slide deck — so you can study on any device, anytime.
+A dedicated solution manual and question bank for the **Programming in Python** OPPE exams. Each problem page contains a detailed walkthrough of the solution, multiple approaches from beginner-friendly to Pythonic, and a downloadable slide deck - so you can study on any device, anytime.
 
-- **Quick Reference** — collapsible cheat sheet at the top of every page for last-minute revision
-- **Step-by-step walkthrough** — reasoning from scratch, not just the final answer
-- **Multiple solutions** — explanatory approach first, Pythonic shortcut after
-- **Key takeaways** — the concept worth remembering beyond this one question
-- **Slide download** — the full annotated deck for offline study
+- **Quick Reference** - collapsible cheat sheet at the top of every page for last-minute revision
+- **Step-by-step walkthrough** - reasoning from scratch, not just the final answer
+- **Multiple solutions** - explanatory approach first, Pythonic shortcut after
+- **Key takeaways** - the concept worth remembering beyond this one question
+- **Slide download** - the full annotated deck for offline study
 
 ---
 
