@@ -1,6 +1,6 @@
 # Python OPPE Solutions
 
-> Previous year OPPE solutions for Python (CS1002/CS2102) - IIT-Madras Online Degree Programme
+> Previous year OPPE solutions for Python (CS1002/CS2102) - IIT-Madras BS Degree Programme
 
 Step-by-step solutions, multiple approaches, and downloadable slides for Python OPPE previous year questions.
 
