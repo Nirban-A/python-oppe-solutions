@@ -21,17 +21,16 @@ A dedicated solution manual and question bank for the **Programming in Python** 
 <div class="pb-set-grid">
 
 <a class="pb-set-card" href="oppe1/">
-<div class="pb-set-card-label">OPPE 1</div>
 <h3>OPPE 1</h3>
-<p>Weeks 1–5 · Strings, lists, functions, loops, dictionaries, and pattern printing.</p>
-<span class="pb-badge pb-badge-done">2024 Sep Set 3 ✓</span>
-<span class="pb-badge pb-badge-soon">More coming</span>
+<h5>Weeks 1 – 5</h5>
+<p>Strings, lists, functions, loops, dictionaries, and pattern printing.</p>
+<span class="pb-badge pb-badge-done">More Details</span>
 </a>
 
 <a class="pb-set-card" href="oppe2/">
-<div class="pb-set-card-label">OPPE 2</div>
 <h3>OPPE 2</h3>
-<p>Weeks 6–10 · File handling, OOP, advanced data structures, and more.</p>
+<h5>Weeks 1 – 8</h5>
+<p>File handling, OOP, advanced data structures, and more.</p>
 <span class="pb-badge pb-badge-soon">Coming soon</span>
 </a>
 

@@ -138,3 +138,5 @@ nav:
 
   - OPPE 2:
     - oppe2/index.md
+  - Status: status.md
+  - Feedback: feedback.md
