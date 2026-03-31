@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Exam-prep companion for Python — walkthrough solutions, key concepts, and downloadable slides.">
+        <meta name="description" content="Exam-prep companion for Python - walkthrough solutions, key concepts, and downloadable slides.">
       
       
       
@@ -2648,7 +2648,7 @@
 </span></code></pre></div>
 <p><strong>Key rules:</strong>
 - Both lowercase and uppercase vowels count
-- Split on <code>" "</code> (single space), not <code>split()</code> — to preserve spacing behaviour
+- Split on <code>" "</code> (single space), not <code>split()</code> - to preserve spacing behaviour
 - Output format: <code>word(count)</code> with no space before <code>(</code>
 - Rejoin with a single space between words</p>
 </details>
@@ -2674,15 +2674,15 @@
 <h2 id="understanding-the-problem">Understanding the problem<a class="headerlink" href="#understanding-the-problem" title="Permanent link">&para;</a></h2>
 <p>Two things to handle per word:</p>
 <ol>
-<li><strong>Count vowels</strong> — how many characters in the word are in <code>"aeiouAEIOU"</code></li>
-<li><strong>Format output</strong> — append the count immediately in parentheses: <code>word(count)</code></li>
+<li><strong>Count vowels</strong> - how many characters in the word are in <code>"aeiouAEIOU"</code></li>
+<li><strong>Format output</strong> - append the count immediately in parentheses: <code>word(count)</code></li>
 </ol>
 <p>Then join all formatted words back with spaces.</p>
 <div class="admonition insight">
 <p class="admonition-title">Counting vowels in a word</p>
 <p><div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">word</span> <span class="k">if</span> <span class="n">c</span> <span class="ow">in</span> <span class="s2">&quot;aeiouAEIOU&quot;</span><span class="p">)</span>
 </span></code></pre></div>
-Walk through each character — if it's a vowel, count it. <code>sum(1 for ...)</code> is the idiomatic counter pattern.</p>
+Walk through each character - if it's a vowel, count it. <code>sum(1 for ...)</code> is the idiomatic counter pattern.</p>
 </div>
 <hr />
 <h2 id="tracing-the-example">Tracing the example<a class="headerlink" href="#tracing-the-example" title="Permanent link">&para;</a></h2>
@@ -2718,7 +2718,7 @@ Walk through each character — if it's a vowel, count it. <code>sum(1 for ...)<
 </tr>
 </tbody>
 </table>
-<p>Output: <code>Computer(3) science(3) is(1) amazing(3)</code> ✓</p>
+<p>Output: <code>Computer(3) science(3) is(1) amazing(3)</code> </p>
 <hr />
 <h2 id="solution-approaches">Solution approaches<a class="headerlink" href="#solution-approaches" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Pythonic (one-liner)</label><label for="__tabbed_1_2">Explanatory (step by step)</label><label for="__tabbed_1_3">Pythonic (list comprehension)</label></div>
@@ -2728,7 +2728,7 @@ Walk through each character — if it's a vowel, count it. <code>sum(1 for ...)<
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">vowels</span> <span class="o">=</span> <span class="s2">&quot;aeiouAEIOU&quot;</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">w</span><span class="si">}</span><span class="s2">(</span><span class="si">{</span><span class="nb">sum</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">w</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">vowels</span><span class="p">)</span><span class="si">}</span><span class="s2">)&quot;</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)))</span>
 </span></code></pre></div>
-<p>Everything in one <code>print</code> call — split, count, format, and join in a single generator expression.</p>
+<p>Everything in one <code>print</code> call - split, count, format, and join in a single generator expression.</p>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
@@ -2745,7 +2745,7 @@ Walk through each character — if it's a vowel, count it. <code>sum(1 for ...)<
 </span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
 </span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">result</span><span class="p">))</span>
 </span></code></pre></div>
-<p>Each step named and visible — reading the input, counting vowels per word, building the result list, and printing.</p>
+<p>Each step named and visible - reading the input, counting vowels per word, building the result list, and printing.</p>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
@@ -2761,7 +2761,7 @@ Walk through each character — if it's a vowel, count it. <code>sum(1 for ...)<
 <hr />
 <h2 id="why-split-and-not-split">Why split(" ") and not split()?<a class="headerlink" href="#why-split-and-not-split" title="Permanent link">&para;</a></h2>
 <p><code>split()</code> with no argument splits on <strong>any whitespace</strong> and ignores leading/trailing spaces and multiple consecutive spaces. <code>split(" ")</code> splits on exactly one space and preserves empty strings between consecutive spaces.</p>
-<p>For this problem either works since the input is a simple sentence with single spaces. However <code>split(" ")</code> is safer when the problem says <em>"spaces should be retained"</em> — it makes the intent explicit.</p>
+<p>For this problem either works since the input is a simple sentence with single spaces. However <code>split(" ")</code> is safer when the problem says <em>"spaces should be retained"</em> - it makes the intent explicit.</p>
 <hr />
 <h2 id="key-takeaways">Key takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">&para;</a></h2>
 <div class="pb-cards">
@@ -2775,13 +2775,13 @@ Walk through each character — if it's a vowel, count it. <code>sum(1 for ...)<
 <div class="pb-card">
 <div class="pb-card-num">02</div>
 <h4>f"{w}({count})" for formatting</h4>
-<p>f-strings handle the <code>word(count)</code> format cleanly. The count is computed inline — no need for a separate variable if using the Pythonic approach.</p>
+<p>f-strings handle the <code>word(count)</code> format cleanly. The count is computed inline - no need for a separate variable if using the Pythonic approach.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">03</div>
 <h4>" ".join(list) to reassemble</h4>
-<p>After transforming each word into a string, <code>" ".join(result)</code> puts them back together with single spaces — exactly matching the expected output format.</p>
+<p>After transforming each word into a string, <code>" ".join(result)</code> puts them back together with single spaces - exactly matching the expected output format.</p>
 </div>
 
 </div>

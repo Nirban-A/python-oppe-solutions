@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Exam-prep companion for Python — walkthrough solutions, key concepts, and downloadable slides.">
+        <meta name="description" content="Exam-prep companion for Python - walkthrough solutions, key concepts, and downloadable slides.">
       
       
       
@@ -2624,7 +2624,7 @@
 <p><strong>Key rules:</strong>
 - Returns a dict with exactly <strong>one</strong> key-value pair
 - <code>index</code> can be negative (Python supports negative indexing)
-- Index is always within valid bounds — no need for a guard</p>
+- Index is always within valid bounds - no need for a guard</p>
 </details>
 <hr />
 <h2 id="problem-statement">Problem Statement<a class="headerlink" href="#problem-statement" title="Permanent link">&para;</a></h2>
@@ -2682,7 +2682,7 @@ index  = -1</code></pre>
 </span></code></pre></div></p>
 <div class="admonition insight">
 <p class="admonition-title">Negative indexing</p>
-<p>Python supports negative indices — <code>-1</code> means the last element, <code>-2</code> means second from last, and so on. <code>keys[-1]</code> = <code>'cherry'</code>, <code>values[-1]</code> = <code>40</code>. No special handling needed; Python does it natively.</p>
+<p>Python supports negative indices - <code>-1</code> means the last element, <code>-2</code> means second from last, and so on. <code>keys[-1]</code> = <code>'cherry'</code>, <code>values[-1]</code> = <code>40</code>. No special handling needed; Python does it natively.</p>
 </div>
 <hr />
 <h2 id="tracing-the-examples">Tracing the examples<a class="headerlink" href="#tracing-the-examples" title="Permanent link">&para;</a></h2>
@@ -2705,7 +2705,7 @@ index  = -1</code></pre>
 </tr>
 </tbody>
 </table>
-<p>Result: <code>{'banana': 20}</code> ✓</p>
+<p>Result: <code>{'banana': 20}</code> </p>
 <p><strong>Example 2:</strong> <code>index = -1</code></p>
 <table>
 <thead>
@@ -2725,8 +2725,8 @@ index  = -1</code></pre>
 </tr>
 </tbody>
 </table>
-<p>Result: <code>{'cherry': 40}</code> ✓</p>
-<p>Note that <code>keys</code> has 3 elements and <code>values</code> has 4 — they don't need to be the same length. The function just indexes each independently.</p>
+<p>Result: <code>{'cherry': 40}</code> </p>
+<p>Note that <code>keys</code> has 3 elements and <code>values</code> has 4 - they don't need to be the same length. The function just indexes each independently.</p>
 <hr />
 <h2 id="solution-approaches">Solution approaches<a class="headerlink" href="#solution-approaches" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Pythonic (dict literal)</label><label for="__tabbed_1_2">Explanatory</label><label for="__tabbed_1_3">Using dict()</label></div>
@@ -2743,7 +2743,7 @@ index  = -1</code></pre>
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="n">value</span> <span class="o">=</span> <span class="n">values</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
 </span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="n">value</span><span class="p">}</span>
 </span></code></pre></div>
-<p>Name each part before building the dict — easier to read and debug.</p>
+<p>Name each part before building the dict - easier to read and debug.</p>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">make_dict_from_elems_in_index</span><span class="p">(</span><span class="n">keys</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">index</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
@@ -2766,13 +2766,13 @@ index  = -1</code></pre>
 <div class="pb-card">
 <div class="pb-card-num">02</div>
 <h4>Negative indexing works everywhere</h4>
-<p>Python's negative indices work on any sequence — lists, strings, tuples. <code>lst[-1]</code> is the last element, <code>lst[-2]</code> is second from last. No length calculation needed.</p>
+<p>Python's negative indices work on any sequence - lists, strings, tuples. <code>lst[-1]</code> is the last element, <code>lst[-2]</code> is second from last. No length calculation needed.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">03</div>
 <h4>Lists don't need to be the same length</h4>
-<p>The two lists are indexed independently — they can have different lengths. The problem guarantees the index is valid for both, so no bounds checking is needed.</p>
+<p>The two lists are indexed independently - they can have different lengths. The problem guarantees the index is valid for both, so no bounds checking is needed.</p>
 </div>
 
 </div>

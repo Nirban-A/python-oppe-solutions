@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Exam-prep companion for Python — walkthrough solutions, key concepts, and downloadable slides.">
+        <meta name="description" content="Exam-prep companion for Python - walkthrough solutions, key concepts, and downloadable slides.">
       
       
       
@@ -2639,7 +2639,7 @@
 <details class="abstract" open="open">
 <summary>⚡ Quick Reference</summary>
 <p><strong>Function:</strong> <code>is_even_or_divisible_by_5(num: int) -&gt; bool</code></p>
-<p><strong>Core idea:</strong> check two conditions — either one being true is enough.</p>
+<p><strong>Core idea:</strong> check two conditions - either one being true is enough.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">is_even_or_divisible_by_5</span><span class="p">(</span><span class="n">num</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">return</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span>
 </span></code></pre></div>
@@ -2720,14 +2720,14 @@
 </tr>
 </tbody>
 </table>
-<p>Use <code>or</code> — if <strong>either</strong> is true, return <code>True</code>. Only when <strong>both</strong> are false, return <code>False</code>.</p>
+<p>Use <code>or</code> - if <strong>either</strong> is true, return <code>True</code>. Only when <strong>both</strong> are false, return <code>False</code>.</p>
 <div class="admonition insight">
 <p class="admonition-title">and vs or</p>
 <ul>
 <li>Use <code>and</code> when <strong>all</strong> conditions must hold simultaneously</li>
 <li>Use <code>or</code> when <strong>at least one</strong> condition is enough</li>
 </ul>
-<p>This problem uses <code>or</code> — being even alone is enough, being divisible by 5 alone is enough, and being both (like 10) is also fine.</p>
+<p>This problem uses <code>or</code> - being even alone is enough, being divisible by 5 alone is enough, and being both (like 10) is also fine.</p>
 </div>
 <hr />
 <h2 id="tracing-all-four-examples">Tracing all four examples<a class="headerlink" href="#tracing-all-four-examples" title="Permanent link">&para;</a></h2>
@@ -2780,7 +2780,7 @@
 </span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="k">else</span><span class="p">:</span>
 </span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>        <span class="k">return</span> <span class="kc">False</span>
 </span></code></pre></div>
-<p>Each condition named separately — most readable for beginners.</p>
+<p>Each condition named separately - most readable for beginners.</p>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">is_even_or_divisible_by_5</span><span class="p">(</span><span class="n">num</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
@@ -2792,7 +2792,7 @@
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">is_even_or_divisible_by_5</span><span class="p">(</span><span class="n">num</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="k">return</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">5</span> <span class="ow">or</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">0</span>
 </span></code></pre></div>
-<p>A number is divisible by 5 if its last digit is 0 or 5. <code>num % 10</code> gives the last digit. This works but is more complex than <code>num % 5 == 0</code> — stick with the direct approach.</p>
+<p>A number is divisible by 5 if its last digit is 0 or 5. <code>num % 10</code> gives the last digit. This works but is more complex than <code>num % 5 == 0</code> - stick with the direct approach.</p>
 </div>
 </div>
 </div>
@@ -2802,7 +2802,7 @@
 <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span>
 </span></code></pre></div>
 <p>If the first condition (<code>num % 2 == 0</code>) is already <code>True</code>, Python <strong>skips</strong> the second condition entirely and returns <code>True</code> immediately. This means for even numbers, the divisibility by 5 check is never computed.</p>
-<p>This is the mirror of <code>and</code> short-circuiting — <code>and</code> stops early on <code>False</code>, <code>or</code> stops early on <code>True</code>.</p>
+<p>This is the mirror of <code>and</code> short-circuiting - <code>and</code> stops early on <code>False</code>, <code>or</code> stops early on <code>True</code>.</p>
 <hr />
 <h2 id="key-takeaways">Key takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">&para;</a></h2>
 <div class="pb-cards">
@@ -2861,7 +2861,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2025 Jan OPPE 1 — Set 1">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2025 Jan OPPE 1 - Set 1">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2871,7 +2871,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                2025 Jan OPPE 1 — Set 1
+                2025 Jan OPPE 1 - Set 1
               </div>
             </div>
           </a>

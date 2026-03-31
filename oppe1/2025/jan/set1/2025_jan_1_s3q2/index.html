@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Exam-prep companion for Python — walkthrough solutions, key concepts, and downloadable slides.">
+        <meta name="description" content="Exam-prep companion for Python - walkthrough solutions, key concepts, and downloadable slides.">
       
       
       
@@ -2651,7 +2651,7 @@
 
 
 
-<h1 id="s3q2-pattern-printing-w-pattern">S3Q2 · Pattern Printing — W Pattern<a class="headerlink" href="#s3q2-pattern-printing-w-pattern" title="Permanent link">&para;</a></h1>
+<h1 id="s3q2-pattern-printing-w-pattern">S3Q2 · Pattern Printing - W Pattern<a class="headerlink" href="#s3q2-pattern-printing-w-pattern" title="Permanent link">&para;</a></h1>
 <div class="pb-downloads">
   <a class="pb-btn pb-btn-repo" href="https://github.com/Nirban-A/Python_Buddy_2026T3/tree/main/2025_Jan_Oppe1_Set1" target="_blank">
     📁 GitHub
@@ -2660,7 +2660,7 @@
 
 <details class="abstract" open="open">
 <summary>⚡ Quick Reference</summary>
-<p><strong>Type:</strong> Full I/O — pattern printing</p>
+<p><strong>Type:</strong> Full I/O - pattern printing</p>
 <p><strong>Core idea:</strong> row <code>i</code> (1-indexed from top) has <code>n-i</code> spaces between <code>|</code> and <code>/</code>, then <code>2*(i-1)</code> inner spaces, then <code>\</code>, then <code>n-i</code> spaces before the closing <code>|</code>.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
@@ -2756,7 +2756,7 @@
 <p>Row structure: <code>|</code> + <code>(n-i)</code> spaces + <code>/</code> + <code>2*(i-1)</code> spaces + <code>\</code> + <code>(n-i)</code> spaces + <code>|</code></p>
 <div class="admonition insight">
 <p class="admonition-title">Why 2*(i-1) inner spaces?</p>
-<p>The <code>/</code> and <code>\</code> both move one step outward each row — <code>/</code> moves one step left, <code>\</code> moves one step right. Together they create 2 extra inner spaces per row. At row 1 there are 0 inner spaces; at row 2 there are 2; at row 3 there are 4 — each time increasing by 2.</p>
+<p>The <code>/</code> and <code>\</code> both move one step outward each row - <code>/</code> moves one step left, <code>\</code> moves one step right. Together they create 2 extra inner spaces per row. At row 1 there are 0 inner spaces; at row 2 there are 2; at row 3 there are 4 - each time increasing by 2.</p>
 </div>
 <hr />
 <h2 id="tracing-n-3">Tracing n = 3<a class="headerlink" href="#tracing-n-3" title="Permanent link">&para;</a></h2>
@@ -2812,7 +2812,7 @@
 </span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="n">inner</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span> <span class="o">*</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
 </span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;|</span><span class="si">{</span><span class="n">pad</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">inner</span><span class="si">}</span><span class="se">\\</span><span class="si">{</span><span class="n">pad</span><span class="si">}</span><span class="s2">|&quot;</span><span class="p">)</span>
 </span></code></pre></div>
-<p>Clean and readable. Two variables — <code>pad</code> for outer spacing, <code>inner</code> for the space between <code>/</code> and <code>\</code>.</p>
+<p>Clean and readable. Two variables - <code>pad</code> for outer spacing, <code>inner</code> for the space between <code>/</code> and <code>\</code>.</p>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
@@ -2829,14 +2829,14 @@
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
 </span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;|&quot;</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span><span class="o">*</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span><span class="o">*</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;|&quot;</span><span class="p">)</span>
 </span></code></pre></div>
-<p>Fully inline — no intermediate variables. Compact but harder to read at a glance.</p>
+<p>Fully inline - no intermediate variables. Compact but harder to read at a glance.</p>
 </div>
 </div>
 </div>
 <hr />
 <h2 id="verifying-with-n-1">Verifying with n = 1<a class="headerlink" href="#verifying-with-n-1" title="Permanent link">&para;</a></h2>
 <p><code>i = 1</code>: <code>n - i = 0</code>, <code>2*(i-1) = 0</code></p>
-<p>Row: <code>|</code> + <code>+ `/` +</code> + <code>\</code> + <code>` +</code>|<code>=</code>|/|` ✓</p>
+<p>Row: <code>|</code> + <code>+ `/` +</code> + <code>\</code> + <code>` +</code>|<code>=</code>|/|` </p>
 <hr />
 <h2 id="key-takeaways">Key takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">&para;</a></h2>
 <div class="pb-cards">
@@ -2844,19 +2844,19 @@
 <div class="pb-card">
 <div class="pb-card-num">01</div>
 <h4>Escape backslash as \\</h4>
-<p><code>\</code> is an escape character in Python strings. Always write <code>\\</code> to get a literal backslash in output. In f-strings, <code>f"{\\"}</code> is not valid — use a variable: <code>bs = "\\"; f"{bs}"</code> or write <code>"\\"</code> directly outside the braces.</p>
+<p><code>\</code> is an escape character in Python strings. Always write <code>\\</code> to get a literal backslash in output. In f-strings, <code>f"{\\"}</code> is not valid - use a variable: <code>bs = "\\"; f"{bs}"</code> or write <code>"\\"</code> directly outside the braces.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">02</div>
 <h4>Symmetric padding on both sides</h4>
-<p>The outer padding is the same on the left and right of each row (<code>n - i</code>). Store it in one variable and reuse it for both sides — less chance of a typo.</p>
+<p>The outer padding is the same on the left and right of each row (<code>n - i</code>). Store it in one variable and reuse it for both sides - less chance of a typo.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">03</div>
 <h4>Inner spaces grow by 2 per row</h4>
-<p>Each step down, <code>/</code> moves one left and <code>\</code> moves one right — together adding 2 inner spaces. The formula <code>2*(i-1)</code> captures this: 0 at row 1, 2 at row 2, 4 at row 3, …</p>
+<p>Each step down, <code>/</code> moves one left and <code>\</code> moves one right - together adding 2 inner spaces. The formula <code>2*(i-1)</code> captures this: 0 at row 1, 2 at row 2, 4 at row 3, …</p>
 </div>
 
 </div>
@@ -2912,13 +2912,13 @@
         
         
           
-          <a href="../../set2/" class="md-footer__link md-footer__link--next" aria-label="Next: 2025 Jan OPPE 1 — Set 2">
+          <a href="../../set2/" class="md-footer__link md-footer__link--next" aria-label="Next: 2025 Jan OPPE 1 - Set 2">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                2025 Jan OPPE 1 — Set 2
+                2025 Jan OPPE 1 - Set 2
               </div>
             </div>
             <div class="md-footer__button md-icon">

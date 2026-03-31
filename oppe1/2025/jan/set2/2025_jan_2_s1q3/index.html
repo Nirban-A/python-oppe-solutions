@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Exam-prep companion for Python — walkthrough solutions, key concepts, and downloadable slides.">
+        <meta name="description" content="Exam-prep companion for Python - walkthrough solutions, key concepts, and downloadable slides.">
       
       
       
@@ -2646,7 +2646,7 @@
 <p><strong>Key rules:</strong>
 - Range is 1 to <code>n</code> inclusive
 - Exactly one number is missing
-- List may contain duplicates (as per the example) — deduplicate with <code>set()</code> before summing
+- List may contain duplicates (as per the example) - deduplicate with <code>set()</code> before summing
 - <code>n*(n+1)//2</code> is the sum of all integers from 1 to n</p>
 </details>
 <hr />
@@ -2677,7 +2677,7 @@
 </ol>
 <div class="admonition insight">
 <p class="admonition-title">Sum formula: n*(n+1)//2</p>
-<p>The sum of all integers from 1 to n is always <code>n*(n+1)//2</code>. For <code>n=6</code>: <code>6*7//2 = 21</code>. This is a classic formula worth memorising — it turns a problem that looks like it needs a loop into a single arithmetic expression.</p>
+<p>The sum of all integers from 1 to n is always <code>n*(n+1)//2</code>. For <code>n=6</code>: <code>6*7//2 = 21</code>. This is a classic formula worth memorising - it turns a problem that looks like it needs a loop into a single arithmetic expression.</p>
 </div>
 <hr />
 <h2 id="tracing-the-example">Tracing the example<a class="headerlink" href="#tracing-the-example" title="Permanent link">&para;</a></h2>
@@ -2685,14 +2685,14 @@
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Expected sum (1 to 6):  6 * 7 // 2  =  21
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Unique values in list:  {1, 2, 4, 5, 6}
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Actual sum:             1 + 2 + 4 + 5 + 6  =  18
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>Missing number:         21 - 18  =  3 ✓
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>Missing number:         21 - 18  =  3 
 </span></code></pre></div>
 <hr />
 <h2 id="why-deduplicate-with-set">Why deduplicate with set()?<a class="headerlink" href="#why-deduplicate-with-set" title="Permanent link">&para;</a></h2>
-<p>The example list <code>[1, 4, 2, 4, 6, 5, 6]</code> contains duplicates — <code>4</code> and <code>6</code> each appear twice. If you sum the raw list you get <code>1+4+2+4+6+5+6 = 28</code>, which gives <code>21 - 28 = -7</code> — completely wrong.</p>
+<p>The example list <code>[1, 4, 2, 4, 6, 5, 6]</code> contains duplicates - <code>4</code> and <code>6</code> each appear twice. If you sum the raw list you get <code>1+4+2+4+6+5+6 = 28</code>, which gives <code>21 - 28 = -7</code> - completely wrong.</p>
 <p>Converting to a <code>set</code> first removes duplicates, giving the correct unique sum.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">sum</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>        <span class="c1"># 28 — wrong (counts duplicates)</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">sum</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>   <span class="c1"># 18 — correct (unique values only)</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">sum</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>        <span class="c1"># 28 - wrong (counts duplicates)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">sum</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>   <span class="c1"># 18 - correct (unique values only)</span>
 </span></code></pre></div>
 <hr />
 <h2 id="solution-approaches">Solution approaches<a class="headerlink" href="#solution-approaches" title="Permanent link">&para;</a></h2>
@@ -2719,7 +2719,7 @@
 </span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="n">missing</span>     <span class="o">=</span> <span class="n">full_set</span> <span class="o">-</span> <span class="n">actual_set</span>  <span class="c1"># {3}</span>
 </span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="k">return</span> <span class="n">missing</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
 </span></code></pre></div>
-<p>Compute the set of all numbers 1 to n, subtract the set of numbers present, and the remainder is the missing number. <code>set.pop()</code> retrieves the single element. Clean and intuitive — reads almost like plain English.</p>
+<p>Compute the set of all numbers 1 to n, subtract the set of numbers present, and the remainder is the missing number. <code>set.pop()</code> retrieves the single element. Clean and intuitive - reads almost like plain English.</p>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">find_missing_number</span><span class="p">(</span><span class="n">nums</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
@@ -2738,20 +2738,20 @@
 
 <div class="pb-card">
 <div class="pb-card-num">01</div>
-<h4>n*(n+1)//2 — sum formula</h4>
+<h4>n*(n+1)//2 - sum formula</h4>
 <p>The sum of integers from 1 to n. Use integer division <code>//</code> to keep the result an int. Appears in many "find the missing/extra number" problems.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">02</div>
 <h4>Deduplicate before summing</h4>
-<p>If the list can contain duplicates, always <code>sum(set(nums))</code> not <code>sum(nums)</code>. The example in this problem has duplicates — missing this costs the full question mark.</p>
+<p>If the list can contain duplicates, always <code>sum(set(nums))</code> not <code>sum(nums)</code>. The example in this problem has duplicates - missing this costs the full question mark.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">03</div>
 <h4>Set difference for "what's missing"</h4>
-<p><code>set(range(1, n+1)) - set(nums)</code> directly gives the missing elements as a set. Works even if multiple numbers were missing — more general than the sum approach.</p>
+<p><code>set(range(1, n+1)) - set(nums)</code> directly gives the missing elements as a set. Works even if multiple numbers were missing - more general than the sum approach.</p>
 </div>
 
 </div>

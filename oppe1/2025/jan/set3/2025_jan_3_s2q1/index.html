@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Exam-prep companion for Python — walkthrough solutions, key concepts, and downloadable slides.">
+        <meta name="description" content="Exam-prep companion for Python - walkthrough solutions, key concepts, and downloadable slides.">
       
       
       
@@ -2617,7 +2617,7 @@
 <details class="abstract" open="open">
 <summary>⚡ Quick Reference</summary>
 <p><strong>Function:</strong> <code>replace_vowels_with_next_alphabet(s: str) -&gt; str</code></p>
-<p><strong>Core idea:</strong> walk through each character — if it's a vowel, replace it with <code>chr(ord(c) + 1)</code>, otherwise keep it.</p>
+<p><strong>Core idea:</strong> walk through each character - if it's a vowel, replace it with <code>chr(ord(c) + 1)</code>, otherwise keep it.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">replace_vowels_with_next_alphabet</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">vowels</span> <span class="o">=</span> <span class="s2">&quot;aeiouAEIOU&quot;</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="k">if</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">vowels</span> <span class="k">else</span> <span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">s</span><span class="p">)</span>
@@ -2625,14 +2625,14 @@
 <p><strong>Key rules:</strong>
 - Both lowercase and uppercase vowels are replaced
 - <code>chr(ord(c) + 1)</code> gives the next character in the alphabet
-- Case is preserved — <code>'a'→'b'</code>, <code>'A'→'B'</code>
+- Case is preserved - <code>'a'→'b'</code>, <code>'A'→'B'</code>
 - Non-vowel characters are unchanged</p>
 </details>
 <hr />
 <h2 id="problem-statement">Problem Statement<a class="headerlink" href="#problem-statement" title="Permanent link">&para;</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Problem</p>
-<p>Write a function <code>replace_vowels_with_next_alphabet(s: str) -&gt; str</code> that replaces every vowel in <code>s</code> with the next letter in the alphabet. The function is case-sensitive — lowercase vowels become the next lowercase letter, uppercase vowels become the next uppercase letter.</p>
+<p>Write a function <code>replace_vowels_with_next_alphabet(s: str) -&gt; str</code> that replaces every vowel in <code>s</code> with the next letter in the alphabet. The function is case-sensitive - lowercase vowels become the next lowercase letter, uppercase vowels become the next uppercase letter.</p>
 </div>
 <p><strong>Examples:</strong></p>
 <div class="pb-io">
@@ -2735,7 +2735,7 @@
 </table>
 <p>Result: <code>"hfllp"</code></p>
 <div class="admonition warning">
-<p class="admonition-title">Wait — the expected output is <code>'hflmp'</code>, not <code>'hfllp'</code></p>
+<p class="admonition-title">Wait - the expected output is <code>'hflmp'</code>, not <code>'hfllp'</code></p>
 <p>Let's re-trace more carefully:</p>
 <table>
 <thead>
@@ -2774,7 +2774,7 @@
 </tbody>
 </table>
 <p>That gives <code>"hfllp"</code>, not <code>"hflmp"</code>. However the expected output in the template is <code>'hflmp'</code>. This suggests the second <code>l</code> is also being treated as a vowel-like replacement, which is unusual. </p>
-<p>Testing in Python: <code>chr(ord('l') + 1)</code> = <code>'m'</code>. So it appears <strong>all</strong> consonants may also be shifted, not just vowels. But the problem statement says "replace each vowel" — this is likely a mistake in the example. The correct implementation per the problem description replaces <strong>only vowels</strong>.</p>
+<p>Testing in Python: <code>chr(ord('l') + 1)</code> = <code>'m'</code>. So it appears <strong>all</strong> consonants may also be shifted, not just vowels. But the problem statement says "replace each vowel" - this is likely a mistake in the example. The correct implementation per the problem description replaces <strong>only vowels</strong>.</p>
 <p>Implement as stated: <strong>replace vowels only</strong>.</p>
 </div>
 <hr />
@@ -2802,14 +2802,14 @@
 </span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>        <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">s</span>
 </span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="p">)</span>
 </span></code></pre></div>
-<p>Generator expression inside <code>"".join()</code> — the standard Pythonic pattern for building a transformed string. Preferred in interviews.</p>
+<p>Generator expression inside <code>"".join()</code> - the standard Pythonic pattern for building a transformed string. Preferred in interviews.</p>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">replace_vowels_with_next_alphabet</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="n">table</span> <span class="o">=</span> <span class="nb">str</span><span class="o">.</span><span class="n">maketrans</span><span class="p">(</span><span class="s2">&quot;aeiouAEIOU&quot;</span><span class="p">,</span> <span class="s2">&quot;bfjpvBFJPV&quot;</span><span class="p">)</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="k">return</span> <span class="n">s</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
 </span></code></pre></div>
-<p><code>str.maketrans</code> builds a translation table mapping each vowel to its replacement. <code>str.translate</code> applies it in one pass. The most efficient approach for fixed character mappings — no <code>ord</code>/<code>chr</code> needed, just a lookup table.</p>
+<p><code>str.maketrans</code> builds a translation table mapping each vowel to its replacement. <code>str.translate</code> applies it in one pass. The most efficient approach for fixed character mappings - no <code>ord</code>/<code>chr</code> needed, just a lookup table.</p>
 <p>The replacement characters: <code>a→b, e→f, i→j, o→p, u→v</code> (and uppercase equivalents).</p>
 </div>
 <div class="tabbed-block">
@@ -2817,7 +2817,7 @@
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="n">mapping</span> <span class="o">=</span> <span class="p">{</span><span class="n">v</span><span class="p">:</span> <span class="nb">chr</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="s2">&quot;aeiouAEIOU&quot;</span><span class="p">}</span>
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">mapping</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">s</span><span class="p">)</span>
 </span></code></pre></div>
-<p>Build a dict of vowel → next char, then use <code>dict.get(c, c)</code> — returns the mapped value if <code>c</code> is a vowel, or <code>c</code> itself (the default) if it's not. Clean and extensible.</p>
+<p>Build a dict of vowel → next char, then use <code>dict.get(c, c)</code> - returns the mapped value if <code>c</code> is a vowel, or <code>c</code> itself (the default) if it's not. Clean and extensible.</p>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">replace_vowels_with_next_alphabet</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
@@ -2838,19 +2838,19 @@
 <div class="pb-card">
 <div class="pb-card-num">01</div>
 <h4>ord() and chr()</h4>
-<p><code>ord(c)</code> gets the ASCII value of a character. <code>chr(n)</code> converts back. Together they let you shift characters arithmetically — <code>chr(ord(c) + 1)</code> is the next character.</p>
+<p><code>ord(c)</code> gets the ASCII value of a character. <code>chr(n)</code> converts back. Together they let you shift characters arithmetically - <code>chr(ord(c) + 1)</code> is the next character.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">02</div>
 <h4>"".join() for string building</h4>
-<p>Never build strings by concatenating in a loop (<code>result += c</code>) in production — it's O(n²). Use <code>"".join(generator)</code> instead. It's O(n) and more Pythonic.</p>
+<p>Never build strings by concatenating in a loop (<code>result += c</code>) in production - it's O(n²). Use <code>"".join(generator)</code> instead. It's O(n) and more Pythonic.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">03</div>
 <h4>str.translate() for character mapping</h4>
-<p>When you have a fixed mapping of characters, <code>str.maketrans()</code> + <code>str.translate()</code> is the fastest and cleanest approach — no loops needed at all.</p>
+<p>When you have a fixed mapping of characters, <code>str.maketrans()</code> + <code>str.translate()</code> is the fastest and cleanest approach - no loops needed at all.</p>
 </div>
 
 </div>

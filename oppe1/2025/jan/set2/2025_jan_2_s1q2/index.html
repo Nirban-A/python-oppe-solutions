@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Exam-prep companion for Python — walkthrough solutions, key concepts, and downloadable slides.">
+        <meta name="description" content="Exam-prep companion for Python - walkthrough solutions, key concepts, and downloadable slides.">
       
       
       
@@ -1695,7 +1695,7 @@
   <a href="#the-key-insight-double-concatenation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The key insight — double concatenation
+        The key insight - double concatenation
       
     </span>
   </a>
@@ -1706,7 +1706,7 @@
   <a href="#length-check-why-it-matters" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Length check — why it matters
+        Length check - why it matters
       
     </span>
   </a>
@@ -2561,7 +2561,7 @@
   <a href="#the-key-insight-double-concatenation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The key insight — double concatenation
+        The key insight - double concatenation
       
     </span>
   </a>
@@ -2572,7 +2572,7 @@
   <a href="#length-check-why-it-matters" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Length check — why it matters
+        Length check - why it matters
       
     </span>
   </a>
@@ -2646,9 +2646,9 @@
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="k">return</span> <span class="n">str2</span> <span class="ow">in</span> <span class="n">str1</span> <span class="o">+</span> <span class="n">str1</span>
 </span></code></pre></div>
 <p><strong>Key rules:</strong>
-- Lengths must match — a rotation never changes length
+- Lengths must match - a rotation never changes length
 - <code>str2 in str1 + str1</code> checks if <code>str2</code> is any rotation of <code>str1</code>
-- This is an O(n) check — no loops needed</p>
+- This is an O(n) check - no loops needed</p>
 </details>
 <hr />
 <h2 id="problem-statement">Problem Statement<a class="headerlink" href="#problem-statement" title="Permanent link">&para;</a></h2>
@@ -2691,7 +2691,7 @@
 </div>
 
 <hr />
-<h2 id="the-key-insight-double-concatenation">The key insight — double concatenation<a class="headerlink" href="#the-key-insight-double-concatenation" title="Permanent link">&para;</a></h2>
+<h2 id="the-key-insight-double-concatenation">The key insight - double concatenation<a class="headerlink" href="#the-key-insight-double-concatenation" title="Permanent link">&para;</a></h2>
 <p>A rotation takes some characters from the front of <code>str1</code> and moves them to the back. Every possible rotation of <code>str1</code> is guaranteed to appear as a contiguous substring inside <code>str1 + str1</code>.</p>
 <p>For <code>str1 = "apple"</code>:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>str1 + str1 = &quot;appleapple&quot;
@@ -2711,30 +2711,30 @@
 <p>In <code>str1 + str1</code>, the substring starting at position <code>k</code> and running for <code>len(str1)</code> characters is exactly <code>str1[k:] + str1[:k]</code> = <code>str2</code>. So <code>str2</code> is always found inside the doubled string.</p>
 </div>
 <hr />
-<h2 id="length-check-why-it-matters">Length check — why it matters<a class="headerlink" href="#length-check-why-it-matters" title="Permanent link">&para;</a></h2>
-<p><code>'ab' in 'abcdabcd'</code> is <code>True</code>, but <code>'ab'</code> is not a rotation of <code>'abcd'</code> — it's just a shorter string. Always check lengths match first:</p>
+<h2 id="length-check-why-it-matters">Length check - why it matters<a class="headerlink" href="#length-check-why-it-matters" title="Permanent link">&para;</a></h2>
+<p><code>'ab' in 'abcdabcd'</code> is <code>True</code>, but <code>'ab'</code> is not a rotation of <code>'abcd'</code> - it's just a shorter string. Always check lengths match first:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">str1</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">str2</span><span class="p">):</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="k">return</span> <span class="kc">False</span>
 </span></code></pre></div>
 <hr />
 <h2 id="tracing-all-three-examples">Tracing all three examples<a class="headerlink" href="#tracing-all-three-examples" title="Permanent link">&para;</a></h2>
 <p><strong><code>is_rotation('abcde', 'cdeab')</code></strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>len match: 5 == 5 ✓
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>len match: 5 == 5 
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>str1 + str1 = &quot;abcdeabcde&quot;
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>&#39;cdeab&#39; in &quot;abcdeabcde&quot;?  → YES (positions 2–6)
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>→ True ✓
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>→ True 
 </span></code></pre></div></p>
 <p><strong><code>is_rotation('hello', 'ehllo')</code></strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>len match: 5 == 5 ✓
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>len match: 5 == 5 
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>str1 + str1 = &quot;hellohello&quot;
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>&#39;ehllo&#39; in &quot;hellohello&quot;?  → NO
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>→ False ✓
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>→ False 
 </span></code></pre></div></p>
 <p><strong><code>is_rotation('hello', 'helol')</code></strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>len match: 5 == 5 ✓
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>len match: 5 == 5 
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>str1 + str1 = &quot;hellohello&quot;
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>&#39;helol&#39; in &quot;hellohello&quot;?  → NO
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>→ False ✓
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>→ False 
 </span></code></pre></div></p>
 <hr />
 <h2 id="solution-approaches">Solution approaches<a class="headerlink" href="#solution-approaches" title="Permanent link">&para;</a></h2>
@@ -2766,7 +2766,7 @@
 </span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>            <span class="k">return</span> <span class="kc">True</span>
 </span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>    <span class="k">return</span> <span class="kc">False</span>
 </span></code></pre></div>
-<p>Explicitly generate every rotation and compare. Correct but O(n²) — much slower than the <code>in</code> approach for large strings. Good for understanding what a rotation is, not for production code.</p>
+<p>Explicitly generate every rotation and compare. Correct but O(n²) - much slower than the <code>in</code> approach for large strings. Good for understanding what a rotation is, not for production code.</p>
 </div>
 </div>
 </div>
@@ -2777,19 +2777,19 @@
 <div class="pb-card">
 <div class="pb-card-num">01</div>
 <h4>str2 in str1 + str1</h4>
-<p>The classic O(n) rotation check. Doubling the string contains every possible rotation as a substring. Memorise this trick — it comes up frequently.</p>
+<p>The classic O(n) rotation check. Doubling the string contains every possible rotation as a substring. Memorise this trick - it comes up frequently.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">02</div>
 <h4>Always check length first</h4>
-<p>A rotation never changes the length of a string. If lengths differ, return <code>False</code> immediately — no substring check needed. This also prevents false positives.</p>
+<p>A rotation never changes the length of a string. If lengths differ, return <code>False</code> immediately - no substring check needed. This also prevents false positives.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">03</div>
 <h4>in operator for substring check</h4>
-<p><code>s2 in s1</code> checks if <code>s2</code> is a contiguous substring of <code>s1</code>. It runs in O(n) using Python's built-in string search — no manual loop needed.</p>
+<p><code>s2 in s1</code> checks if <code>s2</code> is a contiguous substring of <code>s1</code>. It runs in O(n) using Python's built-in string search - no manual loop needed.</p>
 </div>
 
 </div>

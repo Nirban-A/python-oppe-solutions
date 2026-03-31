@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Exam-prep companion for Python — walkthrough solutions, key concepts, and downloadable slides.">
+        <meta name="description" content="Exam-prep companion for Python - walkthrough solutions, key concepts, and downloadable slides.">
       
       
       
@@ -2130,7 +2130,7 @@
   <a href="#tie-breaking-why-listindex-works" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tie-breaking — why list.index() works
+        Tie-breaking - why list.index() works
       
     </span>
   </a>
@@ -2660,7 +2660,7 @@
   <a href="#tie-breaking-why-listindex-works" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tie-breaking — why list.index() works
+        Tie-breaking - why list.index() works
       
     </span>
   </a>
@@ -2704,7 +2704,7 @@
 
 <details class="abstract" open="open">
 <summary>⚡ Quick Reference</summary>
-<p><strong>Type:</strong> Full I/O problem — write complete code with <code>input()</code> and <code>print()</code></p>
+<p><strong>Type:</strong> Full I/O problem - write complete code with <code>input()</code> and <code>print()</code></p>
 <p><strong>Core idea:</strong> read the matrix row by row, compute the sum of each column, find the index of the maximum column sum.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">m</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">matrix</span> <span class="o">=</span> <span class="p">[</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">)]</span>
@@ -2719,7 +2719,7 @@
 </span></code></pre></div>
 <p><strong>Key rules:</strong>
 - 0-based column index
-- If multiple columns share the maximum sum, return the <strong>smallest index</strong> — <code>list.index()</code> already does this (returns the first occurrence)
+- If multiple columns share the maximum sum, return the <strong>smallest index</strong> - <code>list.index()</code> already does this (returns the first occurrence)
 - Print index on line 1, max sum on line 2</p>
 </details>
 <hr />
@@ -2728,7 +2728,7 @@
 <p class="admonition-title">Problem (I/O type)</p>
 <p>Given an <code>m × n</code> matrix, find the <strong>0-based index</strong> of the column with the <strong>largest sum</strong>. If multiple columns share the maximum sum, return the smallest index among them.</p>
 <p><strong>Input:</strong> First line is <code>m n</code>; next <code>m</code> lines each have <code>n</code> space-separated integers.</p>
-<p><strong>Output:</strong> Line 1 — column index. Line 2 — maximum column sum.</p>
+<p><strong>Output:</strong> Line 1 - column index. Line 2 - maximum column sum.</p>
 </div>
 <p><strong>Example:</strong></p>
 <div class="pb-io">
@@ -2759,7 +2759,7 @@
 <p>The maximum sum is <strong>24</strong>, at column index <strong>3</strong>.</p>
 <div class="admonition insight">
 <p class="admonition-title">Key insight</p>
-<p>Column <code>c</code> contains <code>matrix[0][c], matrix[1][c], ..., matrix[m-1][c]</code> — i.e. fix the column index and vary the row. This is the opposite of how you naturally read a matrix row by row, so it trips people up. The formula is: <code>sum(matrix[r][c] for r in range(m))</code>.</p>
+<p>Column <code>c</code> contains <code>matrix[0][c], matrix[1][c], ..., matrix[m-1][c]</code> - i.e. fix the column index and vary the row. This is the opposite of how you naturally read a matrix row by row, so it trips people up. The formula is: <code>sum(matrix[r][c] for r in range(m))</code>.</p>
 </div>
 <hr />
 <h2 id="reading-the-matrix">Reading the matrix<a class="headerlink" href="#reading-the-matrix" title="Permanent link">&para;</a></h2>
@@ -2773,7 +2773,7 @@
 <hr />
 <h2 id="computing-column-sums">Computing column sums<a class="headerlink" href="#computing-column-sums" title="Permanent link">&para;</a></h2>
 <p>There are two natural ways to think about this:</p>
-<p><strong>Approach A — iterate columns, sum down each one:</strong>
+<p><strong>Approach A - iterate columns, sum down each one:</strong>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">col_sums</span> <span class="o">=</span> <span class="p">[]</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
@@ -2781,16 +2781,16 @@
 </span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>        <span class="n">total</span> <span class="o">+=</span> <span class="n">matrix</span><span class="p">[</span><span class="n">r</span><span class="p">][</span><span class="n">c</span><span class="p">]</span>
 </span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="n">col_sums</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
 </span></code></pre></div></p>
-<p><strong>Approach B — use zip to transpose:</strong>
+<p><strong>Approach B - use zip to transpose:</strong>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">col_sums</span> <span class="o">=</span> <span class="p">[</span><span class="nb">sum</span><span class="p">(</span><span class="n">col</span><span class="p">)</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">matrix</span><span class="p">)]</span>
 </span></code></pre></div></p>
-<p><code>zip(*matrix)</code> transposes the matrix — it groups all first elements, all second elements, etc. — turning columns into iterables you can <code>sum()</code> directly.</p>
+<p><code>zip(*matrix)</code> transposes the matrix - it groups all first elements, all second elements, etc. - turning columns into iterables you can <code>sum()</code> directly.</p>
 <hr />
 <h2 id="finding-the-maximum-and-its-index">Finding the maximum and its index<a class="headerlink" href="#finding-the-maximum-and-its-index" title="Permanent link">&para;</a></h2>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">max_sum</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">col_sums</span><span class="p">)</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">max_idx</span> <span class="o">=</span> <span class="n">col_sums</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">max_sum</span><span class="p">)</span>
 </span></code></pre></div>
-<p><code>list.index(value)</code> returns the <strong>first</strong> position of <code>value</code> — so if multiple columns have the same maximum sum, the smallest index is returned automatically. No extra logic needed.</p>
+<p><code>list.index(value)</code> returns the <strong>first</strong> position of <code>value</code> - so if multiple columns have the same maximum sum, the smallest index is returned automatically. No extra logic needed.</p>
 <hr />
 <h2 id="tracing-the-example">Tracing the example<a class="headerlink" href="#tracing-the-example" title="Permanent link">&para;</a></h2>
 <p>Matrix after reading:
@@ -2834,7 +2834,7 @@
 </span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="nb">print</span><span class="p">(</span><span class="n">max_idx</span><span class="p">)</span>
 </span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="nb">print</span><span class="p">(</span><span class="n">max_sum</span><span class="p">)</span>
 </span></code></pre></div>
-<p>Everything explicit — each step is visible and easy to follow.</p>
+<p>Everything explicit - each step is visible and easy to follow.</p>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">m</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
@@ -2880,9 +2880,9 @@
 </div>
 </div>
 <hr />
-<h2 id="tie-breaking-why-listindex-works">Tie-breaking — why <code>list.index()</code> works<a class="headerlink" href="#tie-breaking-why-listindex-works" title="Permanent link">&para;</a></h2>
+<h2 id="tie-breaking-why-listindex-works">Tie-breaking - why <code>list.index()</code> works<a class="headerlink" href="#tie-breaking-why-listindex-works" title="Permanent link">&para;</a></h2>
 <p>The problem says: <em>if more than one column shares the maximum sum, return the one with the </em><em>smallest index</em><em>.</em></p>
-<p><code>col_sums.index(max_sum)</code> scans from left to right and returns the <strong>first</strong> position where <code>max_sum</code> is found — which is always the smallest index. No sorting, no extra code needed.</p>
+<p><code>col_sums.index(max_sum)</code> scans from left to right and returns the <strong>first</strong> position where <code>max_sum</code> is found - which is always the smallest index. No sorting, no extra code needed.</p>
 <hr />
 <h2 id="key-takeaways">Key takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">&para;</a></h2>
 <div class="pb-cards">
@@ -2890,19 +2890,19 @@
 <div class="pb-card">
 <div class="pb-card-num">01</div>
 <h4>Accessing column c: matrix[r][c]</h4>
-<p>Fix <code>c</code>, vary <code>r</code> over <code>range(m)</code>. This is the opposite of reading rows — it's easy to get backwards under exam pressure.</p>
+<p>Fix <code>c</code>, vary <code>r</code> over <code>range(m)</code>. This is the opposite of reading rows - it's easy to get backwards under exam pressure.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">02</div>
 <h4>zip(*matrix) transposes</h4>
-<p><code>zip(*matrix)</code> turns rows into columns. Each yielded tuple is one column of the matrix — you can <code>sum()</code> it directly.</p>
+<p><code>zip(*matrix)</code> turns rows into columns. Each yielded tuple is one column of the matrix - you can <code>sum()</code> it directly.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">03</div>
 <h4>list.index() for first maximum</h4>
-<p><code>list.index(max_val)</code> always returns the first (leftmost) occurrence — which is exactly what "smallest index among ties" requires. No extra logic needed.</p>
+<p><code>list.index(max_val)</code> always returns the first (leftmost) occurrence - which is exactly what "smallest index among ties" requires. No extra logic needed.</p>
 </div>
 
 </div>

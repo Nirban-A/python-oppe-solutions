@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Exam-prep companion for Python — walkthrough solutions, key concepts, and downloadable slides.">
+        <meta name="description" content="Exam-prep companion for Python - walkthrough solutions, key concepts, and downloadable slides.">
       
       
       
@@ -2682,7 +2682,7 @@
 <p><strong><code>"abcdef"</code></strong></p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>s[::2]  = s[0] + s[2] + s[4] = &quot;a&quot; + &quot;c&quot; + &quot;e&quot; = &quot;ace&quot;
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>s[1::2] = s[1] + s[3] + s[5] = &quot;b&quot; + &quot;d&quot; + &quot;f&quot; = &quot;bdf&quot;
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Result  = &quot;ace&quot; + &quot;bdf&quot; = &quot;acebdf&quot; ✓
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Result  = &quot;ace&quot; + &quot;bdf&quot; = &quot;acebdf&quot; 
 </span></code></pre></div>
 <p><strong><code>"12345"</code></strong></p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Index:  0   1   2   3   4
@@ -2690,7 +2690,7 @@
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
 </span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>s[::2]  = s[0] + s[2] + s[4] = &quot;1&quot; + &quot;3&quot; + &quot;5&quot; = &quot;135&quot;
 </span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>s[1::2] = s[1] + s[3]        = &quot;2&quot; + &quot;4&quot;        = &quot;24&quot;
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>Result  = &quot;135&quot; + &quot;24&quot; = &quot;13524&quot; ✓
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>Result  = &quot;135&quot; + &quot;24&quot; = &quot;13524&quot; 
 </span></code></pre></div>
 <p>Note: for an odd-length string, the even group has one more character than the odd group.</p>
 <hr />
@@ -2730,7 +2730,7 @@
 </span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="n">odd_chars</span>  <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">c</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span>
 </span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    <span class="k">return</span> <span class="n">even_chars</span> <span class="o">+</span> <span class="n">odd_chars</span>
 </span></code></pre></div>
-<p>Filter characters by index parity using <code>enumerate</code>. Two passes through the string — less efficient than slicing but readable.</p>
+<p>Filter characters by index parity using <code>enumerate</code>. Two passes through the string - less efficient than slicing but readable.</p>
 </div>
 </div>
 </div>
@@ -2753,7 +2753,7 @@
 <div class="pb-card">
 <div class="pb-card-num">03</div>
 <h4>Odd-length strings</h4>
-<p>If <code>len(s)</code> is odd, the even group has one more character than the odd group. Step slicing handles this automatically — no special case needed.</p>
+<p>If <code>len(s)</code> is odd, the even group has one more character than the odd group. Step slicing handles this automatically - no special case needed.</p>
 </div>
 
 </div>

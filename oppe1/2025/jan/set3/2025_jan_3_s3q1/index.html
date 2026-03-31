@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Exam-prep companion for Python — walkthrough solutions, key concepts, and downloadable slides.">
+        <meta name="description" content="Exam-prep companion for Python - walkthrough solutions, key concepts, and downloadable slides.">
       
       
       
@@ -2104,7 +2104,7 @@
   <a href="#task-1-count_words" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Task 1 — count_words
+        Task 1 - count_words
       
     </span>
   </a>
@@ -2115,7 +2115,7 @@
   <a href="#task-2-count_palindrome_words" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Task 2 — count_palindrome_words
+        Task 2 - count_palindrome_words
       
     </span>
   </a>
@@ -2126,7 +2126,7 @@
   <a href="#task-3-count_words_with_repeated_chars" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Task 3 — count_words_with_repeated_chars
+        Task 3 - count_words_with_repeated_chars
       
     </span>
   </a>
@@ -2137,7 +2137,7 @@
   <a href="#task-4-words_with_max_len" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Task 4 — words_with_max_len
+        Task 4 - words_with_max_len
       
     </span>
   </a>
@@ -2601,7 +2601,7 @@
   <a href="#task-1-count_words" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Task 1 — count_words
+        Task 1 - count_words
       
     </span>
   </a>
@@ -2612,7 +2612,7 @@
   <a href="#task-2-count_palindrome_words" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Task 2 — count_palindrome_words
+        Task 2 - count_palindrome_words
       
     </span>
   </a>
@@ -2623,7 +2623,7 @@
   <a href="#task-3-count_words_with_repeated_chars" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Task 3 — count_words_with_repeated_chars
+        Task 3 - count_words_with_repeated_chars
       
     </span>
   </a>
@@ -2634,7 +2634,7 @@
   <a href="#task-4-words_with_max_len" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Task 4 — words_with_max_len
+        Task 4 - words_with_max_len
       
     </span>
   </a>
@@ -2800,14 +2800,14 @@ task = "words_with_max_len"</code></pre>
 
 <hr />
 <h2 id="breaking-down-each-task">Breaking down each task<a class="headerlink" href="#breaking-down-each-task" title="Permanent link">&para;</a></h2>
-<h3 id="task-1-count_words">Task 1 — <code>count_words</code><a class="headerlink" href="#task-1-count_words" title="Permanent link">&para;</a></h3>
+<h3 id="task-1-count_words">Task 1 - <code>count_words</code><a class="headerlink" href="#task-1-count_words" title="Permanent link">&para;</a></h3>
 <p>Simply count the words after splitting:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">words</span> <span class="o">=</span> <span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
 </span></code></pre></div>
 <p><code>sentence.split()</code> splits on any whitespace and handles multiple spaces gracefully.</p>
 <hr />
-<h3 id="task-2-count_palindrome_words">Task 2 — <code>count_palindrome_words</code><a class="headerlink" href="#task-2-count_palindrome_words" title="Permanent link">&para;</a></h3>
+<h3 id="task-2-count_palindrome_words">Task 2 - <code>count_palindrome_words</code><a class="headerlink" href="#task-2-count_palindrome_words" title="Permanent link">&para;</a></h3>
 <p>A word is a palindrome if it reads the same forwards and backwards:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">w</span> <span class="o">==</span> <span class="n">w</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 </span></code></pre></div>
@@ -2853,7 +2853,7 @@ task = "words_with_max_len"</code></pre>
 <p><code>w[::-1]</code> reverses the string. If the reversed string equals the original, it's a palindrome. This is the cleanest one-liner palindrome check in Python.</p>
 </div>
 <hr />
-<h3 id="task-3-count_words_with_repeated_chars">Task 3 — <code>count_words_with_repeated_chars</code><a class="headerlink" href="#task-3-count_words_with_repeated_chars" title="Permanent link">&para;</a></h3>
+<h3 id="task-3-count_words_with_repeated_chars">Task 3 - <code>count_words_with_repeated_chars</code><a class="headerlink" href="#task-3-count_words_with_repeated_chars" title="Permanent link">&para;</a></h3>
 <p>A word has repeated characters if any character appears more than once. The elegant way to check: convert to a set and compare lengths.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">w</span><span class="p">))</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
 </span></code></pre></div>
@@ -2909,10 +2909,10 @@ task = "words_with_max_len"</code></pre>
 <p>Count: <strong>3</strong></p>
 <div class="admonition insight">
 <p class="admonition-title">set length trick</p>
-<p><code>len(set(w)) &lt; len(w)</code> is the most Pythonic way to check for duplicates in any sequence. A set can only hold unique elements — if the set is smaller than the original, there were duplicates.</p>
+<p><code>len(set(w)) &lt; len(w)</code> is the most Pythonic way to check for duplicates in any sequence. A set can only hold unique elements - if the set is smaller than the original, there were duplicates.</p>
 </div>
 <hr />
-<h3 id="task-4-words_with_max_len">Task 4 — <code>words_with_max_len</code><a class="headerlink" href="#task-4-words_with_max_len" title="Permanent link">&para;</a></h3>
+<h3 id="task-4-words_with_max_len">Task 4 - <code>words_with_max_len</code><a class="headerlink" href="#task-4-words_with_max_len" title="Permanent link">&para;</a></h3>
 <p>Find the length of the longest word, then collect all words matching that length into a set:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">max_len</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">)</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">words</span><span class="p">)</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">return</span> <span class="p">{</span><span class="n">w</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">words</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">)</span> <span class="o">==</span> <span class="n">max_len</span><span class="p">}</span>
@@ -2953,7 +2953,7 @@ task = "words_with_max_len"</code></pre>
 </tbody>
 </table>
 <p><code>max_len = 11</code> → result: <code>{'programming', 'interesting'}</code></p>
-<p>The result is a <strong>set</strong> — order is not guaranteed, and that is expected.</p>
+<p>The result is a <strong>set</strong> - order is not guaranteed, and that is expected.</p>
 <hr />
 <h2 id="solution-approaches">Solution approaches<a class="headerlink" href="#solution-approaches" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Explanatory (if-elif chain)</label><label for="__tabbed_1_2">Pythonic (sum + comprehensions)</label><label for="__tabbed_1_3">With helper functions</label><label for="__tabbed_1_4">Using a dispatch dictionary</label><label for="__tabbed_1_5">Using lambda + filter</label></div>
@@ -3005,7 +3005,7 @@ task = "words_with_max_len"</code></pre>
 </span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>        <span class="n">max_len</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">)</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">words</span><span class="p">)</span>
 </span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>        <span class="k">return</span> <span class="p">{</span><span class="n">w</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">words</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">)</span> <span class="o">==</span> <span class="n">max_len</span><span class="p">}</span>
 </span></code></pre></div>
-<p><code>sum(1 for w in words if condition)</code> is the idiomatic way to count items satisfying a condition — cleaner than maintaining a counter variable.</p>
+<p><code>sum(1 for w in words if condition)</code> is the idiomatic way to count items satisfying a condition - cleaner than maintaining a counter variable.</p>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">is_palindrome</span><span class="p">(</span><span class="n">w</span><span class="p">):</span>
@@ -3054,7 +3054,7 @@ task = "words_with_max_len"</code></pre>
 </span><span id="__span-8-22"><a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a>    <span class="p">}</span>
 </span><span id="__span-8-23"><a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a>    <span class="k">return</span> <span class="n">dispatch</span><span class="p">[</span><span class="n">task</span><span class="p">]()</span>
 </span></code></pre></div>
-<p>Maps task strings to inner functions and calls the right one. Avoids a long if-elif chain — useful when the number of tasks grows large. Advanced but clean.</p>
+<p>Maps task strings to inner functions and calls the right one. Avoids a long if-elif chain - useful when the number of tasks grows large. Advanced but clean.</p>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">process_sentence</span><span class="p">(</span><span class="n">sentence</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">task</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
@@ -3073,7 +3073,7 @@ task = "words_with_max_len"</code></pre>
 </span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>        <span class="n">max_len</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">len</span><span class="p">,</span> <span class="n">words</span><span class="p">))</span>
 </span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>        <span class="k">return</span> <span class="nb">set</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">w</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">)</span> <span class="o">==</span> <span class="n">max_len</span><span class="p">,</span> <span class="n">words</span><span class="p">))</span>
 </span></code></pre></div>
-<p><code>filter(lambda w: condition, words)</code> replaces the comprehension — keeps only words satisfying the condition. <code>len(list(...))</code> counts them. For <code>words_with_max_len</code>, <code>map(len, words)</code> computes all lengths in one pass, and <code>filter</code> selects the longest words. Pure functional style throughout.</p>
+<p><code>filter(lambda w: condition, words)</code> replaces the comprehension - keeps only words satisfying the condition. <code>len(list(...))</code> counts them. For <code>words_with_max_len</code>, <code>map(len, words)</code> computes all lengths in one pass, and <code>filter</code> selects the longest words. Pure functional style throughout.</p>
 </div>
 </div>
 </div>
@@ -3084,7 +3084,7 @@ task = "words_with_max_len"</code></pre>
 <div class="pb-card">
 <div class="pb-card-num">01</div>
 <h4>w == w[::-1] for palindromes</h4>
-<p>Reversing with <code>[::-1]</code> and comparing is the one-liner palindrome check. Works for any sequence — strings, lists, tuples.</p>
+<p>Reversing with <code>[::-1]</code> and comparing is the one-liner palindrome check. Works for any sequence - strings, lists, tuples.</p>
 </div>
 
 <div class="pb-card">
@@ -3096,7 +3096,7 @@ task = "words_with_max_len"</code></pre>
 <div class="pb-card">
 <div class="pb-card-num">03</div>
 <h4>sum(1 for x in iterable if cond)</h4>
-<p>The idiomatic way to count items satisfying a condition. Equivalent to a counter loop but cleaner. Memorise this pattern — it appears constantly.</p>
+<p>The idiomatic way to count items satisfying a condition. Equivalent to a counter loop but cleaner. Memorise this pattern - it appears constantly.</p>
 </div>
 
 </div>

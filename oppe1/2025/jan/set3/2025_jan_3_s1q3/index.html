@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Exam-prep companion for Python — walkthrough solutions, key concepts, and downloadable slides.">
+        <meta name="description" content="Exam-prep companion for Python - walkthrough solutions, key concepts, and downloadable slides.">
       
       
       
@@ -2041,7 +2041,7 @@
   <a href="#set-operations-quick-reference" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Set operations — quick reference
+        Set operations - quick reference
       
     </span>
   </a>
@@ -2594,7 +2594,7 @@
   <a href="#set-operations-quick-reference" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Set operations — quick reference
+        Set operations - quick reference
       
     </span>
   </a>
@@ -2639,14 +2639,14 @@
 <details class="abstract" open="open">
 <summary>⚡ Quick Reference</summary>
 <p><strong>Function:</strong> <code>merge_and_remove_duplicates(list1: list, list2: list) -&gt; set</code></p>
-<p><strong>Core idea:</strong> merge both lists, convert to a set — sets automatically remove duplicates.</p>
+<p><strong>Core idea:</strong> merge both lists, convert to a set - sets automatically remove duplicates.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">merge_and_remove_duplicates</span><span class="p">(</span><span class="n">list1</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">list2</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">set</span><span class="p">:</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">return</span> <span class="nb">set</span><span class="p">(</span><span class="n">list1</span> <span class="o">+</span> <span class="n">list2</span><span class="p">)</span>
 </span></code></pre></div>
 <p><strong>Key rules:</strong>
 - <code>list1 + list2</code> concatenates the two lists
 - <code>set(...)</code> removes all duplicates automatically
-- Order is not preserved in a set — that's expected</p>
+- Order is not preserved in a set - that's expected</p>
 </details>
 <hr />
 <h2 id="problem-statement">Problem Statement<a class="headerlink" href="#problem-statement" title="Permanent link">&para;</a></h2>
@@ -2681,11 +2681,11 @@ list2 = ["bat", "cat"]</code></pre>
 
 <div class="admonition warning">
 <p class="admonition-title">Note on the first example</p>
-<p>The problem statement shows <code>{1, 2, 1}</code> as output, but a set <strong>cannot</strong> contain duplicates — <code>{1, 2, 1}</code> is not a valid set. The correct output is <code>{1, 2}</code>. This appears to be a typo in the question.</p>
+<p>The problem statement shows <code>{1, 2, 1}</code> as output, but a set <strong>cannot</strong> contain duplicates - <code>{1, 2, 1}</code> is not a valid set. The correct output is <code>{1, 2}</code>. This appears to be a typo in the question.</p>
 </div>
 <hr />
 <h2 id="understanding-the-problem">Understanding the problem<a class="headerlink" href="#understanding-the-problem" title="Permanent link">&para;</a></h2>
-<p>A <strong>set</strong> in Python is an unordered collection of <strong>unique</strong> elements. Converting any iterable to a set automatically drops all duplicates — which is exactly what this problem asks for.</p>
+<p>A <strong>set</strong> in Python is an unordered collection of <strong>unique</strong> elements. Converting any iterable to a set automatically drops all duplicates - which is exactly what this problem asks for.</p>
 <table>
 <thead>
 <tr>
@@ -2709,7 +2709,7 @@ list2 = ["bat", "cat"]</code></pre>
 </table>
 <div class="admonition insight">
 <p class="admonition-title">Key insight</p>
-<p>Sets are defined by uniqueness. The moment you call <code>set()</code> on anything, every duplicate vanishes. You don't need to write any loop or comparison logic — the data structure does the work.</p>
+<p>Sets are defined by uniqueness. The moment you call <code>set()</code> on anything, every duplicate vanishes. You don't need to write any loop or comparison logic - the data structure does the work.</p>
 </div>
 <hr />
 <h2 id="tracing-the-examples">Tracing the examples<a class="headerlink" href="#tracing-the-examples" title="Permanent link">&para;</a></h2>
@@ -2721,7 +2721,7 @@ list2 = ["bat", "cat"]</code></pre>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>list1 + list2  →  [&quot;ant&quot;, &quot;bat&quot;, &quot;bat&quot;, &quot;cat&quot;]
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>set(...)       →  {&quot;ant&quot;, &quot;bat&quot;, &quot;cat&quot;}
 </span></code></pre></div>
-<p><code>"bat"</code> appeared twice — once from each list — but the set keeps only one copy.</p>
+<p><code>"bat"</code> appeared twice - once from each list - but the set keeps only one copy.</p>
 <hr />
 <h2 id="solution-approaches">Solution approaches<a class="headerlink" href="#solution-approaches" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Pythonic (one-liner)</label><label for="__tabbed_1_2">Using set union</label><label for="__tabbed_1_3">Using set.union()</label><label for="__tabbed_1_4">Explanatory (loop)</label></div>
@@ -2742,7 +2742,7 @@ list2 = ["bat", "cat"]</code></pre>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">merge_and_remove_duplicates</span><span class="p">(</span><span class="n">list1</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">list2</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">set</span><span class="p">:</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="k">return</span> <span class="nb">set</span><span class="p">(</span><span class="n">list1</span><span class="p">)</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">list2</span><span class="p">)</span>
 </span></code></pre></div>
-<p>Same as union but using the method form. <code>set.union()</code> accepts any iterable as argument — no need to convert <code>list2</code> to a set first.</p>
+<p>Same as union but using the method form. <code>set.union()</code> accepts any iterable as argument - no need to convert <code>list2</code> to a set first.</p>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">merge_and_remove_duplicates</span><span class="p">(</span><span class="n">list1</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">list2</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">set</span><span class="p">:</span>
@@ -2751,12 +2751,12 @@ list2 = ["bat", "cat"]</code></pre>
 </span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>        <span class="n">result</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
 </span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="k">return</span> <span class="n">result</span>
 </span></code></pre></div>
-<p>Manually add each element to a set. The set's uniqueness constraint handles duplicates silently — <code>add()</code> on an existing element is simply a no-op. More verbose but makes the mechanics visible.</p>
+<p>Manually add each element to a set. The set's uniqueness constraint handles duplicates silently - <code>add()</code> on an existing element is simply a no-op. More verbose but makes the mechanics visible.</p>
 </div>
 </div>
 </div>
 <hr />
-<h2 id="set-operations-quick-reference">Set operations — quick reference<a class="headerlink" href="#set-operations-quick-reference" title="Permanent link">&para;</a></h2>
+<h2 id="set-operations-quick-reference">Set operations - quick reference<a class="headerlink" href="#set-operations-quick-reference" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>

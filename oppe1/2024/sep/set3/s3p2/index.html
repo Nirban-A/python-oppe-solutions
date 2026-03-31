@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Exam-prep companion for Python — walkthrough solutions, key concepts, and downloadable slides.">
+        <meta name="description" content="Exam-prep companion for Python - walkthrough solutions, key concepts, and downloadable slides.">
       
       
       
@@ -1123,7 +1123,7 @@
   <a href="#step-1-read-n-and-compute-the-total-width" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 1 — Read n and compute the total width
+        Step 1 - Read n and compute the total width
       
     </span>
   </a>
@@ -1134,7 +1134,7 @@
   <a href="#step-2-loop-from-row-1-to-row-n" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2 — Loop from row 1 to row n
+        Step 2 - Loop from row 1 to row n
       
     </span>
   </a>
@@ -1145,7 +1145,7 @@
   <a href="#step-3-build-the-star-string-for-row-i" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 3 — Build the star string for row i
+        Step 3 - Build the star string for row i
       
     </span>
   </a>
@@ -1156,7 +1156,7 @@
   <a href="#step-4-centre-it-and-print" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 4 — Centre it and print
+        Step 4 - Centre it and print
       
     </span>
   </a>
@@ -2634,7 +2634,7 @@
   <a href="#step-1-read-n-and-compute-the-total-width" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 1 — Read n and compute the total width
+        Step 1 - Read n and compute the total width
       
     </span>
   </a>
@@ -2645,7 +2645,7 @@
   <a href="#step-2-loop-from-row-1-to-row-n" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2 — Loop from row 1 to row n
+        Step 2 - Loop from row 1 to row n
       
     </span>
   </a>
@@ -2656,7 +2656,7 @@
   <a href="#step-3-build-the-star-string-for-row-i" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 3 — Build the star string for row i
+        Step 3 - Build the star string for row i
       
     </span>
   </a>
@@ -2667,7 +2667,7 @@
   <a href="#step-4-centre-it-and-print" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 4 — Centre it and print
+        Step 4 - Centre it and print
       
     </span>
   </a>
@@ -2741,7 +2741,7 @@
 
 <details class="abstract" open="open">
 <summary>⚡ Quick Reference</summary>
-<p><strong>Type:</strong> Pattern printing — I/O (write complete code)</p>
+<p><strong>Type:</strong> Pattern printing - I/O (write complete code)</p>
 <p><strong>Core idea:</strong> Row <code>i</code> (1-indexed) has <code>2i - 1</code> stars, centred in a field of width <code>2n - 1</code>.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">width</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>
@@ -2828,17 +2828,17 @@
 </div>
 <hr />
 <h2 id="step-by-step-walkthrough">Step-by-step walkthrough<a class="headerlink" href="#step-by-step-walkthrough" title="Permanent link">&para;</a></h2>
-<h3 id="step-1-read-n-and-compute-the-total-width">Step 1 — Read n and compute the total width<a class="headerlink" href="#step-1-read-n-and-compute-the-total-width" title="Permanent link">&para;</a></h3>
+<h3 id="step-1-read-n-and-compute-the-total-width">Step 1 - Read n and compute the total width<a class="headerlink" href="#step-1-read-n-and-compute-the-total-width" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">width</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>   <span class="c1"># widest row = bottom row</span>
 </span></code></pre></div>
-<h3 id="step-2-loop-from-row-1-to-row-n">Step 2 — Loop from row 1 to row n<a class="headerlink" href="#step-2-loop-from-row-1-to-row-n" title="Permanent link">&para;</a></h3>
+<h3 id="step-2-loop-from-row-1-to-row-n">Step 2 - Loop from row 1 to row n<a class="headerlink" href="#step-2-loop-from-row-1-to-row-n" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
 </span></code></pre></div>
-<h3 id="step-3-build-the-star-string-for-row-i">Step 3 — Build the star string for row i<a class="headerlink" href="#step-3-build-the-star-string-for-row-i" title="Permanent link">&para;</a></h3>
+<h3 id="step-3-build-the-star-string-for-row-i">Step 3 - Build the star string for row i<a class="headerlink" href="#step-3-build-the-star-string-for-row-i" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">stars</span> <span class="o">=</span> <span class="s2">&quot;*&quot;</span> <span class="o">*</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
 </span></code></pre></div>
-<h3 id="step-4-centre-it-and-print">Step 4 — Centre it and print<a class="headerlink" href="#step-4-centre-it-and-print" title="Permanent link">&para;</a></h3>
+<h3 id="step-4-centre-it-and-print">Step 4 - Centre it and print<a class="headerlink" href="#step-4-centre-it-and-print" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">print</span><span class="p">(</span><span class="n">stars</span><span class="o">.</span><span class="n">center</span><span class="p">(</span><span class="n">width</span><span class="p">))</span>
 </span></code></pre></div>
 <p><code>"*".center(7)</code> → <code>"   *   "</code> (width 7, centred).</p>
@@ -2988,13 +2988,13 @@
         
         
           
-          <a href="../../../../2025/" class="md-footer__link md-footer__link--next" aria-label="Next: OPPE 1 — 2025">
+          <a href="../../../../2025/" class="md-footer__link md-footer__link--next" aria-label="Next: OPPE 1 - 2025">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                OPPE 1 — 2025
+                OPPE 1 - 2025
               </div>
             </div>
             <div class="md-footer__button md-icon">

@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Exam-prep companion for Python — walkthrough solutions, key concepts, and downloadable slides.">
+        <meta name="description" content="Exam-prep companion for Python - walkthrough solutions, key concepts, and downloadable slides.">
       
       
       
@@ -2706,23 +2706,23 @@
 </span></code></pre></div>
 <div class="admonition insight">
 <p class="admonition-title">Why collect all tied numbers?</p>
-<p>The problem asks for the most frequent numbers (plural). If two numbers share the same maximum frequency — as <code>3</code> and <code>5</code> do here — both must be included in the output.</p>
+<p>The problem asks for the most frequent numbers (plural). If two numbers share the same maximum frequency - as <code>3</code> and <code>5</code> do here - both must be included in the output.</p>
 </div>
 <hr />
 <h2 id="building-the-frequency-table">Building the frequency table<a class="headerlink" href="#building-the-frequency-table" title="Permanent link">&para;</a></h2>
 <p>Three equivalent approaches:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Option A — dict.get()</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Option A - dict.get()</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">freq</span> <span class="o">=</span> <span class="p">{}</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="n">freq</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">freq</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
 </span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c1"># Option B — defaultdict</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c1"># Option B - defaultdict</span>
 </span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span>
 </span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="n">freq</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
 </span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
 </span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="n">freq</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
 </span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="c1"># Option C — Counter (most compact)</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="c1"># Option C - Counter (most compact)</span>
 </span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">Counter</span>
 </span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="n">freq</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
 </span></code></pre></div>
@@ -2762,7 +2762,7 @@
 </table>
 <p><code>max_freq = max({3:3, 5:3, 2:1, 8:2, 0:1}.values()) = 3</code></p>
 <p>Numbers with count == 3: <code>[3, 5]</code> → sorted → <code>[3, 5]</code></p>
-<p>Output: <code>[3, 5]</code> ✓</p>
+<p>Output: <code>[3, 5]</code> </p>
 <hr />
 <h2 id="solution-approaches">Solution approaches<a class="headerlink" href="#solution-approaches" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Explanatory (dict loop)</label><label for="__tabbed_1_2">Pythonic (Counter + comprehension)</label><label for="__tabbed_1_3">Using lambda + filter</label><label for="__tabbed_1_4">Using Counter.most_common()</label></div>
@@ -2840,13 +2840,13 @@
 <div class="pb-card">
 <div class="pb-card-num">02</div>
 <h4>Collect all ties, not just one</h4>
-<p>Always filter for <em>all</em> elements matching <code>max_freq</code>. Using <code>max(freq, key=freq.get)</code> returns only one element — it misses ties.</p>
+<p>Always filter for <em>all</em> elements matching <code>max_freq</code>. Using <code>max(freq, key=freq.get)</code> returns only one element - it misses ties.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">03</div>
 <h4>print(list) vs print(*list)</h4>
-<p><code>print([3, 5])</code> outputs <code>[3, 5]</code> — with brackets, as required here. <code>print(*[3, 5])</code> outputs <code>3 5</code> — no brackets. Match the expected output format carefully.</p>
+<p><code>print([3, 5])</code> outputs <code>[3, 5]</code> - with brackets, as required here. <code>print(*[3, 5])</code> outputs <code>3 5</code> - no brackets. Match the expected output format carefully.</p>
 </div>
 
 </div>

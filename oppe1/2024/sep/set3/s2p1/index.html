@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Exam-prep companion for Python — walkthrough solutions, key concepts, and downloadable slides.">
+        <meta name="description" content="Exam-prep companion for Python - walkthrough solutions, key concepts, and downloadable slides.">
       
       
       
@@ -1056,7 +1056,7 @@
   <a href="#pattern-a-last-wins-overwrite-scan-forward" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Pattern A — "Last wins" overwrite (scan forward)
+        Pattern A - "Last wins" overwrite (scan forward)
       
     </span>
   </a>
@@ -1067,7 +1067,7 @@
   <a href="#pattern-b-scan-backward-return-on-first-hit" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Pattern B — Scan backward, return on first hit
+        Pattern B - Scan backward, return on first hit
       
     </span>
   </a>
@@ -1095,7 +1095,7 @@
   <a href="#step-1-split-the-sentence-into-words" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 1 — Split the sentence into words
+        Step 1 - Split the sentence into words
       
     </span>
   </a>
@@ -1106,7 +1106,7 @@
   <a href="#step-2-initialise-result-to-none" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2 — Initialise result to None
+        Step 2 - Initialise result to None
       
     </span>
   </a>
@@ -1117,7 +1117,7 @@
   <a href="#step-3-check-each-words-first-character" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 3 — Check each word's first character
+        Step 3 - Check each word's first character
       
     </span>
   </a>
@@ -1128,7 +1128,7 @@
   <a href="#step-4-overwrite-and-return" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 4 — Overwrite and return
+        Step 4 - Overwrite and return
       
     </span>
   </a>
@@ -2651,7 +2651,7 @@
   <a href="#pattern-a-last-wins-overwrite-scan-forward" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Pattern A — "Last wins" overwrite (scan forward)
+        Pattern A - "Last wins" overwrite (scan forward)
       
     </span>
   </a>
@@ -2662,7 +2662,7 @@
   <a href="#pattern-b-scan-backward-return-on-first-hit" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Pattern B — Scan backward, return on first hit
+        Pattern B - Scan backward, return on first hit
       
     </span>
   </a>
@@ -2690,7 +2690,7 @@
   <a href="#step-1-split-the-sentence-into-words" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 1 — Split the sentence into words
+        Step 1 - Split the sentence into words
       
     </span>
   </a>
@@ -2701,7 +2701,7 @@
   <a href="#step-2-initialise-result-to-none" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2 — Initialise result to None
+        Step 2 - Initialise result to None
       
     </span>
   </a>
@@ -2712,7 +2712,7 @@
   <a href="#step-3-check-each-words-first-character" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 3 — Check each word's first character
+        Step 3 - Check each word's first character
       
     </span>
   </a>
@@ -2723,7 +2723,7 @@
   <a href="#step-4-overwrite-and-return" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 4 — Overwrite and return
+        Step 4 - Overwrite and return
       
     </span>
   </a>
@@ -2808,7 +2808,7 @@
 </span></code></pre></div>
 <p><strong>Key rules:</strong>
 - Returns <code>None</code> if no uppercase-starting word exists
-- <code>word[0].isupper()</code> — checks only the <strong>first character</strong>
+- <code>word[0].isupper()</code> - checks only the <strong>first character</strong>
 - Loop doesn't short-circuit; it always finishes scanning</p>
 </details>
 <hr />
@@ -2843,13 +2843,13 @@
 <hr />
 <h2 id="two-patterns-for-find-the-last-match">Two patterns for "find the last match"<a class="headerlink" href="#two-patterns-for-find-the-last-match" title="Permanent link">&para;</a></h2>
 <p>There are two classic approaches to find the <em>last</em> element satisfying a condition in a list.</p>
-<h3 id="pattern-a-last-wins-overwrite-scan-forward">Pattern A — "Last wins" overwrite (scan forward)<a class="headerlink" href="#pattern-a-last-wins-overwrite-scan-forward" title="Permanent link">&para;</a></h3>
+<h3 id="pattern-a-last-wins-overwrite-scan-forward">Pattern A - "Last wins" overwrite (scan forward)<a class="headerlink" href="#pattern-a-last-wins-overwrite-scan-forward" title="Permanent link">&para;</a></h3>
 <p>Initialize <code>result = None</code>. Loop through all items. Every time the condition is met, overwrite <code>result</code>. When the loop ends, <code>result</code> holds the last match.</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>words:   [&quot;This&quot;, &quot;is&quot;, &quot;a&quot;, &quot;Test&quot;, &quot;sentence&quot;]
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>            ↑              ↑
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>         result=&quot;This&quot;   result=&quot;Test&quot;   ← final answer
 </span></code></pre></div>
-<h3 id="pattern-b-scan-backward-return-on-first-hit">Pattern B — Scan backward, return on first hit<a class="headerlink" href="#pattern-b-scan-backward-return-on-first-hit" title="Permanent link">&para;</a></h3>
+<h3 id="pattern-b-scan-backward-return-on-first-hit">Pattern B - Scan backward, return on first hit<a class="headerlink" href="#pattern-b-scan-backward-return-on-first-hit" title="Permanent link">&para;</a></h3>
 <p>Reverse the list and return the first match. More efficient if the list is long and matches are rare.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">()):</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="k">if</span> <span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">isupper</span><span class="p">():</span>
@@ -2862,23 +2862,23 @@
 </div>
 <hr />
 <h2 id="step-by-step-walkthrough">Step-by-step walkthrough<a class="headerlink" href="#step-by-step-walkthrough" title="Permanent link">&para;</a></h2>
-<h3 id="step-1-split-the-sentence-into-words">Step 1 — Split the sentence into words<a class="headerlink" href="#step-1-split-the-sentence-into-words" title="Permanent link">&para;</a></h3>
+<h3 id="step-1-split-the-sentence-into-words">Step 1 - Split the sentence into words<a class="headerlink" href="#step-1-split-the-sentence-into-words" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="c1"># &quot;This is a Test sentence&quot; → [&quot;This&quot;, &quot;is&quot;, &quot;a&quot;, &quot;Test&quot;, &quot;sentence&quot;]</span>
 </span></code></pre></div>
 <p><code>split()</code> with no argument splits on any whitespace and ignores leading/trailing spaces.</p>
-<h3 id="step-2-initialise-result-to-none">Step 2 — Initialise result to None<a class="headerlink" href="#step-2-initialise-result-to-none" title="Permanent link">&para;</a></h3>
+<h3 id="step-2-initialise-result-to-none">Step 2 - Initialise result to None<a class="headerlink" href="#step-2-initialise-result-to-none" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">result</span> <span class="o">=</span> <span class="kc">None</span>
 </span></code></pre></div>
 <p>If no word qualifies, the function will return this <code>None</code>.</p>
-<h3 id="step-3-check-each-words-first-character">Step 3 — Check each word's first character<a class="headerlink" href="#step-3-check-each-words-first-character" title="Permanent link">&para;</a></h3>
+<h3 id="step-3-check-each-words-first-character">Step 3 - Check each word's first character<a class="headerlink" href="#step-3-check-each-words-first-character" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">isupper</span><span class="p">()</span>
 </span></code></pre></div>
 <p><code>str.isupper()</code> returns <code>True</code> if <strong>all</strong> cased characters are uppercase. But we're calling it on a single character <code>word[0]</code>, so it's simply "is this character uppercase?"</p>
-<h3 id="step-4-overwrite-and-return">Step 4 — Overwrite and return<a class="headerlink" href="#step-4-overwrite-and-return" title="Permanent link">&para;</a></h3>
+<h3 id="step-4-overwrite-and-return">Step 4 - Overwrite and return<a class="headerlink" href="#step-4-overwrite-and-return" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">():</span>
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="k">if</span> <span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">isupper</span><span class="p">():</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>        <span class="n">result</span> <span class="o">=</span> <span class="n">word</span>   <span class="c1"># keep updating — last match wins</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>        <span class="n">result</span> <span class="o">=</span> <span class="n">word</span>   <span class="c1"># keep updating - last match wins</span>
 </span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="k">return</span> <span class="n">result</span>
 </span></code></pre></div>
 <hr />
@@ -2926,7 +2926,7 @@
 </tr>
 </tbody>
 </table>
-<p>Return → <code>"Test"</code> ✓</p>
+<p>Return → <code>"Test"</code> </p>
 <hr />
 <h2 id="solution-approaches">Solution approaches<a class="headerlink" href="#solution-approaches" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Explanatory (for loop)</label><label for="__tabbed_1_2">Pythonic (filter + [-1])</label><label for="__tabbed_1_3">Pythonic (next + reversed)</label></div>
@@ -2954,7 +2954,7 @@
 </span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>        <span class="kc">None</span>
 </span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    <span class="p">)</span>
 </span></code></pre></div>
-<p><code>next(..., None)</code> returns the first element of the generator — but since we iterate in reverse, that's the <em>last</em> match in the original sentence. Short-circuits as soon as it finds a match.</p>
+<p><code>next(..., None)</code> returns the first element of the generator - but since we iterate in reverse, that's the <em>last</em> match in the original sentence. Short-circuits as soon as it finds a match.</p>
 </div>
 </div>
 </div>
@@ -2971,7 +2971,7 @@
 <div class="pb-card">
 <div class="pb-card-num">02</div>
 <h4>"Last wins" overwrite</h4>
-<p>Init to <code>None</code>, overwrite on every match. No need to track index — just let the loop finish.</p>
+<p>Init to <code>None</code>, overwrite on every match. No need to track index - just let the loop finish.</p>
 </div>
 
 <div class="pb-card">

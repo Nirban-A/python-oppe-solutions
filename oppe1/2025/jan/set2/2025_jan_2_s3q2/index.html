@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Exam-prep companion for Python — walkthrough solutions, key concepts, and downloadable slides.">
+        <meta name="description" content="Exam-prep companion for Python - walkthrough solutions, key concepts, and downloadable slides.">
       
       
       
@@ -1879,7 +1879,7 @@
   <a href="#common-mistake-trailing-spaces" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Common mistake — trailing spaces
+        Common mistake - trailing spaces
       
     </span>
   </a>
@@ -2616,7 +2616,7 @@
   <a href="#common-mistake-trailing-spaces" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Common mistake — trailing spaces
+        Common mistake - trailing spaces
       
     </span>
   </a>
@@ -2651,7 +2651,7 @@
 
 
 
-<h1 id="s3q2-pattern-printing-z-pattern">S3Q2 · Pattern Printing — Z Pattern<a class="headerlink" href="#s3q2-pattern-printing-z-pattern" title="Permanent link">&para;</a></h1>
+<h1 id="s3q2-pattern-printing-z-pattern">S3Q2 · Pattern Printing - Z Pattern<a class="headerlink" href="#s3q2-pattern-printing-z-pattern" title="Permanent link">&para;</a></h1>
 <div class="pb-downloads">
   <a class="pb-btn pb-btn-repo" href="https://github.com/Nirban-A/Python_Buddy_2026T3/tree/main/2025_Jan_Oppe1_Set2" target="_blank">
     📁 GitHub
@@ -2660,8 +2660,8 @@
 
 <details class="abstract" open="open">
 <summary>⚡ Quick Reference</summary>
-<p><strong>Type:</strong> Full I/O — pattern printing</p>
-<p><strong>Core idea:</strong> top and bottom rows are full stars; diagonal rows have a star at position <code>n - i</code> (0-indexed) with leading spaces only — no trailing spaces.</p>
+<p><strong>Type:</strong> Full I/O - pattern printing</p>
+<p><strong>Core idea:</strong> top and bottom rows are full stars; diagonal rows have a star at position <code>n - i</code> (0-indexed) with leading spaces only - no trailing spaces.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">i</span> <span class="o">==</span> <span class="n">n</span><span class="p">:</span>
@@ -2730,7 +2730,7 @@
 <tr>
 <td>1</td>
 <td>Top border</td>
-<td>—</td>
+<td>-</td>
 <td>All <code>n</code> stars</td>
 </tr>
 <tr>
@@ -2754,7 +2754,7 @@
 <tr>
 <td>5</td>
 <td>Bottom border</td>
-<td>—</td>
+<td>-</td>
 <td>All <code>n</code> stars</td>
 </tr>
 </tbody>
@@ -2778,7 +2778,7 @@
 <tbody>
 <tr>
 <td>1</td>
-<td>— (border)</td>
+<td>- (border)</td>
 <td><code>*****</code></td>
 </tr>
 <tr>
@@ -2798,7 +2798,7 @@
 </tr>
 <tr>
 <td>5</td>
-<td>— (border)</td>
+<td>- (border)</td>
 <td><code>*****</code></td>
 </tr>
 </tbody>
@@ -2860,7 +2860,7 @@
 </span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="k">else</span><span class="p">:</span>
 </span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="s1">&#39;*&#39;</span><span class="si">:</span><span class="s2">&gt;</span><span class="si">{</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}}</span><span class="s2">&quot;</span><span class="p">)</span>
 </span></code></pre></div>
-<p><code>f"{'*':&gt;{n - i + 1}}"</code> right-aligns <code>*</code> in a field of width <code>n - i + 1</code>. This produces <code>n - i</code> leading spaces followed by <code>*</code> — no trailing spaces.</p>
+<p><code>f"{'*':&gt;{n - i + 1}}"</code> right-aligns <code>*</code> in a field of width <code>n - i + 1</code>. This produces <code>n - i</code> leading spaces followed by <code>*</code> - no trailing spaces.</p>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
@@ -2868,14 +2868,14 @@
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
 </span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
 </span></code></pre></div>
-<p>The <code>lambda</code> encapsulates the row-building logic — pass the row number, get the row string. Clean separation of the pattern logic from the loop.</p>
+<p>The <code>lambda</code> encapsulates the row-building logic - pass the row number, get the row string. Clean separation of the pattern logic from the loop.</p>
 </div>
 </div>
 </div>
 <hr />
-<h2 id="common-mistake-trailing-spaces">Common mistake — trailing spaces<a class="headerlink" href="#common-mistake-trailing-spaces" title="Permanent link">&para;</a></h2>
+<h2 id="common-mistake-trailing-spaces">Common mistake - trailing spaces<a class="headerlink" href="#common-mistake-trailing-spaces" title="Permanent link">&para;</a></h2>
 <p>A common mistake is printing each row padded to width <code>n</code>:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># ❌ Wrong — adds trailing spaces to diagonal rows</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># ❌ Wrong - adds trailing spaces to diagonal rows</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="s1">&#39;*&#39;</span><span class="si">:</span><span class="s2">&gt;</span><span class="si">{</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">:&lt;</span><span class="si">{</span><span class="n">n</span><span class="si">}}</span><span class="s2">&quot;</span><span class="p">)</span>   <span class="c1"># pads right side too</span>
 </span></code></pre></div>
 <p>The problem says no trailing spaces. Always end diagonal rows right after the <code>*</code>.</p>
@@ -2891,14 +2891,14 @@
 
 <div class="pb-card">
 <div class="pb-card-num">02</div>
-<h4>No trailing spaces — end at the star</h4>
+<h4>No trailing spaces - end at the star</h4>
 <p><code>" " * (n - i) + "*"</code> stops right after the star. Never pad to the full row width when trailing spaces are forbidden.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">03</div>
 <h4>Diagonal moves left as i increases</h4>
-<p>For Z: star starts at the right and moves left. Leading spaces = <code>n - i</code> — decreases as <code>i</code> increases. Contrast with triangles where stars grow; here only one star moves.</p>
+<p>For Z: star starts at the right and moves left. Leading spaces = <code>n - i</code> - decreases as <code>i</code> increases. Contrast with triangles where stars grow; here only one star moves.</p>
 </div>
 
 </div>
@@ -2954,13 +2954,13 @@
         
         
           
-          <a href="../../set3/" class="md-footer__link md-footer__link--next" aria-label="Next: 2025 Jan OPPE 1 — Set 3">
+          <a href="../../set3/" class="md-footer__link md-footer__link--next" aria-label="Next: 2025 Jan OPPE 1 - Set 3">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                2025 Jan OPPE 1 — Set 3
+                2025 Jan OPPE 1 - Set 3
               </div>
             </div>
             <div class="md-footer__button md-icon">

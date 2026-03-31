@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Exam-prep companion for Python — walkthrough solutions, key concepts, and downloadable slides.">
+        <meta name="description" content="Exam-prep companion for Python - walkthrough solutions, key concepts, and downloadable slides.">
       
       
       
@@ -1039,7 +1039,7 @@
   <a href="#step-1-understand-in-place-modification" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 1 — Understand in-place modification
+        Step 1 - Understand in-place modification
       
     </span>
   </a>
@@ -1050,7 +1050,7 @@
   <a href="#step-2-compute-the-new-value-with-a-cap" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2 — Compute the new value with a cap
+        Step 2 - Compute the new value with a cap
       
     </span>
   </a>
@@ -1061,7 +1061,7 @@
   <a href="#step-3-collapse-to-one-line-with-min" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 3 — Collapse to one line with min()
+        Step 3 - Collapse to one line with min()
       
     </span>
   </a>
@@ -2623,7 +2623,7 @@
   <a href="#step-1-understand-in-place-modification" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 1 — Understand in-place modification
+        Step 1 - Understand in-place modification
       
     </span>
   </a>
@@ -2634,7 +2634,7 @@
   <a href="#step-2-compute-the-new-value-with-a-cap" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2 — Compute the new value with a cap
+        Step 2 - Compute the new value with a cap
       
     </span>
   </a>
@@ -2645,7 +2645,7 @@
   <a href="#step-3-collapse-to-one-line-with-min" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 3 — Collapse to one line with min()
+        Step 3 - Collapse to one line with min()
       
     </span>
   </a>
@@ -2725,7 +2725,7 @@
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">d</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">+</span> <span class="n">step</span><span class="p">,</span> <span class="n">limit</span><span class="p">)</span>
 </span></code></pre></div>
 <p><strong>Key rules:</strong>
-- Modifies <code>d</code> in-place — function returns <code>None</code>
+- Modifies <code>d</code> in-place - function returns <code>None</code>
 - <code>min(current + step, limit)</code> is the one-liner cap
 - If <code>d[key] + step &gt; limit</code>, store <code>limit</code>; otherwise store <code>d[key] + step</code></p>
 </details>
@@ -2784,25 +2784,25 @@ increment(d, "score", 15, 100)</code></pre>
 <p>The elegant way to express "whichever is smaller" is Python's built-in <code>min()</code>.</p>
 <div class="admonition insight">
 <p class="admonition-title">Key insight</p>
-<p><code>min(a, b)</code> returns the smaller of two values. <code>min(d[key] + step, limit)</code> automatically picks the capped value when the increment would overshoot — no <code>if</code> statement needed.</p>
+<p><code>min(a, b)</code> returns the smaller of two values. <code>min(d[key] + step, limit)</code> automatically picks the capped value when the increment would overshoot - no <code>if</code> statement needed.</p>
 </div>
 <hr />
 <h2 id="step-by-step-walkthrough">Step-by-step walkthrough<a class="headerlink" href="#step-by-step-walkthrough" title="Permanent link">&para;</a></h2>
-<h3 id="step-1-understand-in-place-modification">Step 1 — Understand in-place modification<a class="headerlink" href="#step-1-understand-in-place-modification" title="Permanent link">&para;</a></h3>
+<h3 id="step-1-understand-in-place-modification">Step 1 - Understand in-place modification<a class="headerlink" href="#step-1-understand-in-place-modification" title="Permanent link">&para;</a></h3>
 <p>The function has no <code>return</code> statement. It modifies the dictionary directly:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">d</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">new</span> <span class="n">value</span><span class="o">&gt;</span>   <span class="c1"># this changes the dict that was passed in</span>
 </span></code></pre></div>
 <p>Because Python dicts are <strong>mutable</strong>, changes inside the function are visible outside.</p>
-<h3 id="step-2-compute-the-new-value-with-a-cap">Step 2 — Compute the new value with a cap<a class="headerlink" href="#step-2-compute-the-new-value-with-a-cap" title="Permanent link">&para;</a></h3>
+<h3 id="step-2-compute-the-new-value-with-a-cap">Step 2 - Compute the new value with a cap<a class="headerlink" href="#step-2-compute-the-new-value-with-a-cap" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">new_value</span> <span class="o">=</span> <span class="n">d</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">+</span> <span class="n">step</span>          <span class="c1"># naive increment</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">if</span> <span class="n">new_value</span> <span class="o">&gt;</span> <span class="n">limit</span><span class="p">:</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="n">new_value</span> <span class="o">=</span> <span class="n">limit</span>              <span class="c1"># cap it</span>
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">d</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_value</span>
 </span></code></pre></div>
-<h3 id="step-3-collapse-to-one-line-with-min">Step 3 — Collapse to one line with min()<a class="headerlink" href="#step-3-collapse-to-one-line-with-min" title="Permanent link">&para;</a></h3>
+<h3 id="step-3-collapse-to-one-line-with-min">Step 3 - Collapse to one line with min()<a class="headerlink" href="#step-3-collapse-to-one-line-with-min" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">d</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">+</span> <span class="n">step</span><span class="p">,</span> <span class="n">limit</span><span class="p">)</span>
 </span></code></pre></div>
-<p>These two are exactly equivalent — the <code>min()</code> version is simply more Pythonic.</p>
+<p>These two are exactly equivalent - the <code>min()</code> version is simply more Pythonic.</p>
 <hr />
 <h2 id="solution-approaches">Solution approaches<a class="headerlink" href="#solution-approaches" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Explanatory (if-else)</label><label for="__tabbed_1_2">Pythonic (min)</label><label for="__tabbed_1_3">With ternary</label></div>
@@ -2815,7 +2815,7 @@ increment(d, "score", 15, 100)</code></pre>
 </span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="k">else</span><span class="p">:</span>
 </span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>        <span class="n">d</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_value</span>
 </span></code></pre></div>
-<p>Most readable for beginners — every branch is explicit.</p>
+<p>Most readable for beginners - every branch is explicit.</p>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">increment</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">step</span><span class="p">,</span> <span class="n">limit</span><span class="p">):</span>
@@ -2828,7 +2828,7 @@ increment(d, "score", 15, 100)</code></pre>
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="n">candidate</span> <span class="o">=</span> <span class="n">d</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">+</span> <span class="n">step</span>
 </span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="n">d</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">candidate</span> <span class="k">if</span> <span class="n">candidate</span> <span class="o">&lt;=</span> <span class="n">limit</span> <span class="k">else</span> <span class="n">limit</span>
 </span></code></pre></div>
-<p>Explicit ternary — fine, but <code>min()</code> is shorter and more idiomatic.</p>
+<p>Explicit ternary - fine, but <code>min()</code> is shorter and more idiomatic.</p>
 </div>
 </div>
 </div>
@@ -2853,7 +2853,7 @@ increment(d, "score", 15, 100)</code></pre>
 </tr>
 <tr>
 <td><code>d["score"]</code> after call</td>
-<td><code>95</code> ✓</td>
+<td><code>95</code></td>
 </tr>
 </tbody>
 </table>
@@ -2876,7 +2876,7 @@ increment(d, "score", 15, 100)</code></pre>
 </tr>
 <tr>
 <td><code>d["score"]</code> after call</td>
-<td><code>100</code> ✓ (capped)</td>
+<td><code>100</code>  (capped)</td>
 </tr>
 </tbody>
 </table>
