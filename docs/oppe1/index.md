@@ -51,8 +51,8 @@ OPPE 1 covers **Weeks 1–5** of the Programming in Python course. It tests foun
 <a class="pb-set-card" href="2024/">
 <div class="pb-set-card-label">2024</div>
 <h3>OPPE 1 - 2024</h3>
-<p>January, May and September sessions.</p>
-<span class="pb-badge pb-badge-soon">Coming soon</span>
+<p>September sessions.</p>
+<span class="pb-badge pb-badge-done">See Solutions</span>
 </a>
 
 <a class="pb-set-card" href="2025/">

@@ -55,7 +55,8 @@ This site contains detailed solutions for previous year Python OPPE questions, o
 |---|---|
 | Official Python Textbook (IIT-M) | [bsc-iitm.github.io/python-textbook](https://bsc-iitm.github.io/python-textbook/) |
 | Common OPPE Mistakes (video) | [YouTube](https://www.youtube.com/watch?v=7XgtJeG5Efw) |
-| Slide repository (GitHub) | [Nirban-A/Python\_Buddy\_2026T3](https://github.com/Nirban-A/Python_Buddy_2026T3) |
 | Revision Notes (by Chatrapal Singh) | [Notion](https://www.notion.so/Python-OPPE-1-Revision-30a7588e49aa80d79a5bf776772d7020#32f7588e49aa80258913e0ea731d6fbb) |
+| Slide repository (GitHub) | [Nirban-A/Python\_Buddy\_2026T3](https://github.com/Nirban-A/Python_Buddy_2026T3) |
+
 
 </div>

@@ -173,7 +173,8 @@ python-oppe-solutions/
 
 | Exam | Session | Set | Status |
 |------|---------|-----|--------|
-| OPPE 1 | 2024 Jan/May/Sep | All | 🔜 Coming soon |
+| OPPE 1 | 2024 Jan/May | All | 🔜 Coming soon |
+| OPPE 1 | 2024 Sep | All | ✅ Complete |
 | OPPE 1 | 2025 Jan | All | ✅ Complete |
 | OPPE 1 | 2025 May | All | ✅ Complete |
 | OPPE 1 | 2025 Sep | All | 🔜 Coming soon |

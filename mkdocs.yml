@@ -90,15 +90,33 @@ nav:
         - oppe1/2024/may/index.md
       - September:
         - oppe1/2024/sep/index.md
-        - Set 1: oppe1/2024/sep/set1/index.md
-        - Set 2: oppe1/2024/sep/set2/index.md
+        - Set 1:
+          - oppe1/2024/sep/set1/index.md
+          - S1Q1 · Sum of Squares and Abs Diff: oppe1/2024/sep/set1/2024_sep_1_s1q1.md
+          - S1Q2 · Is Odd-Length Palindrome: oppe1/2024/sep/set1/2024_sep_1_s1q2.md
+          - S1Q3 · Remove Elements at Two Indices: oppe1/2024/sep/set1/2024_sep_1_s1q3.md
+          - S2Q1 · Sum of Squares of Even Numbers: oppe1/2024/sep/set1/2024_sep_1_s2q1.md
+          - S2Q2 · Uppercase Only Vowels: oppe1/2024/sep/set1/2024_sep_1_s2q2.md
+          - S3Q1 · Student Marks Filter: oppe1/2024/sep/set1/2024_sep_1_s3q1.md
+          - S3Q2 · V Pattern: oppe1/2024/sep/set1/2024_sep_1_s3q2.md
+        - Set 2:
+          - oppe1/2024/sep/set2/index.md
+          - S1Q1 · Check Positive Odd or Negative Even: oppe1/2024/sep/set2/2024_sep_2_s1q1.md
+          - S1Q2 · String Within and Has Double Quotes: oppe1/2024/sep/set2/2024_sep_2_s1q2.md
+          - S1Q3 · Replace Middle with N Times Middle: oppe1/2024/sep/set2/2024_sep_2_s1q3.md
+          - S2Q1 · Count Positive Ignoring None: oppe1/2024/sep/set2/2024_sep_2_s2q1.md
+          - S2Q2 · Sum and Abs Diff Alternately: oppe1/2024/sep/set2/2024_sep_2_s2q2.md
+          - S3Q1 · Matrix Walk: oppe1/2024/sep/set2/2024_sep_2_s3q1.md
+          - S3Q2 · X Pattern: oppe1/2024/sep/set2/2024_sep_2_s3q2.md
         - Set 3:
           - oppe1/2024/sep/set3/index.md
-          - S1P2 · Date Format Conversion: oppe1/2024/sep/set3/s1p2.md
-          - S1P3 · Increment Dict with Limit: oppe1/2024/sep/set3/s1p3.md
-          - S2P1 · Last Uppercase Word: oppe1/2024/sep/set3/s2p1.md
-          - S2P2 · Swap & Reverse Lines: oppe1/2024/sep/set3/s2p2.md
-          - S3P2 · Centered Triangle: oppe1/2024/sep/set3/s3p2.md
+          - S1Q1 · Divisible by Exactly One: oppe1/2024/sep/set3/2024_sep_3_s1q1.md
+          - S1Q2 · Date mm-dd-yy to yy-dd-mm: oppe1/2024/sep/set3/2024_sep_3_s1q2.md
+          - S1Q3 · Increment Dict Value with Limit: oppe1/2024/sep/set3/2024_sep_3_s1q3.md
+          - S2Q1 · Last Uppercase Word: oppe1/2024/sep/set3/2024_sep_3_s2q1.md
+          - S2Q2 · Swap and Reverse Alternate Lines: oppe1/2024/sep/set3/2024_sep_3_s2q2.md
+          - S3Q1 · Word Filters: oppe1/2024/sep/set3/2024_sep_3_s3q1.md
+          - S3Q2 · N Pattern: oppe1/2024/sep/set3/2024_sep_3_s3q2.md
     - 2025:
       - oppe1/2025/index.md
       - January:

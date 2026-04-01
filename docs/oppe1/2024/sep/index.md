@@ -5,24 +5,21 @@ This section covers all three exam sets from the **September 2024 OPPE 1**. Each
 <div class="pb-set-grid">
 
 <a class="pb-set-card" href="set1/">
-<div class="pb-set-card-label">Set 1</div>
 <h3>2024 Sep - Set 1</h3>
 <p>Problems from Set 1 of the September 2024 exam.</p>
-<span class="pb-badge pb-badge-soon">Coming soon</span>
+<span class="pb-badge pb-badge-done">Solved </span>
 </a>
 
 <a class="pb-set-card" href="set2/">
-<div class="pb-set-card-label">Set 2</div>
 <h3>2024 Sep - Set 2</h3>
 <p>Problems from Set 2 of the September 2024 exam.</p>
-<span class="pb-badge pb-badge-soon">Coming soon</span>
+<span class="pb-badge pb-badge-done">Solved </span>
 </a>
 
 <a class="pb-set-card" href="set3/">
-<div class="pb-set-card-label">Set 3</div>
 <h3>2024 Sep - Set 3</h3>
-<p>Five fully worked problems - S1P2, S1P3, S2P1, S2P2, S3P2.</p>
-<span class="pb-badge pb-badge-done">5 problems </span>
+<p>Problems from Set 3 of the September 2024 exam.</p>
+<span class="pb-badge pb-badge-done">Solved </span>
 </a>
 
 </div>
