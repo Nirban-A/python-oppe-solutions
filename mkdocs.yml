@@ -75,9 +75,11 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/Nirban-A/Python_Buddy_2026T3
+      link: https://github.com/Nirban-A/python-oppe-solutions
       name: GitHub Repository
-
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/itsanirban
+      name: LinkedIn
 nav:
   - Home: index.md
   - OPPE 1:

@@ -152,9 +152,9 @@ python-oppe-solutions/
             ├── index.md
             ├── jan/
             │   ├── index.md
-            │   ├── set1/    complete
-            │   ├── set2/    complete
-            │   └── set3/    complete
+            │   ├── set1/    
+            │   ├── set2/    
+            │   └── set3/    
             ├── may/
             │   ├── index.md
             │   ├── set1/
