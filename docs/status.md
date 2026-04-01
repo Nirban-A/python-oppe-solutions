@@ -11,16 +11,17 @@ Current completion status of all exam sets across OPPE 1 and OPPE 2.
 <div class="pb-set-grid">
 
 <a class="pb-set-card" href="../oppe1/2025/jan/">
-<div class="pb-set-card-label">January 2025</div>
-<h3>January</h3>
-<span class="pb-badge pb-badge-done"> Set 1 </span>
-<span class="pb-badge pb-badge-done"> Set 2 </span>
-<span class="pb-badge pb-badge-done"> Set 3 </span>
+<h3>January 2025</h3>
+<span class="pb-badge pb-badge-done"> Set 1 - 5 </span>
 </a>
 
-<a class="pb-set-card" href="">
-<div class="pb-set-card-label">2025</div>
-<h3>May Sept</h3>
+<a class="pb-set-card" href="../oppe1/2025/may/">
+<h3>May 2025</h3>
+<span class="pb-badge pb-badge-done"> Set 1 - 5 </span>
+</a>
+
+<a class="pb-set-card" href="../oppe1/2025/sep/">
+<h3>September 2025</h3>
 <span class="pb-badge pb-badge-soon"> Coming soon</span>
 </a>
 
@@ -64,13 +65,11 @@ Current completion status of all exam sets across OPPE 1 and OPPE 2.
 
 | Exam | Session | Set | Status |
 |------|---------|-----|--------|
-| OPPE 1 | 2025 Jan | Set 1 | ✅ Complete (7/7) |
-| OPPE 1 | 2025 Jan | Set 2 | ✅ Complete (7/7) |
-| OPPE 1 | 2025 Jan | Set 3 | ✅ Complete (7/7) |
-| OPPE 1 | 2024 Jan | All sets | 🔜 Coming soon |
-| OPPE 1 | 2024 May | All sets | 🔜 Coming soon |
-| OPPE 1 | 2024 Sep | All sets | 🔜 Coming soon |
-| OPPE 1 | 2025 May | All sets | 🔜 Coming soon |
-| OPPE 1 | 2025 Sep | All sets | 🔜 Coming soon |
-| OPPE 2 | All | All sets | 🔜 Coming soon |
+| OPPE 1 | 2025 Jan | All 3 Sets | ✅ Complete (7/7) |
+| OPPE 1 | 2025 May | All 5 Sets | ✅ Complete (7/7) |
+| OPPE 1 | 2024 Jan | All Sets | 🔜 Coming soon |
+| OPPE 1 | 2024 May | All Sets | 🔜 Coming soon |
+| OPPE 1 | 2024 Sep | All Sets | 🔜 Coming soon |
+| OPPE 1 | 2025 Sep | All Sets | 🔜 Coming soon |
+| OPPE 2 | All | All Sets | 🔜 Coming soon |
 </div>

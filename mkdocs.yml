@@ -1,8 +1,8 @@
 site_name: Python OPPE Solutions
 site_description: Exam-prep companion for Python - walkthrough solutions, key concepts, and downloadable slides.
 site_url: https://github.com/Nirban-A/python-oppe-solutions/
-repo_url: https://github.com/Nirban-A/Python_Buddy_2026T3
-repo_name: Python_Buddy_2026T3
+repo_url: https://github.com/Nirban-A/python-oppe-solutions
+repo_name: python-oppe-solutions
 edit_uri: ""
 
 theme:
@@ -133,6 +133,51 @@ nav:
 
       - May:
         - oppe1/2025/may/index.md
+        - Set 1:
+          - oppe1/2025/may/set1/index.md
+          - S1Q1 · Describe Number Based on Divisibility: oppe1/2025/may/set1/2025_may_1_s1q1.md
+          - S1Q2 · Card to Value Tuple: oppe1/2025/may/set1/2025_may_1_s1q2.md
+          - S1Q3 · Rotate Even Indices: oppe1/2025/may/set1/2025_may_1_s1q3.md
+          - S2Q1 · Unique Sum Pairs: oppe1/2025/may/set1/2025_may_1_s2q1.md
+          - S2Q2 · Replace Consonants with Hash: oppe1/2025/may/set1/2025_may_1_s2q2.md
+          - S3Q1 · Text Frequency Analysis: oppe1/2025/may/set1/2025_may_1_s3q1.md
+          - S3Q2 · Draw Arrow Trail: oppe1/2025/may/set1/2025_may_1_s3q2.md
+        - Set 2:
+          - oppe1/2025/may/set2/index.md
+          - S1Q1 · Even or Divisible by 5: oppe1/2025/may/set2/2025_may_2_s1q1.md
+          - S1Q2 · Deinterleave Even and Odd Indices: oppe1/2025/may/set2/2025_may_2_s1q2.md
+          - S1Q3 · Make Dictionary from Elements in Index: oppe1/2025/may/set2/2025_may_2_s1q3.md
+          - S2Q1 · Count Unique Even and Odd Numbers: oppe1/2025/may/set2/2025_may_2_s2q1.md
+          - S2Q2 · Vowel Count of Words: oppe1/2025/may/set2/2025_may_2_s2q2.md
+          - S3Q1 · Student Score Filter: oppe1/2025/may/set2/2025_may_2_s3q1.md
+          - S3Q2 · W Pattern: oppe1/2025/may/set2/2025_may_2_s3q2.md
+        - Set 3:
+          - oppe1/2025/may/set3/index.md
+          - S1Q1 · Decreasing 4-Digit Number: oppe1/2025/may/set3/2025_may_3_s1q1.md
+          - S1Q2 · Parse Equation and Solve for x: oppe1/2025/may/set3/2025_may_3_s1q2.md
+          - S1Q3 · Divide Into Almost Equal Parts: oppe1/2025/may/set3/2025_may_3_s1q3.md
+          - S2Q1 · Compute Polynomial Value: oppe1/2025/may/set3/2025_may_3_s2q1.md
+          - S2Q2 · Update Todo List: oppe1/2025/may/set3/2025_may_3_s2q2.md
+          - S3Q1 · Batsman Performance Analysis: oppe1/2025/may/set3/2025_may_3_s3q1.md
+          - S3Q2 · Horizontal Bar Chart: oppe1/2025/may/set3/2025_may_3_s3q2.md
+        - Set 4:
+          - oppe1/2025/may/set4/index.md
+          - S1Q1 · Double First and Last Elements: oppe1/2025/may/set4/2025_may_4_s1q1.md
+          - S1Q2 · Extract Email Username: oppe1/2025/may/set4/2025_may_4_s1q2.md
+          - S1Q3 · Four Digit Shuffle: oppe1/2025/may/set4/2025_may_4_s1q3.md
+          - S2Q1 · Uppercase Even Index Words: oppe1/2025/may/set4/2025_may_4_s2q1.md
+          - S2Q2 · Chess Notation Piece Names: oppe1/2025/may/set4/2025_may_4_s2q2.md
+          - S3Q1 · YouTube Video Engagement Analysis: oppe1/2025/may/set4/2025_may_4_s3q1.md
+          - S3Q2 · Format Tic-Tac-Toe Board: oppe1/2025/may/set4/2025_may_4_s3q2.md
+        - Set 5:
+          - oppe1/2025/may/set5/index.md
+          - S1Q1 · Position of Point Relative to Line: oppe1/2025/may/set5/2025_may_5_s1q1.md
+          - S1Q2 · Expand Sum of Products: oppe1/2025/may/set5/2025_may_5_s1q2.md
+          - S1Q3 · Repeat Second Half of a Tuple: oppe1/2025/may/set5/2025_may_5_s1q3.md
+          - S2Q1 · Excel Column to Index: oppe1/2025/may/set5/2025_may_5_s2q1.md
+          - S2Q2 · Reverse Vowel Order: oppe1/2025/may/set5/2025_may_5_s2q2.md
+          - S3Q1 · Chess Game Analysis: oppe1/2025/may/set5/2025_may_5_s3q1.md
+          - S3Q2 · Visualize Pattern Lock: oppe1/2025/may/set5/2025_may_5_s3q2.md
       - September:
         - oppe1/2025/sep/index.md
 

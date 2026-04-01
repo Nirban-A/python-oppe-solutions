@@ -3,31 +3,26 @@
 <div class="pb-set-grid">
 
 <a class="pb-set-card" href="jan/">
-<div class="pb-set-card-label">January 2025</div>
-<h3>January</h3>
-<p>Three exam sets from the January 2025 session. Set 3 is fully worked.</p>
+<h3>January 2025</h3>
+<p>Three exam sets from the January 2025 session.</p>
 <span class="pb-badge pb-badge-done">Set 1</span>
 <span class="pb-badge pb-badge-done">Set 2</span>
 <span class="pb-badge pb-badge-done">Set 3</span>
 </a>
 
 <a class="pb-set-card" href="may/">
-<div class="pb-set-card-label">May 2025</div>
-<h3>May</h3>
+<h3>May 2025</h3>
 <p>Three exam sets from the May 2025 session.</p>
 <span class="pb-badge pb-badge-done">Set 1</span>
 <span class="pb-badge pb-badge-done">Set 2</span>
 <span class="pb-badge pb-badge-done">Set 3</span>
-<span class="pb-badge pb-badge-soon">Coming soon</span>
+<span class="pb-badge pb-badge-done">Set 4</span>
+<span class="pb-badge pb-badge-done">Set 5</span>
 </a>
 
 <a class="pb-set-card" href="sep/">
-<div class="pb-set-card-label">September 2025</div>
-<h3>September</h3>
+<h3>September 2025</h3>
 <p>Three exam sets from the September 2025 session.</p>
-<span class="pb-badge pb-badge-done">Set 1</span>
-<span class="pb-badge pb-badge-done">Set 2</span>
-<span class="pb-badge pb-badge-done">Set 3</span>
 <span class="pb-badge pb-badge-soon">Coming soon</span>
 </a>
 
