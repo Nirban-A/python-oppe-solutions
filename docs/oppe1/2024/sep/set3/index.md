@@ -1,4 +1,4 @@
-# 2024 Sep OPPE 1 — Set 3
+# 2024 Sep OPPE 1 - Set 3
 
 <div class="pb-set-grid">
 
@@ -33,21 +33,21 @@
 <a class="pb-set-card" href="2024_sep_3_s2q2/">
 <div class="pb-set-card-label">Section 2 · Question 2</div>
 <h3>Swap and Reverse Alternate Lines</h3>
-<p>Swap consecutive line pairs and reverse the first of each pair. Full I/O — covers lookahead buffering and <code>[::-1]</code>.</p>
+<p>Swap consecutive line pairs and reverse the first of each pair. Full I/O - covers lookahead buffering and <code>[::-1]</code>.</p>
 <span class="pb-badge pb-badge-done">Solved </span>
 </a>
 
 <a class="pb-set-card" href="2024_sep_3_s3q1/">
 <div class="pb-set-card-label">Section 3 · Question 1</div>
 <h3>Word Filters</h3>
-<p>Filter words by four criteria — continuous, vowel-rich, consonant-rich, sorted. Covers lambda dispatch dicts and vowel/consonant counting.</p>
+<p>Filter words by four criteria - continuous, vowel-rich, consonant-rich, sorted. Covers lambda dispatch dicts and vowel/consonant counting.</p>
 <span class="pb-badge pb-badge-done">Solved </span>
 </a>
 
 <a class="pb-set-card" href="2024_sep_3_s3q2/">
 <div class="pb-set-card-label">Section 3 · Question 2</div>
 <h3>N Pattern</h3>
-<p>Print an N-shape with <code>|</code> bars and a diagonal <code>\</code>. Full I/O — covers the diagonal position formula and backslash escaping.</p>
+<p>Print an N-shape with <code>|</code> bars and a diagonal <code>\</code>. Full I/O - covers the diagonal position formula and backslash escaping.</p>
 <span class="pb-badge pb-badge-done">Solved </span>
 </a>
 
