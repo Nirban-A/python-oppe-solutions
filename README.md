@@ -133,6 +133,13 @@ python-oppe-solutions/
         ├── index.md
         ├── 2024/
         │   ├── index.md
+        │   └── sep/
+        │       ├── index.md
+        │       ├── set1/
+        │       ├── set2/
+        │       └── set3/
+        ├── 2025/
+        │   ├── index.md
         │   ├── jan/
         │   │   ├── index.md
         │   │   ├── set1/
@@ -142,29 +149,15 @@ python-oppe-solutions/
         │   │   ├── index.md
         │   │   ├── set1/
         │   │   ├── set2/
-        │   │   └── set3/
-        │   └── sep/
-        │       ├── index.md
-        │       ├── set1/
-        │       ├── set2/
         │       └── set3/
-        └── 2025/
+        └── 2026/
             ├── index.md
             ├── jan/
             │   ├── index.md
             │   ├── set1/    
             │   ├── set2/    
             │   └── set3/    
-            ├── may/
-            │   ├── index.md
-            │   ├── set1/
-            │   ├── set2/
-            │   └── set3/
-            └── sep/
-                ├── index.md
-                ├── set1/
-                ├── set2/
-                └── set3/
+
 ```
 
 ---
@@ -173,9 +166,8 @@ python-oppe-solutions/
 
 | Exam | Session | Set | Status |
 |------|---------|-----|--------|
-| OPPE 1 | 2024 Jan/May | All | 🔜 Coming soon |
 | OPPE 1 | 2024 Sep | All | ✅ Complete |
 | OPPE 1 | 2025 Jan | All | ✅ Complete |
 | OPPE 1 | 2025 May | All | ✅ Complete |
-| OPPE 1 | 2025 Sep | All | 🔜 Coming soon |
+| OPPE 1 | 2026 Jan | Set 1 |  Complete |
 | OPPE 2 | All | All | 🔜 Coming soon |
