@@ -15,6 +15,8 @@ Current completion status of all exam sets across OPPE 1 and OPPE 2.
 <span class="pb-badge pb-badge-done"> Set 1 - 3 </span>
 </a>
 
+</div>
+
 ### 2025
 
 <div class="pb-set-grid">
@@ -72,7 +74,7 @@ Current completion status of all exam sets across OPPE 1 and OPPE 2.
 
 ## Summary
 
-<div style="display:flex; justify-content:center;" markdown>
+<div  markdown>
 
 | Exam | Session | Set | Status |
 |------|---------|-----|--------|
@@ -84,4 +86,5 @@ Current completion status of all exam sets across OPPE 1 and OPPE 2.
 | OPPE 1 | 2024 May | All Sets | 🔜 Coming soon |
 | OPPE 1 | 2025 Sep | All Sets | 🔜 Coming soon |
 | OPPE 2 | All | All Sets | 🔜 Coming soon |
+
 </div>
