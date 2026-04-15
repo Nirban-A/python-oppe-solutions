@@ -20,6 +20,11 @@
 <span class="pb-badge pb-badge-done">Solutions</span>
 </a>
 
+<a class="pb-set-card" href="set4/">
+<h3>2026 Jan - Set 4</h3>
+<p>Problems from Set 4 of the January 2026 exam.</p>
+<span class="pb-badge pb-badge-done">Solutions</span>
+</a>
 </div>
 
 !!! note "Slide downloads"

@@ -8,6 +8,7 @@
 <span class="pb-badge pb-badge-done">Set 1</span>
 <span class="pb-badge pb-badge-done">Set 2</span>
 <span class="pb-badge pb-badge-done">Set 3</span>
+<span class="pb-badge pb-badge-done">Set 4</span>
 </a>
 
 
