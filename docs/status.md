@@ -78,7 +78,7 @@ Current completion status of all exam sets across OPPE 1 and OPPE 2.
 
 | Exam | Session | Set | Status |
 |------|---------|-----|--------|
-| OPPE 1 | 2026 Jan | Set 1 | ✅ Complete |
+| OPPE 1 | 2026 Jan | 2 Sets  | ✅ Complete |
 | OPPE 1 | 2025 Jan | All 3 Sets | ✅ Complete |
 | OPPE 1 | 2025 May | All 5 Sets | ✅ Complete |
 | OPPE 1 | 2024 Sep | All 3 Sets | ✅ Complete |
