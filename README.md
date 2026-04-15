@@ -169,5 +169,5 @@ python-oppe-solutions/
 | OPPE 1 | 2024 Sep | All | ✅ Complete |
 | OPPE 1 | 2025 Jan | All | ✅ Complete |
 | OPPE 1 | 2025 May | All | ✅ Complete |
-| OPPE 1 | 2026 Jan | Set 1 |  Complete |
+| OPPE 1 | 2026 Jan | 4 Sets |  Complete |
 | OPPE 2 | All | All | 🔜 Coming soon |
