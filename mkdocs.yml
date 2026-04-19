@@ -245,6 +245,36 @@ nav:
           - S3Q2 · N Pattern: oppe1/2024/sep/set3/2024_sep_3_s3q2.md
   - OPPE 2:
     - oppe2/index.md
+    - 2024:
+      - oppe2/2024/index.md
+      - September:
+        - Set 1:
+          - oppe2/2024/sep/set1/index.md
+          - S1Q1 · Check If Even Two-Digit Number: oppe2/2024/sep/set1/2024_sep_1_s1q1.md
+          - S1Q2 · Check Domain .com or .in: oppe2/2024/sep/set1/2024_sep_1_s1q2.md
+          - S1Q3 · Element in Opposite Halves: oppe2/2024/sep/set1/2024_sep_1_s1q3.md
+          - S2Q1 · Count Odd 3-Digit Numbers: oppe2/2024/sep/set1/2024_sep_1_s2q1.md
+          - S2Q2 · Abbreviate Initials and Sort: oppe2/2024/sep/set1/2024_sep_1_s2q2.md
+          - S3Q1 · Shopping List: oppe2/2024/sep/set1/2024_sep_1_s3q1.md
+          - S3Q2 · Ubbi Dubbi: oppe2/2024/sep/set1/2024_sep_1_s3q2.md
+        - Set 2:
+          - oppe2/2024/sep/set2/index.md
+          - S1Q1 · Check If Number Divides Two Others: oppe2/2024/sep/set2/2024_sep_2_s1q1.md
+          - S1Q2 · Check String Rotation: oppe2/2024/sep/set2/2024_sep_2_s1q2.md
+          - S1Q3 · Find Missing Number: oppe2/2024/sep/set2/2024_sep_2_s1q3.md
+          - S2Q1 · Merge Dictionaries Sum on Conflicts: oppe2/2024/sep/set2/2024_sep_2_s2q1.md
+          - S2Q2 · Most Frequent Numbers: oppe2/2024/sep/set2/2024_sep_2_s2q2.md
+          - S3Q1 · Employee Data Analysis: oppe2/2024/sep/set2/2024_sep_2_s3q1.md
+          - S3Q2 · Reorder Jumbled Lines: oppe2/2024/sep/set2/2024_sep_2_s3q2.md
+        - Set 3:
+          - oppe2/2024/sep/set3/index.md
+          - S1Q1 · Product of Sum and Abs Diff of Digits: oppe2/2024/sep/set3/2024_sep_3_s1q1.md
+          - S1Q2 · Check Divisibility by Last Two Digits: oppe2/2024/sep/set3/2024_sep_3_s1q2.md
+          - S1Q3 · Swap Last Chars in Dict Values: oppe2/2024/sep/set3/2024_sep_3_s1q3.md
+          - S2Q1 · Get Words After "the": oppe2/2024/sep/set3/2024_sep_3_s2q1.md
+          - S2Q2 · Ceil Marks to Nearest Tens: oppe2/2024/sep/set3/2024_sep_3_s2q2.md
+          - S3Q1 · Cartesian Points Processing: oppe2/2024/sep/set3/2024_sep_3_s3q1.md
+          - S3Q2 · Fill First n Blanks: oppe2/2024/sep/set3/2024_sep_3_s3q2.md
   - NPPE:
     - oppe1/nppe/index.md
     - S1Q1 · Position of Point Relative to Line: oppe1/2025/may/set5/2025_may_5_s1q1.md
