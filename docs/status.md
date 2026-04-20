@@ -61,16 +61,27 @@ Current completion status of all exam sets across OPPE 1 and OPPE 2.
 
 <div class="pb-set-grid">
 
-<a class="pb-set-card" href="../oppe2/">
-<h3>All Sessions</h3>
-<p>Content for OPPE 2 has not been started yet.</p>
-<span class="pb-badge pb-badge-soon">Coming soon</span>
+<a class="pb-set-card" href="../oppe2/2025/jan/">
+<div class="pb-set-card-label">2025</div>
+<h3>January 2025 </h3>
+<span class="pb-badge pb-badge-done"> Set 1 - 3 </span>
+</a>
+
+<a class="pb-set-card" href="../oppe2/2025/may/">
+<div class="pb-set-card-label">2025</div>
+<h3>May 2025 </h3>
+<span class="pb-badge pb-badge-done"> Set 1 - 3 </span>
+</a>
+
+<a class="pb-set-card" href="../oppe2/2024/sep/">
+<div class="pb-set-card-label">2024</div>
+<h3>September 2024</h3>
+<span class="pb-badge pb-badge-done"> Set 1 - 3 </span>
 </a>
 
 </div>
 
-
-
+---
 
 ## Summary
 
@@ -82,7 +93,7 @@ Current completion status of all exam sets across OPPE 1 and OPPE 2.
 | OPPE 1 | 2025 Jan | 3 Sets | ✅ Complete |
 | OPPE 1 | 2025 May | 5 Sets | ✅ Complete |
 | OPPE 1 | 2024 Sep | 3 Sets | ✅ Complete |
-| OPPE 2 | 2024 Sep | 3 Sets | ✅ Complete  |
+| OPPE 2 | 2024 Sep | 3 Sets | ✅ Complete |
 | OPPE 2 | 2025 Jan | 3 Sets | ✅ Complete |
 | OPPE 2 | 2025 May | 3 Sets | ✅ Complete |
 

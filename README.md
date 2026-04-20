@@ -166,8 +166,10 @@ python-oppe-solutions/
 
 | Exam | Session | Set | Status |
 |------|---------|-----|--------|
-| OPPE 1 | 2024 Sep | All | ✅ Complete |
-| OPPE 1 | 2025 Jan | All | ✅ Complete |
-| OPPE 1 | 2025 May | All | ✅ Complete |
-| OPPE 1 | 2026 Jan | 4 Sets |  Complete |
-| OPPE 2 | All | All | 🔜 Coming soon |
+| OPPE 1 | 2026 Jan | 4 Sets | 
+| OPPE 1 | 2025 Jan | 3 Sets | 
+| OPPE 1 | 2025 May | 5 Sets | 
+| OPPE 1 | 2024 Sep | 3 Sets |
+| OPPE 2 | 2024 Sep | 3 Sets | 
+| OPPE 2 | 2025 Jan | 3 Sets |
+| OPPE 2 | 2025 May | 3 Sets |
