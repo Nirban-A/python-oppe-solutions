@@ -1,4 +1,4 @@
-# OPPE 2 - September 2024 Sep
+# OPPE 2 - September 2024
 
 <div class="pb-set-grid">
 
