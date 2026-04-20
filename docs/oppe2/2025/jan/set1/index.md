@@ -1,4 +1,4 @@
-# 2025 Jan OPPE 2 — Set 1
+# 2025 Jan OPPE 2 - Set 1
 
 <div class="pb-set-grid">
 
@@ -18,7 +18,7 @@
 
 <a class="pb-set-card" href="2025_jan_1_s1q3/">
 <div class="pb-set-card-label">Section 1 · Question 3</div>
-<h3>Rearrange Tuple — Middle Elements to Ends</h3>
+<h3>Rearrange Tuple - Middle Elements to Ends</h3>
 <p>Place the two middle elements of an even-length tuple at the start and end. Covers middle-index formula <code>n//2-1</code> and <code>n//2</code>, single-element tuple syntax <code>(x,)</code>, and the <code>pop()</code> index-shift trick.</p>
 <span class="pb-badge pb-badge-done">Solved</span>
 </a>
@@ -33,21 +33,21 @@
 <a class="pb-set-card" href="2025_jan_1_s2q2/">
 <div class="pb-set-card-label">Section 2 · Question 2</div>
 <h3>Thresholding a 2D Array with * and @</h3>
-<p>Replace each pixel with <code>@</code> (≥ threshold) or <code>*</code>. Full I/O — covers ternary expression in a generator, <code>" ".join()</code> for no trailing space, and row-by-row processing.</p>
+<p>Replace each pixel with <code>@</code> (≥ threshold) or <code>*</code>. Full I/O - covers ternary expression in a generator, <code>" ".join()</code> for no trailing space, and row-by-row processing.</p>
 <span class="pb-badge pb-badge-done">Solved</span>
 </a>
 
 <a class="pb-set-card" href="2025_jan_1_s3q1/">
 <div class="pb-set-card-label">Section 3 · Question 1</div>
 <h3>Railway Ticket Booking Analysis</h3>
-<p>Four operations on nested booking data — ticket prices, total revenue, berth preference counts, coach type counts. Covers pre-initialising with zeros, <code>None</code> as a dict key, and <code>ticket_rate × passengers</code>.</p>
+<p>Four operations on nested booking data - ticket prices, total revenue, berth preference counts, coach type counts. Covers pre-initialising with zeros, <code>None</code> as a dict key, and <code>ticket_rate × passengers</code>.</p>
 <span class="pb-badge pb-badge-done">Solved</span>
 </a>
 
 <a class="pb-set-card" href="2025_jan_1_s3q2/">
 <div class="pb-set-card-label">Section 3 · Question 2</div>
 <h3>String Rearrangement</h3>
-<p>Rearrange each string's characters using 1-based index instructions from a file. File I/O → stdout — covers <code>parts[0]</code> vs <code>parts[1:]</code>, 1-to-0 index conversion, and blank line guarding.</p>
+<p>Rearrange each string's characters using 1-based index instructions from a file. File I/O → stdout - covers <code>parts[0]</code> vs <code>parts[1:]</code>, 1-to-0 index conversion, and blank line guarding.</p>
 <span class="pb-badge pb-badge-done">Solved</span>
 </a>
 

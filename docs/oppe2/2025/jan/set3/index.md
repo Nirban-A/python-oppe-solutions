@@ -1,4 +1,4 @@
-# 2025 Jan OPPE 2 — Set 3
+# 2025 Jan OPPE 2 - Set 3
 
 <div class="pb-set-grid">
 
@@ -33,21 +33,21 @@
 <a class="pb-set-card" href="2025_jan_3_s2q2/">
 <div class="pb-set-card-label">Section 2 · Question 2</div>
 <h3>Hand Cricket Match Runs</h3>
-<p>Simulate a hand cricket innings with two out conditions. Full I/O — covers tracking <code>prev_bat</code> across balls, the <code>bat==0</code> bowler-runs rule, and counting the out ball.</p>
+<p>Simulate a hand cricket innings with two out conditions. Full I/O - covers tracking <code>prev_bat</code> across balls, the <code>bat==0</code> bowler-runs rule, and counting the out ball.</p>
 <span class="pb-badge pb-badge-done">Solved</span>
 </a>
 
 <a class="pb-set-card" href="2025_jan_3_s3q1/">
 <div class="pb-set-card-label">Section 3 · Question 1</div>
 <h3>Polygon Analysis</h3>
-<p>Four geometric functions — perimeter, bounding box, area (Shoelace), and convexity check. Covers modular indexing <code>% n</code>, <code>det_2x2</code>, <code>zcross</code>, and the Shoelace formula.</p>
+<p>Four geometric functions - perimeter, bounding box, area (Shoelace), and convexity check. Covers modular indexing <code>% n</code>, <code>det_2x2</code>, <code>zcross</code>, and the Shoelace formula.</p>
 <span class="pb-badge pb-badge-done">Solved</span>
 </a>
 
 <a class="pb-set-card" href="2025_jan_3_s3q2/">
 <div class="pb-set-card-label">Section 3 · Question 2</div>
 <h3>Total Size of Image Files</h3>
-<p>Sum file sizes for image extensions from a comma-separated file. File I/O → stdout — covers <code>rsplit(".", 1)</code>, <code>.lower()</code> for case-insensitivity, and set membership for O(1) lookup.</p>
+<p>Sum file sizes for image extensions from a comma-separated file. File I/O → stdout - covers <code>rsplit(".", 1)</code>, <code>.lower()</code> for case-insensitivity, and set membership for O(1) lookup.</p>
 <span class="pb-badge pb-badge-done">Solved</span>
 </a>
 
