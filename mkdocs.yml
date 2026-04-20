@@ -296,6 +296,15 @@ nav:
           - S2Q2 · Make Word from Last Characters: oppe2/2025/may/set2/2025_may_2_s2q2.md
           - S3Q1 · Sales Data Analysis: oppe2/2025/may/set2/2025_may_2_s3q1.md
           - S3Q2 · Uppercase Every k-th Vowel: oppe2/2025/may/set2/2025_may_2_s3q2.md
+        - Set 3:
+          - oppe2/2025/may/set3/index.md
+          - S1Q1 · Three-Digit Number with Digit-Sum Divisible by k: oppe2/2025/may/set3/2025_may_3_s1q1.md
+          - S1Q2 · Remove Second and Second-Last Character: oppe2/2025/may/set3/2025_may_3_s1q2.md
+          - S1Q3 · Add Average Key with Absolute Difference Value: oppe2/2025/may/set3/2025_may_3_s1q3.md
+          - S2Q1 · Count Words Matching First/Last Not Second/Second-Last: oppe2/2025/may/set3/2025_may_3_s2q1.md
+          - S2Q2 · Remainder Grouping Dictionary: oppe2/2025/may/set3/2025_may_3_s2q2.md
+          - S3Q1 · Book Reading List Data Analysis: oppe2/2025/may/set3/2025_may_3_s3q1.md
+          - S3Q2 · Column Totals in a Markdown Table: oppe2/2025/may/set3/2025_may_3_s3q2.md
     - 2024:
       - oppe2/2024/index.md
       - September:
