@@ -17,7 +17,7 @@
 <a class="pb-set-card" href="set3/">
 <h3>2025 May - Set 3</h3>
 <p>Problems from Set 3 of the May 2025 exam.</p>
-<span class="pb-badge pb-badge-soon">Solutions</span>
+<span class="pb-badge pb-badge-done">Solutions</span>
 </a>
 
 </div>

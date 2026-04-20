@@ -44,6 +44,13 @@ OPPE 2 covers **Weeks 1–8** of the Programming in Python course. It builds on 
 
 <div class="pb-set-grid">
 
+<a class="pb-set-card" href="2025/">
+<div class="pb-set-card-label">2025</div>
+<h3>OPPE 2 - 2025</h3>
+<p>January, May session</p>
+<span class="pb-badge pb-badge-done">See Solutions</span>
+</a>
+
 <a class="pb-set-card" href="2024/">
 <div class="pb-set-card-label">2024</div>
 <h3>OPPE 2 - 2024</h3>

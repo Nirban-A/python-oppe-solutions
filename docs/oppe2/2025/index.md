@@ -15,7 +15,7 @@
 <p>Three exam sets from the May 2025 session.</p>
 <span class="pb-badge pb-badge-done">Set 1</span>
 <span class="pb-badge pb-badge-done">Set 2</span>
-<span class="pb-badge pb-badge-soon">Set 3</span>
+<span class="pb-badge pb-badge-done">Set 3</span>
 </a>
 
 <a class="pb-set-card" href="sep/">
