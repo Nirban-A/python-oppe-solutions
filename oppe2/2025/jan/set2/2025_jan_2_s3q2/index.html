@@ -5969,7 +5969,7 @@
   <span class="md-ellipsis">
     
   
-    S1Q3 · Rearrange Tuple — Middle to Ends
+    S1Q3 · Rearrange Tuple - Middle to Ends
   
 
     
@@ -8607,7 +8607,7 @@
 </span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>            <span class="nb">print</span><span class="p">(</span><span class="n">stemmed</span><span class="p">)</span>
 </span></code></pre></div>
 <p><strong>Key rules:</strong>
-- Try suffixes in order — remove the <strong>first</strong> match only
+- Try suffixes in order - remove the <strong>first</strong> match only
 - If no suffix matches, keep the word unchanged
 - Preserve line structure: words on the same line stay on the same line
 - Skip blank lines</p>
@@ -8623,7 +8623,7 @@
 <h2 id="understanding-the-stemming-rule">Understanding the stemming rule<a class="headerlink" href="#understanding-the-stemming-rule" title="Permanent link">&para;</a></h2>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">suffixes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;wards&#39;</span><span class="p">,</span> <span class="s1">&#39;ations&#39;</span><span class="p">,</span> <span class="s1">&#39;ation&#39;</span><span class="p">,</span> <span class="s1">&#39;tions&#39;</span><span class="p">,</span> <span class="s1">&#39;tion&#39;</span><span class="p">,</span> <span class="o">...</span><span class="p">]</span>
 </span></code></pre></div>
-<p>For a given word, scan the suffix list from left to right. Remove the <strong>first</strong> suffix found. Stop after one removal — don't chain.</p>
+<p>For a given word, scan the suffix list from left to right. Remove the <strong>first</strong> suffix found. Stop after one removal - don't chain.</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>&quot;education&quot;  → matches &quot;ation&quot; (index 2)  → &quot;educ&quot;
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>&quot;nations&quot;    → matches &quot;ations&quot; (index 1) → &quot;n&quot;
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>&quot;running&quot;    → matches &quot;ing&quot; (index 29)   → &quot;runn&quot;
@@ -8681,7 +8681,7 @@
 </span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>    <span class="k">for</span> <span class="n">suffix</span> <span class="ow">in</span> <span class="n">suffixes</span><span class="p">:</span>
 </span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>        <span class="k">if</span> <span class="n">word</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="n">suffix</span><span class="p">):</span>
 </span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>            <span class="k">return</span> <span class="n">word</span><span class="p">[:</span><span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="n">suffix</span><span class="p">)]</span>   <span class="c1"># strip the suffix</span>
-</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>    <span class="k">return</span> <span class="n">word</span>                           <span class="c1"># no match — return unchanged</span>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>    <span class="k">return</span> <span class="n">word</span>                           <span class="c1"># no match - return unchanged</span>
 </span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>
 </span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
 </span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
@@ -8756,19 +8756,19 @@
 
 <div class="pb-card">
 <div class="pb-card-num">01</div>
-<h4>First match wins — stop after one removal</h4>
+<h4>First match wins - stop after one removal</h4>
 <p>Scan suffixes in order; <code>return word[:-len(suffix)]</code> exits immediately on the first match. Without the early return, a longer suffix that appears earlier in the list might be skipped in favour of a shorter one that also matches.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">02</div>
 <h4>line.split() handles multiple spaces and blank lines</h4>
-<p><code>line.split()</code> without arguments splits on any whitespace and ignores leading/trailing spaces. It returns an empty list for blank lines — checking <code>if words:</code> before printing skips them cleanly.</p>
+<p><code>line.split()</code> without arguments splits on any whitespace and ignores leading/trailing spaces. It returns an empty list for blank lines - checking <code>if words:</code> before printing skips them cleanly.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">03</div>
-<h4>next(generator, default) — clean first-match pattern</h4>
+<h4>next(generator, default) - clean first-match pattern</h4>
 <p><code>next((s for s in suffixes if word.endswith(s)), None)</code> returns the first matching suffix or <code>None</code>. Paired with a conditional strip, it replaces an explicit loop with a single expression.</p>
 </div>
 
@@ -8825,13 +8825,13 @@
         
         
           
-          <a href="../../set3/" class="md-footer__link md-footer__link--next" aria-label="Next: 2025 Jan OPPE 2 — Set 3">
+          <a href="../../set3/" class="md-footer__link md-footer__link--next" aria-label="Next: 2025 Jan OPPE 2 - Set 3">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                2025 Jan OPPE 2 — Set 3
+                2025 Jan OPPE 2 - Set 3
               </div>
             </div>
             <div class="md-footer__button md-icon">

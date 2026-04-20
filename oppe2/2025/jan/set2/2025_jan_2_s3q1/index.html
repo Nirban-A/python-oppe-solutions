@@ -5969,7 +5969,7 @@
   <span class="md-ellipsis">
     
   
-    S1Q3 · Rearrange Tuple — Middle to Ends
+    S1Q3 · Rearrange Tuple - Middle to Ends
   
 
     
@@ -6409,7 +6409,7 @@
   <a href="#operation-1-total_tasks_completed" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Operation 1 — total_tasks_completed
+        Operation 1 - total_tasks_completed
       
     </span>
   </a>
@@ -6420,7 +6420,7 @@
   <a href="#operation-2-most_efficient_employee" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Operation 2 — most_efficient_employee
+        Operation 2 - most_efficient_employee
       
     </span>
   </a>
@@ -6431,7 +6431,7 @@
   <a href="#operation-3-sort_by_hours_worked" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Operation 3 — sort_by_hours_worked
+        Operation 3 - sort_by_hours_worked
       
     </span>
   </a>
@@ -6442,7 +6442,7 @@
   <a href="#operation-4-productive_team_members" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Operation 4 — productive_team_members
+        Operation 4 - productive_team_members
       
     </span>
   </a>
@@ -8570,7 +8570,7 @@
   <a href="#operation-1-total_tasks_completed" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Operation 1 — total_tasks_completed
+        Operation 1 - total_tasks_completed
       
     </span>
   </a>
@@ -8581,7 +8581,7 @@
   <a href="#operation-2-most_efficient_employee" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Operation 2 — most_efficient_employee
+        Operation 2 - most_efficient_employee
       
     </span>
   </a>
@@ -8592,7 +8592,7 @@
   <a href="#operation-3-sort_by_hours_worked" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Operation 3 — sort_by_hours_worked
+        Operation 3 - sort_by_hours_worked
       
     </span>
   </a>
@@ -8603,7 +8603,7 @@
   <a href="#operation-4-productive_team_members" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Operation 4 — productive_team_members
+        Operation 4 - productive_team_members
       
     </span>
   </a>
@@ -8688,7 +8688,7 @@
 <h2 id="problem-statement">Problem Statement<a class="headerlink" href="#problem-statement" title="Permanent link">&para;</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Problem</p>
-<p>Implement <code>process_employees(employee_list, request)</code> — four analytics operations on a list of employee dicts.</p>
+<p>Implement <code>process_employees(employee_list, request)</code> - four analytics operations on a list of employee dicts.</p>
 </div>
 <p><strong>Sample data:</strong>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">employee_list</span> <span class="o">=</span> <span class="p">[</span>
@@ -8700,12 +8700,12 @@
 </span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">]</span>
 </span></code></pre></div></p>
 <hr />
-<h2 id="operation-1-total_tasks_completed">Operation 1 — <code>total_tasks_completed</code><a class="headerlink" href="#operation-1-total_tasks_completed" title="Permanent link">&para;</a></h2>
+<h2 id="operation-1-total_tasks_completed">Operation 1 - <code>total_tasks_completed</code><a class="headerlink" href="#operation-1-total_tasks_completed" title="Permanent link">&para;</a></h2>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">e</span><span class="p">[</span><span class="s2">&quot;tasks_completed&quot;</span><span class="p">]</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">employee_list</span><span class="p">)</span>
 </span></code></pre></div>
 <p><code>30 + 60 + 60 + 50 + 10 = 210</code> ✓</p>
 <hr />
-<h2 id="operation-2-most_efficient_employee">Operation 2 — <code>most_efficient_employee</code><a class="headerlink" href="#operation-2-most_efficient_employee" title="Permanent link">&para;</a></h2>
+<h2 id="operation-2-most_efficient_employee">Operation 2 - <code>most_efficient_employee</code><a class="headerlink" href="#operation-2-most_efficient_employee" title="Permanent link">&para;</a></h2>
 <p>Efficiency = <code>tasks_completed / hours_worked</code>. Ties → higher <code>tasks_completed</code> wins:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">best</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">employee_list</span><span class="p">,</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>           <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">e</span><span class="p">:</span> <span class="p">(</span><span class="n">e</span><span class="p">[</span><span class="s2">&quot;tasks_completed&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">e</span><span class="p">[</span><span class="s2">&quot;hours_worked&quot;</span><span class="p">],</span>
@@ -8756,7 +8756,7 @@
 </table>
 <p>Most efficient: <strong>Employee 1</strong> ✓</p>
 <hr />
-<h2 id="operation-3-sort_by_hours_worked">Operation 3 — <code>sort_by_hours_worked</code><a class="headerlink" href="#operation-3-sort_by_hours_worked" title="Permanent link">&para;</a></h2>
+<h2 id="operation-3-sort_by_hours_worked">Operation 3 - <code>sort_by_hours_worked</code><a class="headerlink" href="#operation-3-sort_by_hours_worked" title="Permanent link">&para;</a></h2>
 <p>Sort descending by hours; ties broken by descending tasks:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">ranked</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">employee_list</span><span class="p">,</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>                <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">e</span><span class="p">:</span> <span class="p">(</span><span class="o">-</span><span class="n">e</span><span class="p">[</span><span class="s2">&quot;hours_worked&quot;</span><span class="p">],</span> <span class="o">-</span><span class="n">e</span><span class="p">[</span><span class="s2">&quot;tasks_completed&quot;</span><span class="p">]))</span>
@@ -8806,7 +8806,7 @@
 </table>
 <p>Result: <code>[3, 4, 2, 1, 5]</code> ✓</p>
 <hr />
-<h2 id="operation-4-productive_team_members">Operation 4 — <code>productive_team_members</code><a class="headerlink" href="#operation-4-productive_team_members" title="Permanent link">&para;</a></h2>
+<h2 id="operation-4-productive_team_members">Operation 4 - <code>productive_team_members</code><a class="headerlink" href="#operation-4-productive_team_members" title="Permanent link">&para;</a></h2>
 <p>Keep employees with <code>tasks_completed &gt;= 20</code>, in original order:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">return</span> <span class="p">[</span><span class="n">e</span><span class="p">[</span><span class="s2">&quot;employee_id&quot;</span><span class="p">]</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">employee_list</span> <span class="k">if</span> <span class="n">e</span><span class="p">[</span><span class="s2">&quot;tasks_completed&quot;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">20</span><span class="p">]</span>
 </span></code></pre></div>
@@ -8898,13 +8898,13 @@
 <div class="pb-card">
 <div class="pb-card-num">02</div>
 <h4>Tuple key for multi-criteria max/sort</h4>
-<p>For <code>most_efficient_employee</code>, the key <code>(ratio, tasks)</code> handles both criteria — ratio is compared first; only when ratios are equal does <code>tasks</code> break the tie. One <code>max()</code> call handles everything.</p>
+<p>For <code>most_efficient_employee</code>, the key <code>(ratio, tasks)</code> handles both criteria - ratio is compared first; only when ratios are equal does <code>tasks</code> break the tie. One <code>max()</code> call handles everything.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">03</div>
-<h4>productive_team_members — preserve original order</h4>
-<p>The problem asks for employees "in the order they are present in the list". A simple list comprehension with <code>if e["tasks_completed"] >= 20</code> filters without sorting — original order is preserved.</p>
+<h4>productive_team_members - preserve original order</h4>
+<p>The problem asks for employees "in the order they are present in the list". A simple list comprehension with <code>if e["tasks_completed"] >= 20</code> filters without sorting - original order is preserved.</p>
 </div>
 
 </div>

@@ -5969,7 +5969,7 @@
   <span class="md-ellipsis">
     
   
-    S1Q3 · Rearrange Tuple — Middle to Ends
+    S1Q3 · Rearrange Tuple - Middle to Ends
   
 
     
@@ -8676,7 +8676,7 @@
 </span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="n">words</span> <span class="o">=</span> <span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
 </span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="k">return</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">itemgetter</span><span class="p">(</span><span class="o">*</span><span class="n">order</span><span class="p">)(</span><span class="n">words</span><span class="p">))</span>
 </span></code></pre></div>
-<p><code>itemgetter(*order)(words)</code> selects multiple items from <code>words</code> by their indices in one call — returns a tuple of the selected words.</p>
+<p><code>itemgetter(*order)(words)</code> selects multiple items from <code>words</code> by their indices in one call - returns a tuple of the selected words.</p>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">shuffle_sentence</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">sentence</span><span class="p">,</span> <span class="n">order</span><span class="p">:</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
@@ -8692,20 +8692,20 @@
 
 <div class="pb-card">
 <div class="pb-card-num">01</div>
-<h4>split() + join() — the standard word-shuffle pattern</h4>
+<h4>split() + join() - the standard word-shuffle pattern</h4>
 <p><code>sentence.split()</code> breaks the sentence into a list of words. Indexing by the order tuple selects them in the new arrangement. <code>" ".join()</code> reassembles them into a string.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">02</div>
 <h4>Order is 0-based</h4>
-<p>The order tuple uses 0-based indices — <code>0</code> = first word, <code>1</code> = second, <code>2</code> = third. No subtraction needed since Python list indexing is already 0-based.</p>
+<p>The order tuple uses 0-based indices - <code>0</code> = first word, <code>1</code> = second, <code>2</code> = third. No subtraction needed since Python list indexing is already 0-based.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">03</div>
 <h4>Works for any number of words, not just three</h4>
-<p>Although the problem specifies three words, the solution <code>" ".join(words[i] for i in order)</code> generalises to any sentence length — the order tuple drives everything.</p>
+<p>Although the problem specifies three words, the solution <code>" ".join(words[i] for i in order)</code> generalises to any sentence length - the order tuple drives everything.</p>
 </div>
 
 </div>

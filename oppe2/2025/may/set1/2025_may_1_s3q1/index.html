@@ -5967,7 +5967,7 @@
   <span class="md-ellipsis">
     
   
-    S1Q3 · Rearrange Tuple — Middle to Ends
+    S1Q3 · Rearrange Tuple - Middle to Ends
   
 
     
@@ -7073,7 +7073,7 @@
   <a href="#function-1-get_short_books" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Function 1 — get_short_books
+        Function 1 - get_short_books
       
     </span>
   </a>
@@ -7084,7 +7084,7 @@
   <a href="#function-2-get_medium_books" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Function 2 — get_medium_books
+        Function 2 - get_medium_books
       
     </span>
   </a>
@@ -7095,7 +7095,7 @@
   <a href="#function-3-get_pages_by_isbn" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Function 3 — get_pages_by_isbn
+        Function 3 - get_pages_by_isbn
       
     </span>
   </a>
@@ -7106,7 +7106,7 @@
   <a href="#function-4-count_by_language" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Function 4 — count_by_language
+        Function 4 - count_by_language
       
     </span>
   </a>
@@ -7117,7 +7117,7 @@
   <a href="#function-5-total_pages_in_genre_lang" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Function 5 — total_pages_in_genre_lang
+        Function 5 - total_pages_in_genre_lang
       
     </span>
   </a>
@@ -8581,7 +8581,7 @@
   <a href="#function-1-get_short_books" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Function 1 — get_short_books
+        Function 1 - get_short_books
       
     </span>
   </a>
@@ -8592,7 +8592,7 @@
   <a href="#function-2-get_medium_books" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Function 2 — get_medium_books
+        Function 2 - get_medium_books
       
     </span>
   </a>
@@ -8603,7 +8603,7 @@
   <a href="#function-3-get_pages_by_isbn" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Function 3 — get_pages_by_isbn
+        Function 3 - get_pages_by_isbn
       
     </span>
   </a>
@@ -8614,7 +8614,7 @@
   <a href="#function-4-count_by_language" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Function 4 — count_by_language
+        Function 4 - count_by_language
       
     </span>
   </a>
@@ -8625,7 +8625,7 @@
   <a href="#function-5-total_pages_in_genre_lang" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Function 5 — total_pages_in_genre_lang
+        Function 5 - total_pages_in_genre_lang
       
     </span>
   </a>
@@ -8729,14 +8729,14 @@
 </span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="p">]</span>
 </span></code></pre></div></p>
 <hr />
-<h2 id="function-1-get_short_books">Function 1 — <code>get_short_books</code><a class="headerlink" href="#function-1-get_short_books" title="Permanent link">&para;</a></h2>
+<h2 id="function-1-get_short_books">Function 1 - <code>get_short_books</code><a class="headerlink" href="#function-1-get_short_books" title="Permanent link">&para;</a></h2>
 <p>Return ISBNs of books with fewer than 200 pages as a <strong>set</strong>:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_short_books</span><span class="p">(</span><span class="n">book_data</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">set</span><span class="p">:</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="k">return</span> <span class="p">{</span><span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">book_data</span> <span class="k">if</span> <span class="n">b</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">200</span><span class="p">}</span>
 </span></code></pre></div>
 <p>Pages &lt; 200: 150 (✅), 175 (✅), 100 (✅) → <code>{"978-3-16-148410-0", "978-1-60413-970-0", "978-1-56619-909-4"}</code> ✓</p>
 <hr />
-<h2 id="function-2-get_medium_books">Function 2 — <code>get_medium_books</code><a class="headerlink" href="#function-2-get_medium_books" title="Permanent link">&para;</a></h2>
+<h2 id="function-2-get_medium_books">Function 2 - <code>get_medium_books</code><a class="headerlink" href="#function-2-get_medium_books" title="Permanent link">&para;</a></h2>
 <p>Return ISBNs of books with 200–500 pages inclusive as a <strong>set</strong>:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_medium_books</span><span class="p">(</span><span class="n">book_data</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">set</span><span class="p">:</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="k">return</span> <span class="p">{</span><span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">book_data</span> <span class="k">if</span> <span class="mi">200</span> <span class="o">&lt;=</span> <span class="n">b</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">500</span><span class="p">}</span>
@@ -8744,10 +8744,10 @@
 <p>200 ≤ pages ≤ 500: 450, 200, 350, 300, 420, 270 → 6 books ✓</p>
 <div class="admonition insight">
 <p class="admonition-title">540 is excluded</p>
-<p>The book with 540 pages falls in neither short nor medium — it would be "long" (&gt; 500). The 540-page Thriller is excluded from both sets.</p>
+<p>The book with 540 pages falls in neither short nor medium - it would be "long" (&gt; 500). The 540-page Thriller is excluded from both sets.</p>
 </div>
 <hr />
-<h2 id="function-3-get_pages_by_isbn">Function 3 — <code>get_pages_by_isbn</code><a class="headerlink" href="#function-3-get_pages_by_isbn" title="Permanent link">&para;</a></h2>
+<h2 id="function-3-get_pages_by_isbn">Function 3 - <code>get_pages_by_isbn</code><a class="headerlink" href="#function-3-get_pages_by_isbn" title="Permanent link">&para;</a></h2>
 <p>Find the book by ISBN, return its page count or <code>None</code>:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_pages_by_isbn</span><span class="p">(</span><span class="n">book_data</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">isbn</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">book_data</span><span class="p">:</span>
@@ -8757,7 +8757,7 @@
 </span></code></pre></div>
 <p><code>get_pages_by_isbn(books_data, "978-0-7432-7356-5")</code> → 420 ✓</p>
 <hr />
-<h2 id="function-4-count_by_language">Function 4 — <code>count_by_language</code><a class="headerlink" href="#function-4-count_by_language" title="Permanent link">&para;</a></h2>
+<h2 id="function-4-count_by_language">Function 4 - <code>count_by_language</code><a class="headerlink" href="#function-4-count_by_language" title="Permanent link">&para;</a></h2>
 <p>Count books per language:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">count_by_language</span><span class="p">(</span><span class="n">book_data</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="n">counts</span> <span class="o">=</span> <span class="p">{}</span>
@@ -8797,7 +8797,7 @@
 </table>
 <p>→ <code>{"English": 5, "Tamil": 2, "Hindi": 1, "Bengali": 1, "Telugu": 1}</code> ✓</p>
 <hr />
-<h2 id="function-5-total_pages_in_genre_lang">Function 5 — <code>total_pages_in_genre_lang</code><a class="headerlink" href="#function-5-total_pages_in_genre_lang" title="Permanent link">&para;</a></h2>
+<h2 id="function-5-total_pages_in_genre_lang">Function 5 - <code>total_pages_in_genre_lang</code><a class="headerlink" href="#function-5-total_pages_in_genre_lang" title="Permanent link">&para;</a></h2>
 <p>Sum pages for books matching both genre and language:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">total_pages_in_genre_lang</span><span class="p">(</span><span class="n">book_data</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">genre</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">lang</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">book_data</span> <span class="k">if</span> <span class="n">b</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="n">genre</span> <span class="ow">and</span> <span class="n">b</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">lang</span><span class="p">)</span>
@@ -8894,19 +8894,19 @@
 <div class="pb-card">
 <div class="pb-card-num">01</div>
 <h4>Return sets for get_short/medium_books</h4>
-<p>The return type is <code>set</code> — use a set comprehension <code>{b[0] for b in ...}</code>. Sets automatically deduplicate and have faster membership testing than lists.</p>
+<p>The return type is <code>set</code> - use a set comprehension <code>{b[0] for b in ...}</code>. Sets automatically deduplicate and have faster membership testing than lists.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">02</div>
 <h4>next(..., None) for safe ISBN lookup</h4>
-<p><code>next((b[1] for b in book_data if b[0] == isbn), None)</code> returns the page count for the first matching book, or <code>None</code> if no match is found — no explicit loop or try/except needed.</p>
+<p><code>next((b[1] for b in book_data if b[0] == isbn), None)</code> returns the page count for the first matching book, or <code>None</code> if no match is found - no explicit loop or try/except needed.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">03</div>
 <h4>Two-condition filter for total_pages_in_genre_lang</h4>
-<p>Both conditions <code>b[3] == genre and b[2] == lang</code> must hold. Short-circuit <code>and</code> skips the language check if the genre already doesn't match — efficient for data with many genres.</p>
+<p>Both conditions <code>b[3] == genre and b[2] == lang</code> must hold. Short-circuit <code>and</code> skips the language check if the genre already doesn't match - efficient for data with many genres.</p>
 </div>
 
 </div>

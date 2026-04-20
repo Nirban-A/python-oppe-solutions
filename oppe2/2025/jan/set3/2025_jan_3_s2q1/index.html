@@ -5969,7 +5969,7 @@
   <span class="md-ellipsis">
     
   
-    S1Q3 · Rearrange Tuple — Middle to Ends
+    S1Q3 · Rearrange Tuple - Middle to Ends
   
 
     
@@ -8730,20 +8730,20 @@
 
 <div class="pb-card">
 <div class="pb-card-num">01</div>
-<h4>zip(w, w[1:]) — elegant adjacent pair iteration</h4>
-<p><code>zip(w, w[1:])</code> pairs each character with the next one without index arithmetic. It naturally stops one pair before the end — no off-by-one risk.</p>
+<h4>zip(w, w[1:]) - elegant adjacent pair iteration</h4>
+<p><code>zip(w, w[1:])</code> pairs each character with the next one without index arithmetic. It naturally stops one pair before the end - no off-by-one risk.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">02</div>
-<h4>any() short-circuits — stops at first match</h4>
+<h4>any() short-circuits - stops at first match</h4>
 <p><code>any(a==b for a,b in zip(w, w[1:]))</code> stops checking as soon as the first consecutive pair is found. No need to scan the whole word once a match is confirmed.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">03</div>
 <h4>Lowercase for comparison, return original case</h4>
-<p>Apply <code>.lower()</code> only for the comparison — keep the original word in the result list. <code>has_consec(w.lower())</code> checks the lowercased version while the list comprehension appends the original <code>w</code>.</p>
+<p>Apply <code>.lower()</code> only for the comparison - keep the original word in the result list. <code>has_consec(w.lower())</code> checks the lowercased version while the list comprehension appends the original <code>w</code>.</p>
 </div>
 
 </div>

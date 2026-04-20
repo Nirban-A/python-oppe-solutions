@@ -5969,7 +5969,7 @@
   <span class="md-ellipsis">
     
   
-    S1Q3 · Rearrange Tuple — Middle to Ends
+    S1Q3 · Rearrange Tuple - Middle to Ends
   
 
     
@@ -8628,8 +8628,8 @@
 - Both <code>sender</code> and <code>recipient</code> must be in <code>accounts</code>
 - <code>amount &gt;= 0</code> (non-negative)
 - <code>accounts[sender] &gt;= amount</code> (sufficient balance)
-- All three must pass — if any fails, do nothing
-- Returns <code>None</code> — modifies dict in-place</p>
+- All three must pass - if any fails, do nothing
+- Returns <code>None</code> - modifies dict in-place</p>
 </details>
 <hr />
 <h2 id="problem-statement">Problem Statement<a class="headerlink" href="#problem-statement" title="Permanent link">&para;</a></h2>
@@ -8672,7 +8672,7 @@ transfer_amount(accounts, "12345", "67890", 1000)</code></pre>
 <p>If all pass → update. If any fails → do nothing.</p>
 <div class="admonition insight">
 <p class="admonition-title">Check existence before balance</p>
-<p><code>accounts[sender] &gt;= amount</code> would raise a <code>KeyError</code> if sender doesn't exist. Always check <code>sender in accounts</code> first — Python's short-circuit <code>and</code> ensures balance is only checked when the key is known to exist.</p>
+<p><code>accounts[sender] &gt;= amount</code> would raise a <code>KeyError</code> if sender doesn't exist. Always check <code>sender in accounts</code> first - Python's short-circuit <code>and</code> ensures balance is only checked when the key is known to exist.</p>
 </div>
 <hr />
 <h2 id="tracing-all-examples">Tracing all examples<a class="headerlink" href="#tracing-all-examples" title="Permanent link">&para;</a></h2>
@@ -8763,7 +8763,7 @@ transfer_amount(accounts, "12345", "67890", 1000)</code></pre>
 </span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="n">accounts</span><span class="p">[</span><span class="n">sender</span><span class="p">]</span>    <span class="o">-=</span> <span class="n">amount</span>
 </span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>    <span class="n">accounts</span><span class="p">[</span><span class="n">recipient</span><span class="p">]</span> <span class="o">+=</span> <span class="n">amount</span>
 </span></code></pre></div>
-<p>Guard clauses — each invalid condition returns early. The actual transfer only runs if all guards pass.</p>
+<p>Guard clauses - each invalid condition returns early. The actual transfer only runs if all guards pass.</p>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">transfer_amount</span><span class="p">(</span><span class="n">accounts</span><span class="p">,</span> <span class="n">sender</span><span class="p">,</span> <span class="n">recipient</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
@@ -8787,18 +8787,18 @@ transfer_amount(accounts, "12345", "67890", 1000)</code></pre>
 <div class="pb-card">
 <div class="pb-card-num">01</div>
 <h4>Check existence before accessing values</h4>
-<p><code>sender in accounts and accounts[sender] >= amount</code> — the key existence check must come before the balance access. Short-circuit <code>and</code> guarantees the balance is only checked after the key is confirmed to exist.</p>
+<p><code>sender in accounts and accounts[sender] >= amount</code> - the key existence check must come before the balance access. Short-circuit <code>and</code> guarantees the balance is only checked after the key is confirmed to exist.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">02</div>
 <h4>Modify in-place, return None</h4>
-<p>The function updates <code>accounts</code> directly — no new dict is created and nothing is returned. The caller sees the changes through their reference to the same dict object.</p>
+<p>The function updates <code>accounts</code> directly - no new dict is created and nothing is returned. The caller sees the changes through their reference to the same dict object.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">03</div>
-<h4>All conditions must pass — no partial updates</h4>
+<h4>All conditions must pass - no partial updates</h4>
 <p>Either both balances update or neither does. Never deduct from sender without confirming the transfer will complete, or you risk an inconsistent state.</p>
 </div>
 

@@ -5967,7 +5967,7 @@
   <span class="md-ellipsis">
     
   
-    S1Q3 · Rearrange Tuple — Middle to Ends
+    S1Q3 · Rearrange Tuple - Middle to Ends
   
 
     
@@ -8593,7 +8593,7 @@
 <details class="abstract" open="open">
 <summary>⚡ Quick Reference</summary>
 <p><strong>Function:</strong> <code>compute_electricity_bill(units: int) -&gt; float</code></p>
-<p><strong>Core idea:</strong> three-slab billing — each slab has a per-unit rate and an optional fixed charge.</p>
+<p><strong>Core idea:</strong> three-slab billing - each slab has a per-unit rate and an optional fixed charge.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">compute_electricity_bill</span><span class="p">(</span><span class="n">units</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">if</span> <span class="n">units</span> <span class="o">&lt;=</span> <span class="mi">200</span><span class="p">:</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        <span class="n">cost</span> <span class="o">=</span> <span class="n">units</span> <span class="o">*</span> <span class="mf">0.5</span>
@@ -8639,7 +8639,7 @@
 
 <div class="admonition warning">
 <p class="admonition-title">Problem statement error</p>
-<p>The problem states <code>compute_electricity_bill(210) -&gt; 236.50</code>. This is incorrect — no formula consistent with the given rates produces 236.50 for 210 units. The flat-rate formula gives <code>210 × 0.75 + 150 = 307.50</code>. The correct answer for 210 units is <strong>307.50</strong>.</p>
+<p>The problem states <code>compute_electricity_bill(210) -&gt; 236.50</code>. This is incorrect - no formula consistent with the given rates produces 236.50 for 210 units. The flat-rate formula gives <code>210 × 0.75 + 150 = 307.50</code>. The correct answer for 210 units is <strong>307.50</strong>.</p>
 </div>
 <hr />
 <h2 id="tracing-all-examples">Tracing all examples<a class="headerlink" href="#tracing-all-examples" title="Permanent link">&para;</a></h2>
@@ -8718,20 +8718,20 @@
 
 <div class="pb-card">
 <div class="pb-card-num">01</div>
-<h4>if-elif chain — check lower slabs first</h4>
+<h4>if-elif chain - check lower slabs first</h4>
 <p>Since <code>elif units <= 400</code> only runs when <code>units > 200</code> (the first condition already failed), the slabs don't overlap. Always order conditions from lowest to highest slab boundary.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">02</div>
 <h4>Flat rate vs tiered billing</h4>
-<p>This problem uses a <em>flat rate</em> — the rate applies to <em>all</em> units, not just the units above the previous threshold. `210 × 0.75 + 150` charges 0.75 per unit for all 210 units. Tiered billing (like income tax) would only charge 0.75 on the extra 10 units.</p>
+<p>This problem uses a <em>flat rate</em> - the rate applies to <em>all</em> units, not just the units above the previous threshold. `210 × 0.75 + 150` charges 0.75 per unit for all 210 units. Tiered billing (like income tax) would only charge 0.75 on the extra 10 units.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">03</div>
-<h4>Return float — don't truncate</h4>
-<p>The template's <code>return cost</code> suggests the result should be a float. Python arithmetic with <code>0.5</code>, <code>0.75</code>, <code>0.90</code> already produces floats — no explicit conversion needed.</p>
+<h4>Return float - don't truncate</h4>
+<p>The template's <code>return cost</code> suggests the result should be a float. Python arithmetic with <code>0.5</code>, <code>0.75</code>, <code>0.90</code> already produces floats - no explicit conversion needed.</p>
 </div>
 
 </div>
@@ -8770,7 +8770,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2025 May OPPE 2 — Set 1">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2025 May OPPE 2 - Set 1">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -8780,7 +8780,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                2025 May OPPE 2 — Set 1
+                2025 May OPPE 2 - Set 1
               </div>
             </div>
           </a>

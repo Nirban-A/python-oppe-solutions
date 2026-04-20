@@ -5971,7 +5971,7 @@
   <span class="md-ellipsis">
     
   
-    S1Q3 · Rearrange Tuple — Middle to Ends
+    S1Q3 · Rearrange Tuple - Middle to Ends
   
 
     
@@ -6124,7 +6124,7 @@
   <a href="#operation-1-ticket_prices" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Operation 1 — ticket_prices
+        Operation 1 - ticket_prices
       
     </span>
   </a>
@@ -6135,7 +6135,7 @@
   <a href="#operation-2-total_revenue" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Operation 2 — total_revenue
+        Operation 2 - total_revenue
       
     </span>
   </a>
@@ -6146,7 +6146,7 @@
   <a href="#operation-3-berth_preference_count" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Operation 3 — berth_preference_count
+        Operation 3 - berth_preference_count
       
     </span>
   </a>
@@ -6157,7 +6157,7 @@
   <a href="#operation-4-coach_type_count" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Operation 4 — coach_type_count
+        Operation 4 - coach_type_count
       
     </span>
   </a>
@@ -8570,7 +8570,7 @@
   <a href="#operation-1-ticket_prices" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Operation 1 — ticket_prices
+        Operation 1 - ticket_prices
       
     </span>
   </a>
@@ -8581,7 +8581,7 @@
   <a href="#operation-2-total_revenue" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Operation 2 — total_revenue
+        Operation 2 - total_revenue
       
     </span>
   </a>
@@ -8592,7 +8592,7 @@
   <a href="#operation-3-berth_preference_count" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Operation 3 — berth_preference_count
+        Operation 3 - berth_preference_count
       
     </span>
   </a>
@@ -8603,7 +8603,7 @@
   <a href="#operation-4-coach_type_count" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Operation 4 — coach_type_count
+        Operation 4 - coach_type_count
       
     </span>
   </a>
@@ -8693,7 +8693,7 @@
 <h2 id="problem-statement">Problem Statement<a class="headerlink" href="#problem-statement" title="Permanent link">&para;</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Problem</p>
-<p>Implement <code>analyze_bookings(bookings, task)</code> — four analytics operations on nested booking data.</p>
+<p>Implement <code>analyze_bookings(bookings, task)</code> - four analytics operations on nested booking data.</p>
 </div>
 <p><strong>Sample data:</strong>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">bookings</span> <span class="o">=</span> <span class="p">{</span>
@@ -8708,7 +8708,7 @@
 </span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="p">}</span>
 </span></code></pre></div></p>
 <hr />
-<h2 id="operation-1-ticket_prices">Operation 1 — <code>ticket_prices</code><a class="headerlink" href="#operation-1-ticket_prices" title="Permanent link">&para;</a></h2>
+<h2 id="operation-1-ticket_prices">Operation 1 - <code>ticket_prices</code><a class="headerlink" href="#operation-1-ticket_prices" title="Permanent link">&para;</a></h2>
 <p>Total price per PNR = <code>ticket_rate × number of passengers</code>:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">return</span> <span class="p">{</span><span class="n">pnr</span><span class="p">:</span> <span class="n">b</span><span class="p">[</span><span class="s2">&quot;ticket_rate&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="s2">&quot;passengers&quot;</span><span class="p">])</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>        <span class="k">for</span> <span class="n">pnr</span><span class="p">,</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">bookings</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
@@ -8751,13 +8751,13 @@
 </table>
 <p>→ <code>{'PNR112': 1800, 'PNR123': 3000, 'PNR456': 1600, 'PNR789': 1500}</code> ✓</p>
 <hr />
-<h2 id="operation-2-total_revenue">Operation 2 — <code>total_revenue</code><a class="headerlink" href="#operation-2-total_revenue" title="Permanent link">&para;</a></h2>
+<h2 id="operation-2-total_revenue">Operation 2 - <code>total_revenue</code><a class="headerlink" href="#operation-2-total_revenue" title="Permanent link">&para;</a></h2>
 <p>Sum all PNR totals:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="s2">&quot;ticket_rate&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="s2">&quot;passengers&quot;</span><span class="p">])</span> <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">bookings</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
 </span></code></pre></div>
 <p><code>1800 + 3000 + 1600 + 1500 = 7900</code> ✓</p>
 <hr />
-<h2 id="operation-3-berth_preference_count">Operation 3 — <code>berth_preference_count</code><a class="headerlink" href="#operation-3-berth_preference_count" title="Permanent link">&para;</a></h2>
+<h2 id="operation-3-berth_preference_count">Operation 3 - <code>berth_preference_count</code><a class="headerlink" href="#operation-3-berth_preference_count" title="Permanent link">&para;</a></h2>
 <p>Count passengers per berth preference. All 6 types must appear in output (zero if absent):</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">counts</span> <span class="o">=</span> <span class="p">{</span><span class="n">bt</span><span class="p">:</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">bt</span> <span class="ow">in</span> <span class="n">berth_types</span><span class="p">}</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">bookings</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
@@ -8796,7 +8796,7 @@
 </tr>
 <tr>
 <td><code>SL</code></td>
-<td>—</td>
+<td>-</td>
 <td>0</td>
 </tr>
 <tr>
@@ -8808,7 +8808,7 @@
 </table>
 <p>→ <code>{'UB':3, 'MB':2, 'LB':1, 'SU':1, 'SL':0, None:2}</code> ✓</p>
 <hr />
-<h2 id="operation-4-coach_type_count">Operation 4 — <code>coach_type_count</code><a class="headerlink" href="#operation-4-coach_type_count" title="Permanent link">&para;</a></h2>
+<h2 id="operation-4-coach_type_count">Operation 4 - <code>coach_type_count</code><a class="headerlink" href="#operation-4-coach_type_count" title="Permanent link">&para;</a></h2>
 <p>Count total passengers per coach type (only types present in data):</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">counts</span> <span class="o">=</span> <span class="p">{}</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">bookings</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
@@ -8957,12 +8957,12 @@
 <div class="pb-card">
 <div class="pb-card-num">02</div>
 <h4>None is a valid dictionary key</h4>
-<p>Passengers with no berth preference have <code>None</code> as their second tuple element. Python dicts accept <code>None</code> as a key — <code>counts[None] += 1</code> works correctly.</p>
+<p>Passengers with no berth preference have <code>None</code> as their second tuple element. Python dicts accept <code>None</code> as a key - <code>counts[None] += 1</code> works correctly.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">03</div>
-<h4>ticket_rate × len(passengers) — rate is per person</h4>
+<h4>ticket_rate × len(passengers) - rate is per person</h4>
 <p><code>ticket_rate</code> is the price for one passenger. Multiply by <code>len(passengers)</code> to get the total for the entire PNR booking.</p>
 </div>
 

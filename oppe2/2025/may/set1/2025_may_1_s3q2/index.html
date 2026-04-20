@@ -5967,7 +5967,7 @@
   <span class="md-ellipsis">
     
   
-    S1Q3 · Rearrange Tuple — Middle to Ends
+    S1Q3 · Rearrange Tuple - Middle to Ends
   
 
     
@@ -8640,7 +8640,7 @@
 <p><strong>Key rules:</strong>
 - Zigzag cycle length = <code>2*(z-1)</code> for <code>z &gt; 1</code>; always 0 spaces for <code>z == 1</code>
 - For position <code>pos</code> in cycle: ascending if <code>pos &lt; z</code>, descending otherwise
-- No trailing spaces — print the character immediately after the spaces</p>
+- No trailing spaces - print the character immediately after the spaces</p>
 </details>
 <hr />
 <h2 id="problem-statement">Problem Statement<a class="headerlink" href="#problem-statement" title="Permanent link">&para;</a></h2>
@@ -8793,7 +8793,7 @@ n
 <div class="pb-card">
 <div class="pb-card-num">01</div>
 <h4>Cycle length = 2*(z-1)</h4>
-<p>The zigzag goes up to <code>z-1</code> spaces then back down to 0 — one full cycle spans <code>2*(z-1)</code> lines. Using <code>i % cycle</code> maps any line index into the current position within the cycle.</p>
+<p>The zigzag goes up to <code>z-1</code> spaces then back down to 0 - one full cycle spans <code>2*(z-1)</code> lines. Using <code>i % cycle</code> maps any line index into the current position within the cycle.</p>
 </div>
 
 <div class="pb-card">
@@ -8804,8 +8804,8 @@ n
 
 <div class="pb-card">
 <div class="pb-card-num">03</div>
-<h4>itertools.cycle — cleaner for pre-built patterns</h4>
-<p>Building <code>[0, 1, ..., z-1, z-2, ..., 1]</code> as a list and wrapping with <code>cycle()</code> avoids the index arithmetic entirely. Call <code>next(pattern)</code> for each character — reads like the problem description.</p>
+<h4>itertools.cycle - cleaner for pre-built patterns</h4>
+<p>Building <code>[0, 1, ..., z-1, z-2, ..., 1]</code> as a list and wrapping with <code>cycle()</code> avoids the index arithmetic entirely. Call <code>next(pattern)</code> for each character - reads like the problem description.</p>
 </div>
 
 </div>

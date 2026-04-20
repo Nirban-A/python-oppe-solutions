@@ -5971,7 +5971,7 @@
   <span class="md-ellipsis">
     
   
-    S1Q3 · Rearrange Tuple — Middle to Ends
+    S1Q3 · Rearrange Tuple - Middle to Ends
   
 
     
@@ -8598,7 +8598,7 @@
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">strings</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
 </span></code></pre></div>
 <p><strong>Key rules:</strong>
-- Divisible by 3 OR 5 — either condition counts
+- Divisible by 3 OR 5 - either condition counts
 - Strings divisible by both (e.g. length 15) are counted once
 - <code>sum(1 for ...)</code> counts without building an intermediate list</p>
 </details>
@@ -8701,7 +8701,7 @@
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="n">is_valid</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span>
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">is_valid</span><span class="p">,</span> <span class="n">strings</span><span class="p">))</span>
 </span></code></pre></div>
-<p><code>map(is_valid, strings)</code> produces a sequence of <code>True</code>/<code>False</code> values. <code>sum()</code> treats <code>True</code> as 1 and <code>False</code> as 0 — a clean way to count booleans.</p>
+<p><code>map(is_valid, strings)</code> produces a sequence of <code>True</code>/<code>False</code> values. <code>sum()</code> treats <code>True</code> as 1 and <code>False</code> as 0 - a clean way to count booleans.</p>
 </div>
 </div>
 </div>
@@ -8711,19 +8711,19 @@
 
 <div class="pb-card">
 <div class="pb-card-num">01</div>
-<h4>OR — count if divisible by 3, 5, or both</h4>
-<p>Using <code>or</code> means strings with lengths divisible by both 3 and 5 (like 15, 30) are counted exactly once — not twice. <code>or</code> is the correct operator here, not two separate checks.</p>
+<h4>OR - count if divisible by 3, 5, or both</h4>
+<p>Using <code>or</code> means strings with lengths divisible by both 3 and 5 (like 15, 30) are counted exactly once - not twice. <code>or</code> is the correct operator here, not two separate checks.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">02</div>
-<h4>sum(1 for ...) — count without a list</h4>
-<p><code>sum(1 for s in strings if condition)</code> counts matching elements using a generator — no intermediate list is created. Equivalent to <code>len([s for s in strings if condition])</code> but more memory-efficient.</p>
+<h4>sum(1 for ...) - count without a list</h4>
+<p><code>sum(1 for s in strings if condition)</code> counts matching elements using a generator - no intermediate list is created. Equivalent to <code>len([s for s in strings if condition])</code> but more memory-efficient.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">03</div>
-<h4>sum(map(bool_func, iterable)) — boolean counting</h4>
+<h4>sum(map(bool_func, iterable)) - boolean counting</h4>
 <p>Python's <code>sum()</code> treats <code>True</code> as 1 and <code>False</code> as 0. Mapping a boolean function over a list and summing the results is an elegant way to count how many elements satisfy a condition.</p>
 </div>
 
@@ -8763,7 +8763,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../2025_jan_1_s1q3/" class="md-footer__link md-footer__link--prev" aria-label="Previous: S1Q3 · Rearrange Tuple — Middle to Ends">
+          <a href="../2025_jan_1_s1q3/" class="md-footer__link md-footer__link--prev" aria-label="Previous: S1Q3 · Rearrange Tuple - Middle to Ends">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -8773,7 +8773,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                S1Q3 · Rearrange Tuple — Middle to Ends
+                S1Q3 · Rearrange Tuple - Middle to Ends
               </div>
             </div>
           </a>

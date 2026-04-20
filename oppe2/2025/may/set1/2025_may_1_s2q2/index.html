@@ -5967,7 +5967,7 @@
   <span class="md-ellipsis">
     
   
-    S1Q3 · Rearrange Tuple — Middle to Ends
+    S1Q3 · Rearrange Tuple - Middle to Ends
   
 
     
@@ -8704,7 +8704,7 @@ Original column 2 = <code>[3, 6, 9]</code>, bottom to top = <code>[9, 6, 3]</cod
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># For reference only — numpy not available in exam</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># For reference only - numpy not available in exam</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">m</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
 </span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">matrix</span> <span class="o">=</span> <span class="p">[</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">)]</span>
@@ -8727,8 +8727,8 @@ Original column 2 = <code>[3, 6, 9]</code>, bottom to top = <code>[9, 6, 3]</cod
 
 <div class="pb-card">
 <div class="pb-card-num">02</div>
-<h4>zip(*matrix[::-1]) — the two-liner trick</h4>
-<p>Reverse the rows (<code>matrix[::-1]</code>), then transpose (<code>zip(*...)</code>). These two operations together achieve a 90° clockwise rotation. Memorise this pattern — it works for any rectangular matrix.</p>
+<h4>zip(*matrix[::-1]) - the two-liner trick</h4>
+<p>Reverse the rows (<code>matrix[::-1]</code>), then transpose (<code>zip(*...)</code>). These two operations together achieve a 90° clockwise rotation. Memorise this pattern - it works for any rectangular matrix.</p>
 </div>
 
 <div class="pb-card">

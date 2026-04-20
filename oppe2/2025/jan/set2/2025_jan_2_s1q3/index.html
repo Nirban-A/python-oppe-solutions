@@ -5969,7 +5969,7 @@
   <span class="md-ellipsis">
     
   
-    S1Q3 · Rearrange Tuple — Middle to Ends
+    S1Q3 · Rearrange Tuple - Middle to Ends
   
 
     
@@ -8600,7 +8600,7 @@
 </span></code></pre></div>
 <p><strong>Key rules:</strong>
 - Three sign categories: positive (<code>&gt; 0</code>), negative (<code>&lt; 0</code>), zero (<code>== 0</code>)
-- <code>same_sign(0, 10)</code> → <code>False</code> — zero is its own category, not positive or negative
+- <code>same_sign(0, 10)</code> → <code>False</code> - zero is its own category, not positive or negative
 - Both must be in the <strong>same</strong> category</p>
 </details>
 <hr />
@@ -8727,7 +8727,7 @@
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="n">both_zero</span>     <span class="o">=</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span>
 </span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="k">return</span> <span class="n">both_positive</span> <span class="ow">or</span> <span class="n">both_negative</span> <span class="ow">or</span> <span class="n">both_zero</span>
 </span></code></pre></div>
-<p>Most readable — directly states each of the three valid cases. No helper function needed.</p>
+<p>Most readable - directly states each of the three valid cases. No helper function needed.</p>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
@@ -8761,13 +8761,13 @@
 
 <div class="pb-card">
 <div class="pb-card-num">02</div>
-<h4>Three explicit cases — most readable</h4>
-<p><code>both_positive or both_negative or both_zero</code> directly maps to the problem statement. Each condition is self-explanatory — no mental decoding of sign tricks needed.</p>
+<h4>Three explicit cases - most readable</h4>
+<p><code>both_positive or both_negative or both_zero</code> directly maps to the problem statement. Each condition is self-explanatory - no mental decoding of sign tricks needed.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">03</div>
-<h4>sign(a) == sign(b) — compact and extensible</h4>
+<h4>sign(a) == sign(b) - compact and extensible</h4>
 <p>Mapping each number to its sign value (<code>-1</code>, <code>0</code>, <code>1</code>) and comparing is compact. Works for any number of arguments if extended to <code>len(set(map(sign, nums))) == 1</code>.</p>
 </div>
 

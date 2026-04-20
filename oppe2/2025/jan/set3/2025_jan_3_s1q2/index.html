@@ -5969,7 +5969,7 @@
   <span class="md-ellipsis">
     
   
-    S1Q3 · Rearrange Tuple — Middle to Ends
+    S1Q3 · Rearrange Tuple - Middle to Ends
   
 
     
@@ -8736,7 +8736,7 @@
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="n">hours</span><span class="p">,</span> <span class="n">minutes</span> <span class="o">=</span> <span class="nb">divmod</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">to_min</span><span class="p">(</span><span class="n">time1</span><span class="p">)</span> <span class="o">-</span> <span class="n">to_min</span><span class="p">(</span><span class="n">time2</span><span class="p">)),</span> <span class="mi">60</span><span class="p">)</span>
 </span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">hours</span><span class="si">:</span><span class="s2">02</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">minutes</span><span class="si">:</span><span class="s2">02</span><span class="si">}</span><span class="s2">&quot;</span>
 </span></code></pre></div>
-<p><code>divmod(diff, 60)</code> returns <code>(hours, minutes)</code> in one call — cleaner than two separate <code>//</code> and <code>%</code> operations.</p>
+<p><code>divmod(diff, 60)</code> returns <code>(hours, minutes)</code> in one call - cleaner than two separate <code>//</code> and <code>%</code> operations.</p>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">absolute_time_difference</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">t1</span><span class="p">,</span> <span class="n">t2</span><span class="p">:</span> <span class="p">(</span>
@@ -8759,14 +8759,14 @@
 
 <div class="pb-card">
 <div class="pb-card-num">02</div>
-<h4>{val:02} — zero-pad to two digits</h4>
-<p><code>f"{hours:02}"</code> pads with a leading zero if the value is a single digit. Without it, <code>"00:40"</code> would become <code>"0:40"</code> — wrong format. Always use <code>:02</code> for both hours and minutes.</p>
+<h4>{val:02} - zero-pad to two digits</h4>
+<p><code>f"{hours:02}"</code> pads with a leading zero if the value is a single digit. Without it, <code>"00:40"</code> would become <code>"0:40"</code> - wrong format. Always use <code>:02</code> for both hours and minutes.</p>
 </div>
 
 <div class="pb-card">
 <div class="pb-card-num">03</div>
 <h4>abs() makes the result order-independent</h4>
-<p><code>abs(total1 - total2)</code> gives the same result regardless of which time is larger. No need to check which is earlier — the function is symmetric by design.</p>
+<p><code>abs(total1 - total2)</code> gives the same result regardless of which time is larger. No need to check which is earlier - the function is symmetric by design.</p>
 </div>
 
 </div>
