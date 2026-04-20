@@ -1,4 +1,4 @@
-# 2024 Sep OPPE 2 — Set 1
+# 2024 Sep OPPE 2 - Set 1
 
 <div class="pb-set-grid">
 
@@ -33,21 +33,21 @@
 <a class="pb-set-card" href="2024_sep_1_s2q2/">
 <div class="pb-set-card-label">Section 2 · Question 2</div>
 <h3>Abbreviate Initials and Sort</h3>
-<p>Abbreviate all name parts except the surname, then print sorted alphabetically. Full I/O — covers <code>parts[:-1]</code>, <code>parts[-1]</code>, and <code>sorted()</code>.</p>
+<p>Abbreviate all name parts except the surname, then print sorted alphabetically. Full I/O - covers <code>parts[:-1]</code>, <code>parts[-1]</code>, and <code>sorted()</code>.</p>
 <span class="pb-badge pb-badge-done">Solved</span>
 </a>
 
 <a class="pb-set-card" href="2024_sep_1_s3q1/">
 <div class="pb-set-card-label">Section 3 · Question 1</div>
 <h3>Shopping List</h3>
-<p>Three operations on a grocery list — total bill, max quantity item, and sort by total amount. Covers <code>sum()</code>, <code>max(key=)</code>, and multi-criteria <code>sorted()</code> with negate-for-descending.</p>
+<p>Three operations on a grocery list - total bill, max quantity item, and sort by total amount. Covers <code>sum()</code>, <code>max(key=)</code>, and multi-criteria <code>sorted()</code> with negate-for-descending.</p>
 <span class="pb-badge pb-badge-done">Solved</span>
 </a>
 
 <a class="pb-set-card" href="2024_sep_1_s3q2/">
 <div class="pb-set-card-label">Section 3 · Question 2</div>
 <h3>Ubbi Dubbi</h3>
-<p>Insert <code>"ub"</code> or <code>"dub"</code> alternately before vowels across a multi-line file. File I/O → stdout — covers global counters, <code>print(end="")</code>, and <code>set("aeiou")</code> for O(1) lookup.</p>
+<p>Insert <code>"ub"</code> or <code>"dub"</code> alternately before vowels across a multi-line file. File I/O → stdout - covers global counters, <code>print(end="")</code>, and <code>set("aeiou")</code> for O(1) lookup.</p>
 <span class="pb-badge pb-badge-done">Solved</span>
 </a>
 

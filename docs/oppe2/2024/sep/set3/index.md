@@ -1,4 +1,4 @@
-# 2024 Sep OPPE 2 — Set 3
+# 2024 Sep OPPE 2 - Set 3
 
 <div class="pb-set-grid">
 
@@ -33,21 +33,21 @@
 <a class="pb-set-card" href="2024_sep_3_s2q2/">
 <div class="pb-set-card-label">Section 2 · Question 2</div>
 <h3>Ceil Marks to Nearest Tens if Close</h3>
-<p>Round up marks to the next ten if the units digit is 8 or 9, printing only updated records. Full I/O — covers <code>marks % 10 in (8, 9)</code> and <code>(marks // 10 + 1) * 10</code>.</p>
+<p>Round up marks to the next ten if the units digit is 8 or 9, printing only updated records. Full I/O - covers <code>marks % 10 in (8, 9)</code> and <code>(marks // 10 + 1) * 10</code>.</p>
 <span class="pb-badge pb-badge-done">Solved</span>
 </a>
 
 <a class="pb-set-card" href="2024_sep_3_s3q1/">
 <div class="pb-set-card-label">Section 3 · Question 1</div>
 <h3>Cartesian Points Processing</h3>
-<p>Three operations on a set of points — sort by distance to y-axis, closest to origin, group by quadrant. Covers <code>math.atan2</code>, tuple keys for multi-criteria sorting, and <code>setdefault</code> grouping.</p>
+<p>Three operations on a set of points - sort by distance to y-axis, closest to origin, group by quadrant. Covers <code>math.atan2</code>, tuple keys for multi-criteria sorting, and <code>setdefault</code> grouping.</p>
 <span class="pb-badge pb-badge-done">Solved</span>
 </a>
 
 <a class="pb-set-card" href="2024_sep_3_s3q2/">
 <div class="pb-set-card-label">Section 3 · Question 2</div>
 <h3>Fill First n Blanks with 1 to n</h3>
-<p>Replace the first <code>n</code> underscores in a multi-line file with sequential numbers. File I/O → stdout — covers persistent counters across lines and multi-digit replacements of single characters.</p>
+<p>Replace the first <code>n</code> underscores in a multi-line file with sequential numbers. File I/O → stdout - covers persistent counters across lines and multi-digit replacements of single characters.</p>
 <span class="pb-badge pb-badge-done">Solved</span>
 </a>
 

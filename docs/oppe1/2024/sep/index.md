@@ -1,6 +1,5 @@
-# 2024 Sep OPPE 1
+# OPPE1 - September 2024
 
-This section covers all three exam sets from the **September 2024 OPPE 1**. Each set has three sections (S1, S2, S3) with one problem each worth varying marks.
 
 <div class="pb-set-grid">
 

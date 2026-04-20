@@ -7,8 +7,9 @@
 <div class="pb-set-card-label">September 2024</div>
 <h3>September</h3>
 <p>Three exam sets from the September 2024 session. Set 3 is fully worked.</p>
+<span class="pb-badge pb-badge-done">Set 1 </span>
+<span class="pb-badge pb-badge-done">Set 2 </span>
 <span class="pb-badge pb-badge-done">Set 3 </span>
-<span class="pb-badge pb-badge-soon">Sets 1 & 2 coming</span>
 </a>
 
 </div>

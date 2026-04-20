@@ -10,8 +10,8 @@ OPPE 1 covers **Weeks 1–5** of the Programming in Python course. It tests foun
 | Section | Questions | Marks each | Total |
 |---------|-----------|-----------|-------|
 | Section 1 | 3 | 10 | 30 |
-| Section 2 | 2 | 15 | 30 |
-| Section 3 | 2 | 20 | 40 |
+| Section 2 | 2 | 15/20 | 30/40 |
+| Section 3 | 2 | 20/15 | 40/30 |
 | **Total** | **7** | - | **100** |
 </div>
 
@@ -52,21 +52,21 @@ OPPE 1 covers **Weeks 1–5** of the Programming in Python course. It tests foun
 <a class="pb-set-card" href="2026/">
 <div class="pb-set-card-label">2026</div>
 <h3>OPPE 1 - 2026</h3>
-<p>January session.</p>
+<p>January session</p>
 <span class="pb-badge pb-badge-done">See Solutions</span>
 </a>
 
 <a class="pb-set-card" href="2025/">
 <div class="pb-set-card-label">2025</div>
 <h3>OPPE 1 - 2025</h3>
-<p>January, May sessions.</p>
+<p>January, May sessions</p>
 <span class="pb-badge pb-badge-done">See Solutions</span>
 </a>
 
 <a class="pb-set-card" href="2024/">
 <div class="pb-set-card-label">2024</div>
 <h3>OPPE 1 - 2024</h3>
-<p>September sessions.</p>
+<p>September sessions</p>
 <span class="pb-badge pb-badge-done">See Solutions</span>
 </a>
 
