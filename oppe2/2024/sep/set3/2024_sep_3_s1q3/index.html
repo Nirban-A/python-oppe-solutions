@@ -5717,6 +5717,10 @@
     
       
         
+          
+        
+      
+        
       
         
       
@@ -5738,8 +5742,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -5753,8 +5758,14 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2_2">
@@ -5766,6 +5777,8 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -5807,7 +5820,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2_2" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -5829,14 +5842,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3_2_2_1" id="__nav_3_2_2_1_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3_2_2_2" id="__nav_3_2_2_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_2_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2_2_1">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_2_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -6092,7 +6105,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2_3" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -6114,14 +6127,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3_2_2_2" id="__nav_3_2_2_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3_2_2_3" id="__nav_3_2_2_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_2_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2_2_2">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_2_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -6280,7 +6293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../set2/2024_sep_2_s3q1.md" class="md-nav__link">
+      <a href="../../set2/2024_sep_2_s3q1/" class="md-nav__link">
         
   
   
@@ -6379,7 +6392,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2_4" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -6401,14 +6414,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3_2_2_3" id="__nav_3_2_2_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3_2_2_4" id="__nav_3_2_2_4_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_2_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_2_2_3">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2_2_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -7156,7 +7169,7 @@
 <p><strong>Key rules:</strong>
 - <code>v[-1]</code> → last character
 - <code>v[:-1]</code> → everything except the last character
-- Modifies the dict <strong>in-place</strong> — returns <code>None</code>
+- Modifies the dict <strong>in-place</strong> - returns <code>None</code>
 - Save both last chars before modifying (avoid overwriting)</p>
 </details>
 <hr />
@@ -7208,7 +7221,7 @@
 <p>✓</p>
 <div class="admonition insight">
 <p class="admonition-title">Why save both values upfront?</p>
-<p>If you updated <code>d[k1]</code> first and then read <code>d[k1][-1]</code> for the swap, you'd get the already-modified last character — not the original one. Always read both original values into local variables before writing back.</p>
+<p>If you updated <code>d[k1]</code> first and then read <code>d[k1][-1]</code> for the swap, you'd get the already-modified last character - not the original one. Always read both original values into local variables before writing back.</p>
 </div>
 <hr />
 <h2 id="solution-approaches">Solution approaches<a class="headerlink" href="#solution-approaches" title="Permanent link">&para;</a></h2>
@@ -7238,7 +7251,7 @@
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="c1"># Python evaluates the right side fully before assigning</span>
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="n">d</span><span class="p">[</span><span class="n">k1</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="n">k2</span><span class="p">]</span> <span class="o">=</span> <span class="n">d</span><span class="p">[</span><span class="n">k1</span><span class="p">][:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">d</span><span class="p">[</span><span class="n">k2</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="n">k2</span><span class="p">][:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">d</span><span class="p">[</span><span class="n">k1</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 </span></code></pre></div>
-<p>Python evaluates the entire right-hand side before any assignment, so the original values of <code>d[k1]</code> and <code>d[k2]</code> are used in both expressions — no temporary variables needed.</p>
+<p>Python evaluates the entire right-hand side before any assignment, so the original values of <code>d[k1]</code> and <code>d[k2]</code> are used in both expressions - no temporary variables needed.</p>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">swap_last_chars_of_values</span><span class="p">(</span><span class="n">d</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">k1</span><span class="p">,</span> <span class="n">k2</span><span class="p">):</span>
@@ -7255,7 +7268,7 @@
 <div class="pb-card">
 <div class="pb-card-num">01</div>
 <h4>v[:-1] + new_char replaces the last character</h4>
-<p><code>v[:-1]</code> slices everything except the last character. Concatenating a new character gives the modified string. This works for any string length since strings are immutable — you build a new one.</p>
+<p><code>v[:-1]</code> slices everything except the last character. Concatenating a new character gives the modified string. This works for any string length since strings are immutable - you build a new one.</p>
 </div>
 
 <div class="pb-card">
@@ -7266,8 +7279,8 @@
 
 <div class="pb-card">
 <div class="pb-card-num">03</div>
-<h4>In-place modification — return None</h4>
-<p>The function modifies the dictionary directly and returns nothing. The caller sees the changes through the same dict reference. Don't return a new dict — that would leave the original unchanged.</p>
+<h4>In-place modification - return None</h4>
+<p>The function modifies the dictionary directly and returns nothing. The caller sees the changes through the same dict reference. Don't return a new dict - that would leave the original unchanged.</p>
 </div>
 
 </div>
