@@ -245,6 +245,49 @@ nav:
           - S3Q2 · N Pattern: oppe1/2024/sep/set3/2024_sep_3_s3q2.md
   - OPPE 2:
     - oppe2/index.md
+    - 2025:
+      - oppe2/2025/index.md
+      - January:
+        - oppe2/2025/jan/index.md
+        - Set 1:
+          - oppe2/2025/jan/set1/index.md
+          - S1Q1 · Check if Either Number is a Multiple: oppe2/2025/jan/set1/2025_jan_1_s1q1.md
+          - S1Q2 · Starts and Ends with Same Vowel: oppe2/2025/jan/set1/2025_jan_1_s1q2.md
+          - S1Q3 · Rearrange Tuple — Middle to Ends: oppe2/2025/jan/set1/2025_jan_1_s1q3.md
+          - S2Q1 · Count Strings Divisible by 3 or 5: oppe2/2025/jan/set1/2025_jan_1_s2q1.md
+          - S2Q2 · Thresholding 2D Array: oppe2/2025/jan/set1/2025_jan_1_s2q2.md
+          - S3Q1 · Railway Ticket Booking Analysis: oppe2/2025/jan/set1/2025_jan_1_s3q1.md
+          - S3Q2 · String Rearrangement: oppe2/2025/jan/set1/2025_jan_1_s3q2.md
+        - Set 2:
+          - oppe2/2025/jan/set2/index.md
+          - S1Q1 · Extract Middle Elements: oppe2/2025/jan/set2/2025_jan_2_s1q1.md
+          - S1Q2 · Shuffle a Three-Word Sentence: oppe2/2025/jan/set2/2025_jan_2_s1q2.md
+          - S1Q3 · Check Same Sign: oppe2/2025/jan/set2/2025_jan_2_s1q3.md
+          - S2Q1 · Check Palindrome (Advanced): oppe2/2025/jan/set2/2025_jan_2_s2q1.md
+          - S2Q2 · Abbreviate Initials and Sort (Last, F.M.): oppe2/2025/jan/set2/2025_jan_2_s2q2.md
+          - S3Q1 · Employee Task Analysis: oppe2/2025/jan/set2/2025_jan_2_s3q1.md
+          - S3Q2 · Simple Stemmer: oppe2/2025/jan/set2/2025_jan_2_s3q2.md
+        - Set 3:
+          - oppe2/2025/jan/set3/index.md
+          - S1Q1 · Extract Border Elements: oppe2/2025/jan/set3/2025_jan_3_s1q1.md
+          - S1Q2 · Absolute Time Difference: oppe2/2025/jan/set3/2025_jan_3_s1q2.md
+          - S1Q3 · Transfer Amount: oppe2/2025/jan/set3/2025_jan_3_s1q3.md
+          - S2Q1 · Words with Consecutive Identical Letters: oppe2/2025/jan/set3/2025_jan_3_s2q1.md
+          - S2Q2 · Hand Cricket Match Runs: oppe2/2025/jan/set3/2025_jan_3_s2q2.md
+          - S3Q1 · Polygon Analysis: oppe2/2025/jan/set3/2025_jan_3_s3q1.md
+          - S3Q2 · Total Size of Image Files: oppe2/2025/jan/set3/2025_jan_3_s3q2.md
+      - May:
+        - oppe2/2025/may/index.md
+        - Set 1:
+          - oppe2/2025/may/set1/index.md
+          - S1Q1 · Compute Electricity Bill: oppe2/2025/may/set1/2025_may_1_s1q1.md
+          - S1Q2 · Is Reverse Combined Palindrome: oppe2/2025/may/set1/2025_may_1_s1q2.md
+          - S1Q3 · Pangram Check: oppe2/2025/may/set1/2025_may_1_s1q3.md
+          - S2Q1 · Check for Arithmetic Progression: oppe2/2025/may/set1/2025_may_1_s2q1.md
+          - S2Q2 · Rotate Matrix Clockwise 90°: oppe2/2025/may/set1/2025_may_1_s2q2.md
+          - S3Q1 · Book Data Analysis: oppe2/2025/may/set1/2025_may_1_s3q1.md
+          - S3Q2 · File Content Zigzag Shift: oppe2/2025/may/set1/2025_may_1_s3q2.md
+        
     - 2024:
       - oppe2/2024/index.md
       - September:
