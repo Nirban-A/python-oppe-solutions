@@ -11,4 +11,4 @@ Use the form below - it takes less than a minute.
 ---
 
 !!! note "Can't see the form?"
-    If the form doesn't load, you can access it directly here: [Open form](https://docs.google.com/forms/d/e/1FAIpQLSftAdGGgLqZimRFPhZd2I1l-nNlUx7W08egco59LDZWmMmd1Q/viewform)
+    If the form doesn't load, you can access it directly from here: [Open form](https://docs.google.com/forms/d/e/1FAIpQLSftAdGGgLqZimRFPhZd2I1l-nNlUx7W08egco59LDZWmMmd1Q/viewform)
