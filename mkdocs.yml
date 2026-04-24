@@ -1,5 +1,6 @@
 site_name: Python OPPE Solutions
-copyright: Compiled and Maintained by Anirban &nbsp;·&nbsp; This Project is supported by the Python Buddy Initiative
+#copyright: Compiled and Maintained by Anirban &nbsp;·&nbsp; This Project is supported by the Python Buddy Initiative
+copyright: 'Compiled and Maintained by Anirban &nbsp;·&nbsp; This Project is supported by the Python Buddy Initiative &nbsp;·&nbsp; <span id="gc-stats" style="font-weight: bold; opacity: 0.8;"></span>'
 site_description: Exam-prep companion for Python - walkthrough solutions, key concepts, and downloadable slides.
 site_url: https://github.com/Nirban-A/python-oppe-solutions/
 repo_url: https://github.com/Nirban-A/python-oppe-solutions
