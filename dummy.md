@@ -11,4 +11,6 @@
 4. live code changes in the existing solutions codes to see if it works
 5. Fixing the hyperlinks for ppt from code solution page
 6. Practice problems solutions
-7. Add more practice problems
+7. Add more practice problem
+
+8. PYQ Solved (Q1 and ET)
