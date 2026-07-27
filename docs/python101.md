@@ -129,6 +129,47 @@ Creating & accessing dicts · `.get()` / `.items()` / `.keys()` · `setdefault` 
 </a>
 
 </div>
+
+---
+
+## 🔷 Pattern Printing
+
+`rjust` · `center` · `str * n` · border logic · two-pass design · grid traversal · real OPPE1 S3Q2 problems from all terms
+
+<div class="pb-set-grid">
+
+
+<a class="pb-set-card" href="https://colab.research.google.com/drive/1mIziFi1zgDJainDxAMDR0oWAu_Pz5ihW" target="_blank" rel="noopener">
+<div class="pb-set-card-label">Practice Questions</div>
+<h3>Pattern Printing - Practice</h3>
+<p>9 questions · Basic → Expert · progressively harder with hints · builds every core technique.</p>
+<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" style="margin-top:0.5rem;">
+</a>
+
+<a class="pb-set-card" href="https://colab.research.google.com/drive/1E5kK1IyLuBCqfCYilUz4kO6bEG2TqYEg" target="_blank" rel="noopener">
+<div class="pb-set-card-label">Solutions</div>
+<h3>Pattern Printing - Solutions</h3>
+<p>Explanatory + Pythonic approaches with key ideas for all 9 practice problems.</p>
+<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" style="margin-top:0.5rem;">
+</a>
+
+<a class="pb-set-card" href="https://colab.research.google.com/drive/1zH6GUc9tGbd8C0pYx5g5pYZBWQVFp4Rx" target="_blank" rel="noopener">
+<div class="pb-set-card-label">Previous OPPE Questions</div>
+<h3>OPPE1 S3Q2 - Questions</h3>
+<p>Previous OPPE Pattern Printing questions (2024 Sep → 2026 Jan).</p>
+<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" style="margin-top:0.5rem;">
+</a>
+
+<a class="pb-set-card" href="https://colab.research.google.com/drive/1XC-neMYO1kVbjTuvujZaksDniiv_i_Zb" target="_blank" rel="noopener">
+<div class="pb-set-card-label">Previous OPPE Solutions</div>
+<h3>OPPE1 S3Q2 - Solutions</h3>
+<p>Explanatory + Pythonic approaches with key ideas for all 13 problems.</p>
+<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" style="margin-top:0.5rem;">
+</a>
+
+
+</div>
+
 ---
 
 ## λ Lambda Functions
