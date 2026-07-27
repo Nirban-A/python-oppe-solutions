@@ -13,7 +13,7 @@ script.src = '//gc.zgo.at/count.js';
 document.head.appendChild(script);
 
 // 2. Fetch JSON Count and Display at Bottom Right
-/*
+
 document.addEventListener("DOMContentLoaded", function() {
     fetch('https://python-oppe.goatcounter.com/counter/TOTAL.json')
         .then(response => response.json())
@@ -43,4 +43,4 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .catch(err => console.log("Stats blocked by privacy setting."));
 });
-*/
+
