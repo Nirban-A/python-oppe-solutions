@@ -9259,20 +9259,20 @@ d2 = {'b': 3, 'c': 4}</code></pre>
 <hr />
 <h2 id="tracing-the-example">Tracing the example<a class="headerlink" href="#tracing-the-example" title="Permanent link">&para;</a></h2>
 <p><code>d1 = {'a': 1, 'b': 2}</code>, <code>d2 = {'b': 3, 'c': 4}</code></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Start: result = {&#39;a&#39;: 1, &#39;b&#39;: 2}   (copy of d1)
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Start: result = {'a': 1, 'b': 2}   (copy of d1)
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Process d2:
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>  key=&#39;b&#39;, value=3:
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    result.get(&#39;b&#39;, 0) = 2
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    result[&#39;b&#39;] = 2 + 3 = 5
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    result = {&#39;a&#39;: 1, &#39;b&#39;: 5}
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>  key='b', value=3:
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    result.get('b', 0) = 2
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    result['b'] = 2 + 3 = 5
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    result = {'a': 1, 'b': 5}
 </span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>  key=&#39;c&#39;, value=4:
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    result.get(&#39;c&#39;, 0) = 0   (not present)
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    result[&#39;c&#39;] = 0 + 4 = 4
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    result = {&#39;a&#39;: 1, &#39;b&#39;: 5, &#39;c&#39;: 4}
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>  key='c', value=4:
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    result.get('c', 0) = 0   (not present)
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    result['c'] = 0 + 4 = 4
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    result = {'a': 1, 'b': 5, 'c': 4}
 </span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>Return: {&#39;a&#39;: 1, &#39;b&#39;: 5, &#39;c&#39;: 4} 
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>Return: {'a': 1, 'b': 5, 'c': 4} 
 </span></code></pre></div>
 <hr />
 <h2 id="solution-approaches">Solution approaches<a class="headerlink" href="#solution-approaches" title="Permanent link">&para;</a></h2>

@@ -9164,7 +9164,7 @@
 <p><strong>Function:</strong> <code>is_dot_com_or_dot_in(domain: str) -&gt; bool</code></p>
 <p><strong>Core idea:</strong> check if the string ends with <code>".com"</code> or <code>".in"</code> using <code>str.endswith()</code>.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">is_dot_com_or_dot_in</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">return</span> <span class="n">domain</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;.com&quot;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">domain</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;.in&quot;</span><span class="p">)</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">return</span> <span class="n">domain</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">".com"</span><span class="p">)</span> <span class="ow">or</span> <span class="n">domain</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">".in"</span><span class="p">)</span>
 </span></code></pre></div>
 <p><strong>Key rules:</strong>
 - Must end with <code>".com"</code> or <code>".in"</code> (the dot is part of the suffix)
@@ -9276,23 +9276,23 @@
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">is_dot_com_or_dot_in</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="k">return</span> <span class="n">domain</span><span class="o">.</span><span class="n">endswith</span><span class="p">((</span><span class="s2">&quot;.com&quot;</span><span class="p">,</span> <span class="s2">&quot;.in&quot;</span><span class="p">))</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="k">return</span> <span class="n">domain</span><span class="o">.</span><span class="n">endswith</span><span class="p">((</span><span class="s2">".com"</span><span class="p">,</span> <span class="s2">".in"</span><span class="p">))</span>
 </span></code></pre></div>
 <p><code>str.endswith()</code> accepts a <strong>tuple of suffixes</strong> and returns <code>True</code> if the string ends with any of them. The cleanest single-expression solution.</p>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">is_dot_com_or_dot_in</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="k">return</span> <span class="n">domain</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;.com&quot;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">domain</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;.in&quot;</span><span class="p">)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="k">return</span> <span class="n">domain</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">".com"</span><span class="p">)</span> <span class="ow">or</span> <span class="n">domain</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">".in"</span><span class="p">)</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">is_dot_com_or_dot_in</span><span class="p">(</span><span class="n">domain</span><span class="p">):</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="k">return</span> <span class="n">domain</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">:]</span> <span class="o">==</span> <span class="s2">&quot;.com&quot;</span> <span class="ow">or</span> <span class="n">domain</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span> <span class="o">==</span> <span class="s2">&quot;.in&quot;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="k">return</span> <span class="n">domain</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">:]</span> <span class="o">==</span> <span class="s2">".com"</span> <span class="ow">or</span> <span class="n">domain</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span> <span class="o">==</span> <span class="s2">".in"</span>
 </span></code></pre></div>
 <p>Slice the last 4 characters for <code>.com</code> and last 3 for <code>.in</code>. Less readable than <code>endswith()</code> but shows the underlying idea.</p>
 </div>
 <div class="tabbed-block">
-<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">is_dot_com_or_dot_in</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">domain</span><span class="p">:</span> <span class="n">domain</span><span class="o">.</span><span class="n">endswith</span><span class="p">((</span><span class="s2">&quot;.com&quot;</span><span class="p">,</span> <span class="s2">&quot;.in&quot;</span><span class="p">))</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">is_dot_com_or_dot_in</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">domain</span><span class="p">:</span> <span class="n">domain</span><span class="o">.</span><span class="n">endswith</span><span class="p">((</span><span class="s2">".com"</span><span class="p">,</span> <span class="s2">".in"</span><span class="p">))</span>
 </span></code></pre></div>
 </div>
 </div>

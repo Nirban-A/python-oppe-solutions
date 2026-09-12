@@ -9189,16 +9189,16 @@
 <p><strong>Function:</strong> <code>classify_temperature(temp: str) -&gt; str</code></p>
 <p><strong>Core idea:</strong> strip the unit, convert Kelvin to Celsius if needed, then classify.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">classify_temperature</span><span class="p">(</span><span class="n">temp</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">if</span> <span class="n">temp</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;K&quot;</span><span class="p">):</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">if</span> <span class="n">temp</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">"K"</span><span class="p">):</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        <span class="n">celsius</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">temp</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">-</span> <span class="mf">273.15</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="k">else</span><span class="p">:</span>
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="n">celsius</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">temp</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="k">if</span> <span class="n">celsius</span> <span class="o">&lt;</span> <span class="mi">15</span><span class="p">:</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        <span class="k">return</span> <span class="s2">&quot;Cold&quot;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        <span class="k">return</span> <span class="s2">"Cold"</span>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="k">elif</span> <span class="n">celsius</span> <span class="o">&lt;=</span> <span class="mi">30</span><span class="p">:</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        <span class="k">return</span> <span class="s2">&quot;Moderate&quot;</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        <span class="k">return</span> <span class="s2">"Moderate"</span>
 </span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="k">else</span><span class="p">:</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        <span class="k">return</span> <span class="s2">&quot;Hot&quot;</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        <span class="k">return</span> <span class="s2">"Hot"</span>
 </span></code></pre></div>
 <p><strong>Key rules:</strong>
 - Unit is the last character: <code>"C"</code> or <code>"K"</code>
@@ -9209,29 +9209,29 @@
 <hr />
 <h2 id="template-code">Template Code<a class="headerlink" href="#template-code" title="Permanent link">&para;</a></h2>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">classify_temperature</span><span class="p">(</span><span class="n">temp</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="sd">'''</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="sd">    Classify a temperature given as a string with unit C or K.</span>
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
 </span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="sd">    Convert Kelvin to Celsius using: °C = K - 273.15</span>
 </span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="sd">    Classification:</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="sd">        &quot;Cold&quot;     if celsius &lt; 15</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="sd">        &quot;Moderate&quot; if 15 &lt;= celsius &lt;= 30</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="sd">        &quot;Hot&quot;      if celsius &gt; 30</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="sd">        "Cold"     if celsius &lt; 15</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="sd">        "Moderate" if 15 &lt;= celsius &lt;= 30</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="sd">        "Hot"      if celsius &gt; 30</span>
 </span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
 </span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="sd">    Examples:</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="sd">    &gt;&gt;&gt; classify_temperature(&quot;10C&quot;)</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="sd">    &quot;Cold&quot;</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="sd">    &gt;&gt;&gt; classify_temperature(&quot;20C&quot;)</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="sd">    &quot;Moderate&quot;</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="sd">    &gt;&gt;&gt; classify_temperature(&quot;290K&quot;)</span>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="sd">    &quot;Moderate&quot;</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="sd">    &gt;&gt;&gt; classify_temperature("10C")</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="sd">    "Cold"</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="sd">    &gt;&gt;&gt; classify_temperature("20C")</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="sd">    "Moderate"</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="sd">    &gt;&gt;&gt; classify_temperature("290K")</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="sd">    "Moderate"</span>
 </span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>
 </span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="sd">    Args:</span>
-</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="sd">        temp (str): Temperature string ending with &quot;C&quot; or &quot;K&quot;</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="sd">        temp (str): Temperature string ending with "C" or "K"</span>
 </span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>
 </span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="sd">    Returns:</span>
-</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="sd">        str: &quot;Cold&quot;, &quot;Moderate&quot;, or &quot;Hot&quot;</span>
-</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="sd">    &#39;&#39;&#39;</span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="sd">        str: "Cold", "Moderate", or "Hot"</span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="sd">    '''</span>
 </span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>    <span class="o">...</span>
 </span></code></pre></div>
 <hr />
@@ -9348,16 +9348,16 @@
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">classify_temperature</span><span class="p">(</span><span class="n">temp</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="k">if</span> <span class="n">temp</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;K&quot;</span><span class="p">):</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="k">if</span> <span class="n">temp</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">"K"</span><span class="p">):</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>        <span class="n">celsius</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">temp</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">-</span> <span class="mf">273.15</span>
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="k">else</span><span class="p">:</span>
 </span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>        <span class="n">celsius</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">temp</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 </span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="k">if</span> <span class="n">celsius</span> <span class="o">&lt;</span> <span class="mi">15</span><span class="p">:</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>        <span class="k">return</span> <span class="s2">&quot;Cold&quot;</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>        <span class="k">return</span> <span class="s2">"Cold"</span>
 </span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="k">elif</span> <span class="n">celsius</span> <span class="o">&lt;=</span> <span class="mi">30</span><span class="p">:</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>        <span class="k">return</span> <span class="s2">&quot;Moderate&quot;</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>        <span class="k">return</span> <span class="s2">"Moderate"</span>
 </span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="k">else</span><span class="p">:</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>        <span class="k">return</span> <span class="s2">&quot;Hot&quot;</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>        <span class="k">return</span> <span class="s2">"Hot"</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -9365,33 +9365,33 @@
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="n">unit</span>  <span class="o">=</span> <span class="n">temp</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="n">value</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">temp</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 </span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="k">if</span> <span class="n">unit</span> <span class="o">==</span> <span class="s2">&quot;K&quot;</span><span class="p">:</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="k">if</span> <span class="n">unit</span> <span class="o">==</span> <span class="s2">"K"</span><span class="p">:</span>
 </span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>        <span class="n">celsius</span> <span class="o">=</span> <span class="n">value</span> <span class="o">-</span> <span class="mf">273.15</span>
 </span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="k">else</span><span class="p">:</span>
 </span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>        <span class="n">celsius</span> <span class="o">=</span> <span class="n">value</span>
 </span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
 </span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="k">if</span> <span class="n">celsius</span> <span class="o">&lt;</span> <span class="mi">15</span><span class="p">:</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>        <span class="k">return</span> <span class="s2">&quot;Cold&quot;</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>        <span class="k">return</span> <span class="s2">"Cold"</span>
 </span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    <span class="k">elif</span> <span class="n">celsius</span> <span class="o">&lt;=</span> <span class="mi">30</span><span class="p">:</span>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>        <span class="k">return</span> <span class="s2">&quot;Moderate&quot;</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>        <span class="k">return</span> <span class="s2">"Moderate"</span>
 </span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>    <span class="k">else</span><span class="p">:</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>        <span class="k">return</span> <span class="s2">&quot;Hot&quot;</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>        <span class="k">return</span> <span class="s2">"Hot"</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">classify_temperature</span><span class="p">(</span><span class="n">temp</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="n">value</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">temp</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="n">celsius</span> <span class="o">=</span> <span class="n">value</span> <span class="o">-</span> <span class="mf">273.15</span> <span class="k">if</span> <span class="n">temp</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;K&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="n">value</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="n">celsius</span> <span class="o">=</span> <span class="n">value</span> <span class="o">-</span> <span class="mf">273.15</span> <span class="k">if</span> <span class="n">temp</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">"K"</span><span class="p">)</span> <span class="k">else</span> <span class="n">value</span>
 </span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="k">if</span> <span class="n">celsius</span> <span class="o">&lt;</span> <span class="mi">15</span><span class="p">:</span>    <span class="k">return</span> <span class="s2">&quot;Cold&quot;</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="k">if</span> <span class="n">celsius</span> <span class="o">&lt;=</span> <span class="mi">30</span><span class="p">:</span>   <span class="k">return</span> <span class="s2">&quot;Moderate&quot;</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="k">return</span> <span class="s2">&quot;Hot&quot;</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="k">if</span> <span class="n">celsius</span> <span class="o">&lt;</span> <span class="mi">15</span><span class="p">:</span>    <span class="k">return</span> <span class="s2">"Cold"</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="k">if</span> <span class="n">celsius</span> <span class="o">&lt;=</span> <span class="mi">30</span><span class="p">:</span>   <span class="k">return</span> <span class="s2">"Moderate"</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="k">return</span> <span class="s2">"Hot"</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">classify_temperature</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">temp</span><span class="p">:</span> <span class="p">(</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="p">(</span><span class="k">lambda</span> <span class="n">c</span><span class="p">:</span> <span class="s2">&quot;Cold&quot;</span> <span class="k">if</span> <span class="n">c</span> <span class="o">&lt;</span> <span class="mi">15</span> <span class="k">else</span> <span class="s2">&quot;Moderate&quot;</span> <span class="k">if</span> <span class="n">c</span> <span class="o">&lt;=</span> <span class="mi">30</span> <span class="k">else</span> <span class="s2">&quot;Hot&quot;</span><span class="p">)</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">temp</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">-</span> <span class="p">(</span><span class="mf">273.15</span> <span class="k">if</span> <span class="n">temp</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;K&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="mi">0</span><span class="p">))</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="p">(</span><span class="k">lambda</span> <span class="n">c</span><span class="p">:</span> <span class="s2">"Cold"</span> <span class="k">if</span> <span class="n">c</span> <span class="o">&lt;</span> <span class="mi">15</span> <span class="k">else</span> <span class="s2">"Moderate"</span> <span class="k">if</span> <span class="n">c</span> <span class="o">&lt;=</span> <span class="mi">30</span> <span class="k">else</span> <span class="s2">"Hot"</span><span class="p">)</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">temp</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">-</span> <span class="p">(</span><span class="mf">273.15</span> <span class="k">if</span> <span class="n">temp</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">"K"</span><span class="p">)</span> <span class="k">else</span> <span class="mi">0</span><span class="p">))</span>
 </span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="p">)</span>
 </span></code></pre></div>
 <p>Inner lambda classifies; the ternary in the outer call handles unit conversion. All in one expression.</p>

@@ -9208,10 +9208,10 @@
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>           ↑           ↑
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>        remove 1    remove 4 (len-2)
 </span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>s[0]   = &quot;a&quot;
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>s[2:-2] = s[2:4] = &quot;cd&quot;
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>s[-1]  = &quot;f&quot;
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>→ &quot;a&quot; + &quot;cd&quot; + &quot;f&quot; = &quot;acdf&quot; ✓
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>s[0]   = "a"
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>s[2:-2] = s[2:4] = "cd"
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>s[-1]  = "f"
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>→ "a" + "cd" + "f" = "acdf" ✓
 </span></code></pre></div></p>
 <p><strong><code>"abcd"</code> (length 4):</strong>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Index:  0  1  2  3
@@ -9219,10 +9219,10 @@
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>           ↑  ↑
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>        remove 1  remove 2 (len-2)
 </span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>s[0]   = &quot;a&quot;
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>s[2:-2] = s[2:2] = &quot;&quot;  (empty - no middle)
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>s[-1]  = &quot;d&quot;
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>→ &quot;a&quot; + &quot;&quot; + &quot;d&quot; = &quot;ad&quot; ✓
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>s[0]   = "a"
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>s[2:-2] = s[2:2] = ""  (empty - no middle)
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>s[-1]  = "d"
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>→ "a" + "" + "d" = "ad" ✓
 </span></code></pre></div></p>
 <div class="admonition insight">
 <p class="admonition-title">s[2:-2] handles the middle cleanly</p>
@@ -9248,9 +9248,9 @@
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">remove_second_and_second_last</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="n">lst</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="k">del</span> <span class="n">lst</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>    <span class="c1"># remove second-last first (doesn&#39;t shift index 1)</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="k">del</span> <span class="n">lst</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>    <span class="c1"># remove second-last first (doesn't shift index 1)</span>
 </span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">del</span> <span class="n">lst</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>     <span class="c1"># then remove second</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="k">return</span> <span class="s2">""</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
 </span></code></pre></div>
 <p>Delete the second-last first - removing it doesn't change the index of the second character. Reverse order of deletion avoids index-shift bugs.</p>
 </div>

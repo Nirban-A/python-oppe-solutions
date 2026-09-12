@@ -9167,7 +9167,7 @@
 <p><strong>Function:</strong> <code>extract_email_username(email: str) -&gt; str</code></p>
 <p><strong>Core idea:</strong> split on <code>@</code> and return the first part.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">extract_email_username</span><span class="p">(</span><span class="n">email</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">return</span> <span class="n">email</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;@&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">return</span> <span class="n">email</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"@"</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
 </span></code></pre></div>
 <p><strong>Key rules:</strong>
 - Exactly one <code>@</code> in the input -guaranteed
@@ -9217,12 +9217,12 @@
 <hr />
 <h2 id="understanding-the-problem">Understanding the problem<a class="headerlink" href="#understanding-the-problem" title="Permanent link">&para;</a></h2>
 <p>An email address has exactly one <code>@</code> that separates the username from the domain. Everything to the left of <code>@</code> is what we need:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>&quot;ananya.sharma@iitd.ac.in&quot;
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>"ananya.sharma@iitd.ac.in"
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>               ↑
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>              &quot;@&quot; is the separator
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>              "@" is the separator
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>Left:  &quot;ananya.sharma&quot;  ← return this
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>Right: &quot;iitd.ac.in&quot;    ← ignore
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>Left:  "ananya.sharma"  ← return this
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>Right: "iitd.ac.in"    ← ignore
 </span></code></pre></div>
 <hr />
 <h2 id="solution-approaches">Solution approaches<a class="headerlink" href="#solution-approaches" title="Permanent link">&para;</a></h2>
@@ -9230,26 +9230,26 @@
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">extract_email_username</span><span class="p">(</span><span class="n">email</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="k">return</span> <span class="n">email</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;@&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="k">return</span> <span class="n">email</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"@"</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
 </span></code></pre></div>
 <p><code>split("@")</code> produces <code>["ananya.sharma", "iitd.ac.in"]</code>. Index <code>[0]</code> gives the username. Clean and direct.</p>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">extract_email_username</span><span class="p">(</span><span class="n">email</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="n">username</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">email</span><span class="o">.</span><span class="n">partition</span><span class="p">(</span><span class="s2">&quot;@&quot;</span><span class="p">)</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="n">username</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">email</span><span class="o">.</span><span class="n">partition</span><span class="p">(</span><span class="s2">"@"</span><span class="p">)</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="k">return</span> <span class="n">username</span>
 </span></code></pre></div>
 <p><code>str.partition(sep)</code> splits into exactly three parts: <code>(before, sep, after)</code>. Slightly more explicit than <code>split</code> -makes it clear you're splitting on the first occurrence of <code>@</code> and taking the left part.</p>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">extract_email_username</span><span class="p">(</span><span class="n">email</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="n">at_pos</span> <span class="o">=</span> <span class="n">email</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;@&quot;</span><span class="p">)</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="n">at_pos</span> <span class="o">=</span> <span class="n">email</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">"@"</span><span class="p">)</span>
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="k">return</span> <span class="n">email</span><span class="p">[:</span><span class="n">at_pos</span><span class="p">]</span>
 </span></code></pre></div>
 <p><code>str.index("@")</code> finds the position of <code>@</code>. Slice up to that position. More verbose but shows the underlying mechanism clearly.</p>
 </div>
 <div class="tabbed-block">
-<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">extract_email_username</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">email</span><span class="p">:</span> <span class="n">email</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;@&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">extract_email_username</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">email</span><span class="p">:</span> <span class="n">email</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"@"</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
 </span></code></pre></div>
 <p>The entire function as a lambda -useful when passing as an argument to <code>map()</code>.</p>
 </div>

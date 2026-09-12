@@ -9164,7 +9164,7 @@
 <p><strong>Function:</strong> <code>starts_with_greeting(s: str) -&gt; bool</code></p>
 <p><strong>Core idea:</strong> check if the string starts with <code>"Hello "</code> or <code>"Hi "</code> (space included).</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">starts_with_greeting</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">return</span> <span class="n">s</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;Hello &quot;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">s</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;Hi &quot;</span><span class="p">)</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">return</span> <span class="n">s</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">"Hello "</span><span class="p">)</span> <span class="ow">or</span> <span class="n">s</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">"Hi "</span><span class="p">)</span>
 </span></code></pre></div>
 <p><strong>Key rules:</strong>
 - The space after the greeting is mandatory - <code>"HelloWorld"</code> is <code>False</code>
@@ -9272,17 +9272,17 @@
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">starts_with_greeting</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="k">return</span> <span class="n">s</span><span class="o">.</span><span class="n">startswith</span><span class="p">((</span><span class="s2">&quot;Hello &quot;</span><span class="p">,</span> <span class="s2">&quot;Hi &quot;</span><span class="p">))</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="k">return</span> <span class="n">s</span><span class="o">.</span><span class="n">startswith</span><span class="p">((</span><span class="s2">"Hello "</span><span class="p">,</span> <span class="s2">"Hi "</span><span class="p">))</span>
 </span></code></pre></div>
 <p><code>str.startswith()</code> accepts a <strong>tuple of prefixes</strong> - returns <code>True</code> if the string starts with any of them. The cleanest single-expression solution.</p>
 </div>
 <div class="tabbed-block">
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">starts_with_greeting</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="k">return</span> <span class="n">s</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;Hello &quot;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">s</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;Hi &quot;</span><span class="p">)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="k">return</span> <span class="n">s</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">"Hello "</span><span class="p">)</span> <span class="ow">or</span> <span class="n">s</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">"Hi "</span><span class="p">)</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">starts_with_greeting</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">startswith</span><span class="p">((</span><span class="s2">&quot;Hello &quot;</span><span class="p">,</span> <span class="s2">&quot;Hi &quot;</span><span class="p">))</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">starts_with_greeting</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">startswith</span><span class="p">((</span><span class="s2">"Hello "</span><span class="p">,</span> <span class="s2">"Hi "</span><span class="p">))</span>
 </span></code></pre></div>
 </div>
 </div>

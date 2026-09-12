@@ -9320,7 +9320,7 @@
 </span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>        <span class="n">seen</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
 </span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="c1"># Handle same-number pairs: need at least 2 occurrences</span>
 </span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>    <span class="c1"># The above naturally handles this -when the 2nd occurrence</span>
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>    <span class="c1"># of num is processed, the 1st is already in &#39;seen&#39;</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>    <span class="c1"># of num is processed, the 1st is already in 'seen'</span>
 </span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>    <span class="k">return</span> <span class="n">result</span>
 </span></code></pre></div>
 <p>Walk through the list, tracking seen numbers. When the complement is already seen, a valid pair is found. The second occurrence of a number pairs with the first -same-number pairs handled automatically.</p>

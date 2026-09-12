@@ -9257,13 +9257,13 @@
 <li><code>len(s) % 3 == 0</code> - length is divisible by 3</li>
 <li><code>s[:n] == s[n:2n] == s[2n:]</code> - all three parts are identical (where <code>n = len(s) // 3</code>)</li>
 </ol>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>&quot;abcabcabc&quot;  →  n=3
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Part 1: s[0:3] = &quot;abc&quot;
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Part 2: s[3:6] = &quot;abc&quot;
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>Part 3: s[6:9] = &quot;abc&quot;
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>"abcabcabc"  →  n=3
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Part 1: s[0:3] = "abc"
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Part 2: s[3:6] = "abc"
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>Part 3: s[6:9] = "abc"
 </span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>All equal → True 
 </span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>&quot;hello&quot;  →  len=5, 5 % 3 = 2 ≠ 0 → False 
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>"hello"  →  len=5, 5 % 3 = 2 ≠ 0 → False 
 </span></code></pre></div>
 <div class="admonition insight">
 <p class="admonition-title">Chained comparison: a == b == c</p>
