@@ -162,10 +162,10 @@ python-oppe-solutions/
 
 ---
 
-## Completion status
+## Completed sets
 
-| Exam | Session | Set | Status |
-|------|---------|-----|--------|
+| Exam | Session | Set |
+|------|---------|-----|
 | OPPE 1 | 2026 Jan | 4 Sets | 
 | OPPE 1 | 2025 Jan | 3 Sets | 
 | OPPE 1 | 2025 May | 5 Sets | 
