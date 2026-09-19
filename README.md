@@ -46,6 +46,11 @@ sX    → section      e.g. s1, s2, s3
 qY    → question     e.g. q1, q2
 
 Example: 2025_jan_3_s2q1.md
+
+```
+### nav entry format (in mkdocs.yml)
+```yaml
+- S2Q1 · Problem Title: oppe1/2025/may/set3/2025_may_3_s2q1.md
 ```
 
 ### Page template
@@ -54,8 +59,9 @@ Example: 2025_jan_3_s2q1.md
 # SXQ Y · Problem Title
 
 <div class="pb-downloads">
-  <a class="pb-btn pb-btn-slides" href="GITHUB_RAW_LINK" target="_blank">⬇ Download slides</a>
-  <a class="pb-btn pb-btn-repo" href="GITHUB_FOLDER_LINK" target="_blank">📁 GitHub</a>
+  <a class="pb-btn pb-btn-repo" href="https://github.com/Nirban-A/python-oppe-solutions/tree/main/FOLDER" target="_blank">
+    📁 GitHub
+  </a>
 </div>
 
 ???+ abstract "⚡ Quick Reference"
@@ -78,24 +84,54 @@ Example: 2025_jan_3_s2q1.md
 !!! note "Problem"
     Problem description here.
 
+**Examples:**
+
+<div class="pb-io">
+<div class="pb-io-block input">
+<span class="pb-io-label">Input</span>
+<pre><code>example input</code></pre>
+</div>
+<div class="pb-io-block output">
+<span class="pb-io-label">Output</span>
+<pre><code>example output</code></pre>
+</div>
+</div>
+
+---
+
+## Understanding the problem
+
+Explanation, tracing table, insight blocks.
+
+!!! insight "Insight title"
+    Explanation of the key insight.
+
 ---
 
 ## Solution approaches
 
 === "Explanatory"
+
     ```python
-    # verbose, beginner-friendly solution
+    # verbose, beginner-friendly solution with comments
     ```
 
+    Description of approach.
+
 === "Pythonic"
+
     ```python
-    # clean, idiomatic solution
+    # clean, idiomatic one-liner or comprehension
     ```
+
+    Description.
 
 === "Using lambda"
     ```python
-    # functional approach where applicable
+    # functional approach using lambda/map/filter
     ```
+
+    Description.
 
 ---
 
@@ -105,10 +141,30 @@ Example: 2025_jan_3_s2q1.md
 <div class="pb-card">
 <div class="pb-card-num">01</div>
 <h4>Concept title</h4>
+<p>Explanation with <code>inline code</code>.</p>
+</div>
+
+<div class="pb-card">
+<div class="pb-card-num">02</div>
+<h4>Concept title</h4>
 <p>Explanation.</p>
 </div>
+
+<div class="pb-card">
+<div class="pb-card-num">03</div>
+<h4>Concept title</h4>
+<p>Explanation.</p>
+</div>
+
 </div>
 ````
+
+**Notes:**
+- Always include 3 key takeaway cards
+- Solution tabs: use at least Explanatory + Pythonic; add lambda tab where applicable
+- `!!! insight "title"` for important insights inside section bodies
+- `!!! note "Problem"` for the problem statement block
+- `!!! warning "title"` if there are known errors in the original template/docstring
 
 ---
 
@@ -131,32 +187,13 @@ python-oppe-solutions/
     │   └── extra.js
     └── oppe1/
         ├── index.md
-        ├── 2024/
-        │   ├── index.md
-        │   └── sep/
-        │       ├── index.md
-        │       ├── set1/
-        │       ├── set2/
-        │       └── set3/
-        ├── 2025/
-        │   ├── index.md
-        │   ├── jan/
-        │   │   ├── index.md
-        │   │   ├── set1/
-        │   │   ├── set2/
-        │   │   └── set3/
-        │   ├── may/
-        │   │   ├── index.md
-        │   │   ├── set1/
-        │   │   ├── set2/
-        │       └── set3/
-        └── 2026/
+        └── <year>/             # e.g., 2024, 2025, 2026
             ├── index.md
-            ├── jan/
-            │   ├── index.md
-            │   ├── set1/    
-            │   ├── set2/    
-            │   └── set3/    
+            └── <term>/        # e.g., jan, may, sep
+                ├── index.md
+                ├── set1/    
+                ├── set2/    
+                └── set3/  
 
 ```
 
