@@ -30,7 +30,41 @@ mkdocs gh-deploy
 
 ---
 
-## 2. File Naming Convention
+## 2. Project Structure
+
+```
+python-oppe-solutions/
+├── mkdocs.yml
+├── README.md
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+└── docs/
+    ├── index.md
+    ├── status.md
+    ├── feedback.md
+    ├── python-101/
+    │   └── index.md
+    ├── stylesheets/
+    │   └── extra.css
+    ├── javascripts/
+    │   └── extra.js
+    └── oppe1/
+        ├── index.md
+        └── <year>/             # e.g., 2024, 2025, 2026
+            ├── index.md
+            └── <term>/         # e.g., jan, may, sep
+                ├── index.md
+                ├── set1/
+                ├── set2/
+                └── set3/
+```
+
+Each `setN/` folder contains `index.md` + solution files named `YYYY_mmm_N_sXqY.md`.
+
+---
+
+## 3. File Naming Convention
 
 ```
 docs/oppe1/YYYY/mmm/setN/YYYY_mmm_N_sXqY.md
@@ -51,7 +85,7 @@ Example: 2025_may_3_s2q1.md
 
 ---
 
-## 3. Solution Page Template
+## 4. Solution Page Template
 
 Every solution page follows this exact structure:
 
@@ -170,7 +204,7 @@ Explanation, tracing table, insight blocks.
 
 ---
 
-## 4. Set Index Page Template (`setN/index.md`)
+## 5. Set Index Page Template (`setN/index.md`)
 
 ```markdown
 # YYYY Mon OPPE 1 - Set N
@@ -206,7 +240,7 @@ Explanation, tracing table, insight blocks.
 
 ---
 
-## 5. CSS Classes Reference
+## 6. CSS Classes Reference
 
 | Class | Purpose |
 |-------|---------|
@@ -228,7 +262,7 @@ Explanation, tracing table, insight blocks.
 
 ---
 
-## 6. Admonition Types Used
+## 7. Admonition Types Used
 
 ```markdown
 !!! note "Problem"           - problem statement
@@ -239,7 +273,7 @@ Explanation, tracing table, insight blocks.
 
 ---
 
-## 7. Checklist When Adding a New Question
+## 8. Checklist When Adding a New Question
 
 1. Create `docs/oppe1/YYYY/mmm/setN/YYYY_mmm_N_sXqY.md` using the template above
 2. Add the page to `nav:` in `mkdocs.yml`
@@ -250,7 +284,7 @@ Explanation, tracing table, insight blocks.
 
 ---
 
-## 8. mkdocs.yml Structure (nav skeleton)
+## 9. mkdocs.yml Structure (nav skeleton)
 
 ```yaml
 nav:
@@ -290,7 +324,7 @@ nav:
 
 ---
 
-## 9. Python 101 Hub Page
+## 10. Python 101 Hub Page
 
 **Location:** `docs/python-101/index.md`
 **Uses:** `pb-set-grid` / `pb-set-card` / `pb-set-card-label` CSS classes
@@ -314,7 +348,7 @@ Each topic section has:
 
 ---
 
-## 10. Duplicate / Repeat Questions
+## 11. Duplicate / Repeat Questions
 
 When a question is identical to one already solved in another set, create a short stub page:
 
@@ -337,7 +371,7 @@ When a question is identical to one already solved in another set, create a shor
 
 ---
 
-## 11. I/O Type Questions
+## 12. I/O Type Questions
 
 For questions marked "Full I/O" (no function definition, raw `input()`/`print()`), the Quick Reference block uses:
 
@@ -360,7 +394,7 @@ The solution tabs still follow the same Explanatory / Pythonic / lambda structur
 
 ---
 
-## 12. Completion Status
+## 13. Completion Status
 
 ### OPPE 1
 
@@ -379,7 +413,7 @@ All sets pending. Same folder structure: `docs/oppe2/YYYY/mmm/setN/`.
 
 ---
 
-## 13. Common Gotchas
+## 14. Common Gotchas
 
 - **File already exists error:** delete and recreate rather than trying to edit in-place with bash heredoc
 - **`!!! insight` type:** this is a custom admonition registered in `extra.css`. Don't use standard Material types for it
@@ -392,7 +426,7 @@ All sets pending. Same folder structure: `docs/oppe2/YYYY/mmm/setN/`.
 
 ---
 
-## 14. Quick Reference: Starting a New Set
+## 15. Quick Reference: Starting a New Set
 
 When starting solutions for e.g. **2026 Jan Set 2**:
 
