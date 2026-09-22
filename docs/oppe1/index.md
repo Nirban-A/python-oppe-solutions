@@ -1,6 +1,6 @@
 # OPPE 1
 
-OPPE 1 covers **Weeks 1–5** of the Programming in Python course. It tests foundational Python - strings, lists, functions, conditionals, loops, and basic I/O.
+OPPE 1 covers **Weeks 1-5** of the Programming in Python course. It tests foundational Python - strings, lists, functions, conditionals, loops, and basic I/O.
 
 
 
@@ -16,7 +16,7 @@ OPPE 1 covers **Weeks 1–5** of the Programming in Python course. It tests foun
 </div>
 
 
-## Syllabus (Weeks 1–5)
+## Syllabus (Weeks 1-5)
 
 - **Week 1** - Python basics, variables, data types, expressions, `print()`, `input()`
 - **Week 2** - Strings - indexing, slicing, methods (`split`, `join`, `upper`, `lower`, etc.)

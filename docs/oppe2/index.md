@@ -1,6 +1,6 @@
 # OPPE 2
 
-OPPE 2 covers **Weeks 1–8** of the Programming in Python course. It builds on OPPE 1 and additionally tests file handling, dictionaries, sets, higher-order functions, and more complex I/O patterns.
+OPPE 2 covers **Weeks 1-8** of the Programming in Python course. It builds on OPPE 1 and additionally tests file handling, dictionaries, sets, higher-order functions, and more complex I/O patterns.
 
 ## Exam Structure
 
@@ -13,9 +13,9 @@ OPPE 2 covers **Weeks 1–8** of the Programming in Python course. It builds on 
 | **Total** | **7** | - | **100** |
 </div>
 
-## Syllabus (Weeks 1–8)
+## Syllabus (Weeks 1-8)
 
-- **Weeks 1–5** - Everything from OPPE 1 (strings, lists, functions, conditionals, loops)
+- **Weeks 1-5** - Everything from OPPE 1 (strings, lists, functions, conditionals, loops)
 - **Week 6** - Dictionaries - creation, access, `.get()`, `.items()`, comprehensions
 - **Week 7** - Sets, `sorted()`, `lambda`, `map()`, `filter()`
 - **Week 8** - File handling - `open()`, `read()`, `readlines()`, `with` statement
