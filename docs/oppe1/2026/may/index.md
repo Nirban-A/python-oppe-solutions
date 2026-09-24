@@ -11,7 +11,7 @@
 <a class="pb-set-card" href="set2/">
 <h3>2026 Jan - Set 2</h3>
 <p>Problems from Set 2 of the May 2026 exam.</p>
-<span class="pb-badge pb-badge-soon">Coming soon</span>
+<span class="pb-badge pb-badge-done">Solutions</span>
 </a>
 
 <a class="pb-set-card" href="set3/">
