@@ -1,3 +1,5 @@
+Fix the Page view counter( currently stuck at 12826)
+
 ### Features Planned
 1. Grade Predictor
 2. Live render ipynb notebooks
